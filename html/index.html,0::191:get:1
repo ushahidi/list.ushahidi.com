@@ -1,0 +1,45 @@
+John,<br>As far as I know, you&#39;d have to use a single layer and render all features to it. For instance if you have a vector layer with existing features, you&#39;d then have to populate this same layer with the KML features.<br>
+
+
+<br><br><div class="gmail_quote">On Sat, Feb 4, 2012 at 10:46 PM, George Chamales <span dir="ltr">&lt;<a href="mailto:george@...">george@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+Pretty sure that&#39;s an openlayers limitation.  Figured the easiest approach to deal with it was to parse the kml and pull the points / lines / polygons in as full-on Ushahidi reports.  Of course that&#39;s using a highly subjective definition of &quot;easiest.&quot;  <div>
+
+
+
+<br></div><div>Schuyler Earle was one of the openlayers developers, he&#39;s based in the Bay Area and is currently bumming around afghanistan followed by india.  He might be a good person to reach out to if you want more specifics.<div>
+
+
+
+<div><br></div><div>george<span class="HOEnZb"><font color="#888888"><br clear="all"><br>George Chamales<br>Rogue Genius LLC<div><a href="http://roguegenius.com" target="_blank">http://roguegenius.com</a><br>Phone:  <a href="tel:718.288.7718" value="+17182887718" target="_blank">718.288.7718</a><br>
+
+Skype:  notgeorge<br><br></div></font></span><div><div class="h5">
+<br>
+
+<br><br><div class="gmail_quote">On Sat, Feb 4, 2012 at 11:29 AM, John Etherton <span dir="ltr">&lt;<a href="mailto:john.etherton@..." target="_blank">john.etherton@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+
+
+  
+    
+  
+  <div bgcolor="#FFFFFF" text="#000000">
+    I know this isn&#39;t an Ushahidi specific questions but thought I&#39;d
+    try:<br>
+    <br>
+    Does anyone know how to make more than one vector layer clickable at
+    a time? Like If you have the dots and a KML layer, you can only
+    click on elements from one layer at a time. Can I make it so you can
+    click on both at the same time?<br>
+    <br>
+    Thanks,<span><font color="#888888"><br>
+    <br>
+    <div>John Etherton<br>
+      <a href="tel:%2B1-404-578-1606" value="+14045781606" target="_blank">+1-404-578-1606</a><br>
+      <a href="mailto:john.etherton@..." target="_blank">john.etherton@...</a></div>
+    <br>
+  </font></span></div>
+
+</blockquote></div><br></div></div></div></div></div>
+</blockquote></div><br>

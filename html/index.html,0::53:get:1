@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="Content-Type">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+Good idea Chris, it should probably be built upon SiCDS (duplication
+detection).&nbsp; Something like this should be written as a using the
+Ushahidi and Swift plugin architecture.<br>
+<br>
+If you want to give it a go we'll get you some documentation!&nbsp; If not
+we'll work it onto the roadmap, post-Beta release (August)<br>
+<br>
+<div class="moz-signature">-- <br>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title></title>
+<span style="font-weight: bold;">Jon Gosier</span><br>
++256.773806071<br>
+Director of Swift River<br>
+<br>
+url - <a href="http://swift.ushahidi.com/">http://swift.ushahidi.com/</a><br>
+twitter -
+<meta charset="utf-8">
+<a href="http://twitter.com/swiftriver">@swiftriver</a><br>
+skype - j.gosier<br>
+<br>
+</div>
+<br>
+<br>
+Chris Blow wrote:
+<blockquote cite="mid:EFA08B8F-12A8-4510-BB16-159C113EDB6F@..."
+ type="cite">Hello,&nbsp;<br>
+  <div><br>
+  </div>
+  <div>I sketched a little idea for reconciling reports and would be
+interested in getting some feedback:&nbsp;</div>
+  <div><br>
+  </div>
+  <div><a moz-do-not-send="true"
+ href="http://www.flickr.com/photos/unthinkingly/4610396204/">http://www.flickr.com/photos/unthinkingly/4610396204/</a></div>
+  <div><br>
+  </div>
+  <div>The idea is to expose a simple Yes/no queuing system for linking
+reports, to help some of the problems with duplicate reports we see in
+the Haiti instance.</div>
+  <div><br>
+  </div>
+  <div>There would need to be a table of "similar sounding" reports --
+which possibly could be populated with SiLCC.</div>
+  <div><br>
+  </div>
+  <div>Does that make sense?</div>
+  <div><br>
+  </div>
+  <div>PS: not a feature request! Just an idea :)</div>
+  <div><br>
+  </div>
+  <div>c</div>
+  <div apple-content-edited="true"><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+  <div style="word-wrap: break-word;"><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+  <div style="word-wrap: break-word;"><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+  <div style="word-wrap: break-word;"><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+  <div style="word-wrap: break-word;"><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+  <div style="word-wrap: break-word;"><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+  <div style="word-wrap: break-word;"><span class="Apple-style-span"
+ style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+  <div style="word-wrap: break-word;">
+  <div>
+  <div><font class="Apple-style-span" color="#898a8a" face="Arial"
+ size="3"><span class="Apple-style-span" style="font-size: 11px;"><br>
+  </span></font></div>
+  </div>
+  </div>
+  </span><br class="Apple-interchange-newline">
+  </div>
+  </span><br class="Apple-interchange-newline">
+  </div>
+  </span><br class="Apple-interchange-newline">
+  </div>
+  </span><br class="Apple-interchange-newline">
+  </div>
+  </span><br class="Apple-interchange-newline">
+  </div>
+  </span><br class="Apple-interchange-newline">
+  </div>
+  </span><br class="Apple-interchange-newline">
+  </div>
+</blockquote>
+</body>
+</html>

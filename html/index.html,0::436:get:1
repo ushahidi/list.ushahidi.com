@@ -1,0 +1,19 @@
+<div dir="ltr"><div>Hey folks,<br></div>We&#39;ve been doing weekly checkins among the V3 team for a few weeks now. These are just a chance for the team to say what they&#39;re working on and shout about anything they need help with. Since the developer release is out the door we&#39;re going to start doing these in public now. This way anyone interested can see where we&#39;re up to, and anyone who wants to help out can.<br>
+
+<div><div><div><br> We follow something like the agile standup questions:<br>- What did I build/design/do this week?<br>- What will I do next week?<br>- Is anything blocking you? (questions you need answered, things you need help with, etc)<br>
+
+
+<br></div><div>Here&#39;s mine.. This week:<br></div><div>- Finished up the post form location picker widget<br></div><div>- Merged the create post form into master. Its not what I&#39;d call complete yet, but its usable and we needed it for the dev release<br>
+
+</div><div>- Created a build process using Phing. I copied this from Kohana and tweaked it a little bit.<br></div><div>- Updated the demo site and moved the url to <a href="http://v3.ushahidi.com">v3.ushahidi.com</a><br>
+</div>
+<div><br></div><div>Next week:<br></div><div>- Hopefully merging my ACL work and improving our oauth2 handling in the UI. Killing that horrible &#39;authorize&#39; screen<br></div><div>- Documenting the build process<br>
+</div>
+<div>- Creating a couple of screencasts (install, UI walkthrough) and <br></div><div>- Updating the &#39;easy tasks&#39; list for anyone starting on V3 development<br></div><div>- Helping anyone else with their blockers<br>
+
+</div><br></div><div>I&#39;ve also taken a decent break this week, and may still take Monday off. Burnt myself out getting the dev release done: not my best plan ever!<br clear="all"></div><div><div><div><div><br>-- <br>
+<div>
+Robbie Mackay</div><div><br><div>Software Developer, External Projects</div><div>Ushahidi Inc<br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div></div><div>skype: robbie.mackay</div>
+
+</div>
+</div></div></div></div></div></div>

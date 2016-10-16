@@ -1,0 +1,122 @@
+Trying to get my hands on ushahidi plugins dev. how do you know which ushahidi events are available. Like this one <div><br></div><div>Event::add(&#39;ushahidi_action.report_edit&#39;, array($this, &#39;_report_form_submit&#39;)); <div>
+
+<br></div><div>which hooks into the report_edit form, how do you know the others that exist.</div><div><br></div><div>Gracia!<br><br><div class="gmail_quote">On Mon, Jun 7, 2010 at 9:01 PM, David Kobia <span dir="ltr">&lt;<a href="mailto:david@...">david@...</a>&gt;</span> wrote:<br>
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex;">Ushahidi Plugins are essentially Kohana Modules - no difference,<br>
+except that we&#39;re placing markers in the code to allow the plugins to<br>
+hook into Ushahidi&#39;s core. You can write new controllers and views<br>
+without using hooks and you are correct about being able to do<br>
+something like <a href="http://example.com/ushahidi/facebook" target="_blank">http://example.com/ushahidi/facebook</a> as long as you<br>
+adhere to Kohana&#39;s cascading filesystem. The plugin folder essentially<br>
+mirrors the main application folder.<br>
+<br>
+As far as skills required to develop plugins... yes PHP is necessary.<br>
+<div><div></div><div class="h5"><br>
+<br>
+<br>
+<br>
+On Thu, Jun 3, 2010 at 2:25 AM, Soyapi Mumba &lt;<a href="mailto:soyapim@...">soyapim@...</a>&gt; wrote:<br>
+&gt; How different/similar are Ushahidi plugins from Kohana<br>
+&gt; Modules/plugins? What extra functionality is available in Ushahidi<br>
+&gt; Plugins that cannot be accomplished with Kohana&#39;s.<br>
+&gt;<br>
+&gt; What skills/knowledge are required to develop plugins? Is proficiency<br>
+&gt; in PHP a must?<br>
+&gt;<br>
+&gt; - Soyapi<br>
+&gt;<br>
+&gt; On Thu, Jun 3, 2010 at 2:37 AM, george &lt;<a href="mailto:george@...">george@...</a>&gt; wrote:<br>
+&gt;&gt; How do users find plugins - will there be a central database ala wordpress?  How are plugins updated over time?<br>
+&gt;&gt;<br>
+&gt;&gt; And just to make sure I understand the documentation - it&#39;s possible to write plugins that add completely new controllers / views without using hooks - i.e. <a href="http://example.com/ushahidi/facebook" target="_blank">http://example.com/ushahidi/facebook</a> by just having the views and controllers directories laid out correctly, right?<br>
+
+
+&gt;&gt; george<br>
+&gt;&gt; On Wed, Jun 2, 2010 at 7:49 AM, Caleb Bell &lt;<a href="mailto:caleb@...">caleb@...</a>&gt; wrote:<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Hi Folks,<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; David and I are organizing for a screen cast that will cover Ushahidi Plugins.  The screencast will basically be a conversation between David and I where we&#39;ll discuss the plugin system and do some diagraming/visuals along the way. Our hope is to produce a screen cast that will cover the basics of the Ushahidi Plugin system and give a general overview of how to create one.<br>
+
+
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Please reply with any questions you have about the system that you&#39;d like to see covered.  For those of you already familiar with the system, if you think of a question that would be helpful, you can send it on too.<br>
+
+
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Here are a few questions to get the ball rolling:<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; How has the plugin architecture altered the Ushahidi core platform (code-wise or directory-wise)?<br>
+&gt;&gt;&gt; What is a hook?<br>
+&gt;&gt;&gt; What is a filter?<br>
+&gt;&gt;&gt; How do I handle database changes or updates needed for my plugin?<br>
+&gt;&gt;&gt; How do I get started writing my own plugin?<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Please send all questions in no later than Friday (June 4) of this week. We&#39;ll try to cover as much of them as we can during the screen cast.<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Cheers!<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Caleb Bell<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; <a href="http://www.ushahidi.com" target="_blank">www.ushahidi.com</a><br>
+&gt;&gt;&gt; US: 850.366.3702<br>
+&gt;&gt;<br>
+&gt;&gt;<br>
+&gt;<br>
+&gt;<br>
+&gt;<br>
+&gt; --<br>
+&gt; Soyapi Mumba<br>
+&gt;<br>
+&gt; <a href="http://soyapi.com" target="_blank">http://soyapi.com</a><br>
+&gt;<br>
+&gt;<br>
+&gt;<br>
+&gt; ~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+&gt; List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+&gt;<br>
+&gt; Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+&gt; <a href="mailto:developers-digest-subscribe@...">developers-digest-subscribe@...</a><br>
+&gt;<br>
+&gt; To remove your address from the list, just send a message to<br>
+&gt; the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+&gt; message. If you haven&#39;t changed addresses since subscribing,<br>
+&gt; you can also send a message to:<br>
+&gt; <a href="mailto:developers-unsubscribe@...">developers-unsubscribe@...</a><br>
+&gt;<br>
+&gt; For addition or removal of addresses, we&#39;ll send a confirmation<br>
+&gt; message to that address. When you receive it, simply reply to it<br>
+&gt; to complete the transaction.<br>
+&gt;<br>
+&gt; If you need to get in touch with the human owner of this list,<br>
+&gt; please send a message to:<br>
+&gt; <a href="mailto:developers-owner@...">developers-owner@...</a><br>
+&gt;<br>
+&gt;<br>
+<br>
+<br>
+<br>
+~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="mailto:developers-digest-subscribe@...">developers-digest-subscribe@...</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+message. If you haven&#39;t changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="mailto:developers-unsubscribe@...">developers-unsubscribe@...</a><br>
+<br>
+For addition or removal of addresses, we&#39;ll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="mailto:developers-owner@...">developers-owner@...</a><br>
+<br>
+</div></div></blockquote></div><br><br clear="all"><br>-- <br>Henry<br>Crowdsourcing Crisis Information<br><br><a href="http://www.ushahidi.com">www.ushahidi.com</a> | <a href="http://twitter.com/ushahidi">twitter.com/ushahidi</a><br>
+
+Ghana: +233243581806 <br>Skype: eyedol25<br><br>
+</div></div>

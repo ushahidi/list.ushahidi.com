@@ -1,0 +1,299 @@
+Good idea - I&#39;ve added a stub project page to the wiki for adding world bank layers.<div>Kaushal - could you add some more detail and info on how to find the maps available? and if you&#39;re happy to advise anyone wanting to work on this, your contact details too?</div>
+
+<div><br></div><div>Robbie.</div><div><br></div><div><div class="gmail_quote">On Tue, Oct 23, 2012 at 2:14 PM, Kaushal Jhalla <span dir="ltr">&lt;<a href="mailto:ksjhalla@..." target="_blank">ksjhalla@...</a>&gt;</span> wrote:<br>
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div bgcolor="#FFFFFF"><div>I would add to this to say the World Bank publishes a lot of base layers on poverty and development such as mDGs on maps.worldbank at a sub national level - they are currently hosted on GeoIQ/ArcGIs and can be pulled in too. </div>
+
+<div><br></div><div>We intend to publish many more in the next few months a we validate and process them.</div><div><br></div><div>Cheers,</div><div>Kaushal <br></div><div><div class="h5"><div><br></div><div><br>On Oct 22, 2012, at 9:05 PM, Robbie MacKay &lt;<a href="mailto:robbie@..." target="_blank">robbie@...</a>&gt; wrote:<br>
+
+<br></div><div></div><blockquote type="cite"><div>Hi Dennison,<div>Thanks for the detailed notes. Great to hear all the great mapping things going on. Wish I could have made it myself.</div><div><br></div><div>I agree it&#39;d be great to improve our import functionality (and theres a fair bit of work being done CSV/XML imports at the moment) but we don&#39;t want to get stretched too think. We&#39;ve still got a lot of work that could be done on improving the UI of core Ushahidi functions. For additional data sources and things like what CartoDB does, it would be great if we can leverage those existing tools, and work with them rather than trying to reproduce that function. I&#39;ve been playing with CartoDB myself, seeing if I can push data into it from Ushahidi, theres some potential to use it to do more complex analysis there too.</div>
+
+
+
+<div><br></div>
+<div>For custom themed maps, its fairly trivial to pull in tiles from mapbox, cloudmade, or other sources, so we can leverage their work to provide custom themed maps to users. The key here is probably to make the management and setup UI for this really good so its easy to get going.</div>
+
+
+
+<div><br></div><div>There&#39;s some other great little points in those notes..</div><div><br></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div>&quot;Zoom: pick the smallest zoom range necesary.  Specify the level in which it appears.  Ask: what is the purpose of each level for the user?&quot;</div>
+
+
+
+</blockquote>This is a great point. Ushahidi maps, because they&#39;re designed to be quick to get up and going, always have a large zoom range. But often some projects could do away with most of that. If your reports only cover New Zealand, why let users zoom out to the full world map?<div>
+
+
+
+<br></div><div>Stamen maps - just beautiful. Something we should add a plugin for or bundle in core <a href="http://maps.stamen.com/" target="_blank">http://maps.stamen.com/</a></div><div>I&#39;ve written up a quick community task ticket for this: <a href="https://github.com/ushahidi/Ushahidi_Web/issues/898" target="_blank">https://github.com/ushahidi/Ushahidi_Web/issues/898</a></div>
+
+
+
+<div><div><br></div><div>Robbie<div>
+<br><div class="gmail_quote">On Wed, Oct 17, 2012 at 7:05 AM, Mr. Evoltech <span dir="ltr">&lt;<a href="mailto:evoltech@..." target="_blank">evoltech@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+
+
+
+  
+
+    
+  
+  <div bgcolor="#FFFFFF" text="#000000">
+    <div style="font-family:-moz-fixed;font-size:12px" lang="x-western">
+      <pre>Team,
+
+Please see attached my notes from the State of the Map open street map
+conference.
+
+There are two main things that I took from this conference that I think
+are relevant to Ushahidi: historical story telling, and creating custom
+base maps.
+
+There was a lot of talk about historical story telling with OSM at the
+conference.  This is probably one of the most used features of Ushahidi,
+but we keep our data in a separate database that we export into geojson
+for consumption by openlayers which creates the map overlays.  There are
+a number of historical map data sources both in base layer form as well
+as in geocoded form.  I think we could see added value to the Ushahidi
+poject with a wider range and modernized import functionality.  For
+example we already have csv and kml import from file upload, but it
+would be nice to have drag and drop in or maybe even pasting a url where
+it will figure it out.  <a href="http://CartoDB.com" target="_blank">CartoDB.com</a> is a good example of this.
+
+Speaking of which, from my experience there is a high demand for not
+just custom theming the Ushahidi interface but I have seen interest in
+custom theming the maps.  In my own experience with the March-Hare
+Communications Collective there was a lot of demand for offline mobile
+maps themed to downplay vehicular paths and emphasize pedestrian paths
+as well as simplifying the maps for a city sized range with only a few
+zoom levels (14-17).  This can all be done with tools like tile mill or
+cartodb.  Both of these tools allow for users to import map information
+that is relevent to their interests and style as they need.  With
+Tilemill you can then export the resulting tileset to Mapbox&#39;s hosting
+solution or PDF or mbtiles format (which could be downloaded to mobile
+devices and directly opened with OpenLayers for offline usage).  With
+cartodb you can bush the resulting baselayers to their servers, but you
+can also run sql queries (they have a json sql api) to pull certain data
+from the baselayers.  This has significant gains for doing research when
+asking questions about Ushahidi reports <span><span>_</span>and<span>_</span></span> the map data.
+
+Sincerely,
+Dennison
+</pre>
+    </div>
+    <br>
+    <fieldset><legend>Notes.txt</legend></fieldset>
+    <br>
+    <div style="font-family:-moz-fixed;font-size:12px" lang="x-unicode">
+      <pre>===
+Keynote
+===
+- US Chapter is only 2yo
+- Addressing is the main area of support that is needed
+
+===
+Beautiful thematic maps: 
+===
+TJ Maciak from Johnson Center, community research institute
+- MAPAS - data mapping tool
+- OSM has a euro look and feel
+- Created maps with mapnik for visualizing data
+- Casched tiles with tilemap
+- Weave - maping engine and visualization (GPL v3)
+- Shapefiles are available from cloudmade
+- Style the maps with TileMill
+- OGCServer - serves maps using, connects to tilecache
+- Base maps -&gt; Thematics -&gt; OSM
+
+Artem Pavlenko, Dan Springmeyer Mapnik 2.1, <a href="http://github.com/mapnik" target="_blank">github.com/mapnik</a>
+- Map renderer, making maps with data
+- <a href="http://tile.osm.org" target="_blank">tile.osm.org</a>, <a href="http://mapquest.com" target="_blank">mapquest.com</a>
+- New feature: Scale factor
+- New feature: vertex converter
+- Image filters can be used directly in mapnik core, with chaining
+- Compositing: style level
+- Opacity: style leveling
+- SVG and Marker advances
+- Mapnik does not need a database.  There is a csv plugin which is really fast
+with really small and medium data
+- You can now pull data from python file: python function
+- pull from GEOJSON
+
+Jessica Lord, Code for America, TileMill <a href="http://github.com/codeforamerica" target="_blank">github.com/codeforamerica</a>
+- Mss: how your styling the map like css
+- Zoom: pick the smallest zoom range necesary.  Specify the level in which it 
+appears.  Ask: what is the purpose of each level for the user?
+- You can create an invisible target point layer that will capture user actions
+with a visible layer that has smaller icons on top of that.
+- mackie icon library
+
+Michael Migurski Nathaniel Kelso, Stamen: Data visualizations
+<a href="http://maps.stamen.com" target="_blank">maps.stamen.com</a>, <a href="http://github.com/migurski/DEM-Tools" target="_blank">github.com/migurski/DEM-Tools</a>
+- 3 different map tiles: toner, water color, terrain
+- elevation: talked about getting elevation data and improving
+- ground cover: for coloring map areas (woods, city, water, etc)
+national land cover data set from usgs
+<a href="http://github.com/migurski/TileStache" target="_blank">github.com/migurski/TileStache</a> make the tiles and cache the tiles
+- Color process: integrating with PS
+- Simulated anealing allows for the intelligent placement of labels so they 
+do not overlap.  Tool is called Dimeo
+- Fixing some issues with OSM dual carriage roads
+
+===
+Join the Humanitarian OpenStreetMap Team, Kate Chapman
+===
+- FOSS response, disasster preparedness, instruction
+- Haiti is the longest running project
+- Educational materials available: <a href="http://learnOSM.org" target="_blank">http://learnOSM.org</a>
+- join mailing list, patch software, outreach, check the task manager: 
+<a href="http://tasks.hotsom.org" target="_blank">tasks.hotsom.org</a>, translators
+- dealing with low bandwidth environments
+- positions posted to <a href="http://hot.openstreetmap.org" target="_blank">hot.openstreetmap.org</a>
+- mailing list: <a href="http://lists.openstreetmap.org/listinfo/hot" target="_blank">http://lists.openstreetmap.org/listinfo/hot</a>
+
+===
+OSM and Disaster Risk Management, Robert Sodan, World Bank
+===
+- Disasters are relationships between naturaly occuring phenomenons and 
+human interactions
+- Risk Assesments: Hazard + Exposure + Vulnerability = Risk (probable loss)
+- Categorization of infrastructure of interest
+- Number of occupants in buildings is often a tagged data point
+
+How do you ethically justify the use of volunteer labor in critical communities
+to support an institution like the world bank that works closly with 
+governments in the end goal of colonialism and restrictions on individual 
+and community agency?  Agreed that it will be a problem.
+
+===
+State of the Portlan Map
+===
+- There is a lot of open data in portland
+- sw trails pdx
+
+===
+Mapbox
+===
+- OSM is a lot of facts independent of use
+- Paper maps independent of routing
+- Designs baselaye (with tilemill, cartocss, rendered with mapbox)
+- Data not rendered on the file, looking at files (tiles)
+- Unique aproach to OSM tile reference linked on Mapbox blog from this summer
+- level 2,3,4 with administrative boundaries (overpass api, including member 
+ways and nodes)
+- alter tags: drop tags from nodes, downplay maritime boundaries
+- Natural earth data set: fuzzy matches with OSM data set to determine size
+and placement of city labels
+- import tool is impossom: can not do differential updates (vs osmdb2sql), 
+allows for custom manipulating of data during import.  Can set up additional
+tables (bodies of water, land uses, etc).  Mapbox has custom functions to this
+end: replace tag name seperating characters, apply abbreviations to common
+words.
+- postprocessing: performs transformations after the import.  Define points for
+labels of all polygons.  Labels layer is above the polygon level which allows
+for intelligent placement of labels.  Different landuse areas get a uniqe 
+&quot;inline&quot;.  
+- Icons and labels: merge multiple nodes into with the same name in the same 
+area.
+
+===
+Things are Heating Up in Geo: Heat Maps 101, HumanGeo, Abe Usher, 
+<a href="http://thehumangeo.com" target="_blank">thehumangeo.com</a>, 
+===
+- Use heatmaps when there is too much data, to determine trust
+- Dont just trust open street map, you can also check other spatial crowd 
+source data sources.  Correlations promote trust.
+- Showed an interesting example of heatmapping tweets over a OSM map
+- You can also make a video file
+- Metacarta and geodict can be used to geolocate un structured text
+- Jeff Jonas from IBM - deals with determining uncertain data
+
+===
+Code for America, <a href="http://OpenImpact.us" target="_blank">OpenImpact.us</a>
+===
+- PeaceCorps for Geeks
+- Adopt a hydrant, used google maps
+- ethically compelled to move to OSM
+- some places like macon are still using physical pushpins for mapping events
+- follow the data: by using this technique in interviews they were able to find 
+data sources
+- <a href="http://Prepared.ly" target="_blank">Prepared.ly</a> - OSM and Stamen
+- TileMill, Neo4j+OSM, Skobbler + Data
+- Data Checkout <a href="http://bit.ly/timemaker" target="_blank">bit.ly/timemaker</a>: leaflet, mongodb, geojson, kml
+- Creating tools
+
+===
+Steps for creating basemaps
+===
+- This is all done in TileMill: styling (carto css), importing layers and data 
+sources in multiple formats, rendering (mapbox on the backend), exporting to 
+multiple formats (mbtiles, SVG, GeoPDF, upload to mapbox)
+- RouteME (for iOS) Justin Miller (maybe mapbox sdk)
+- OpenLayers can handle mbtiles!
+
+===
+<a href="http://CartoDB.com" target="_blank">CartoDB.com</a>, Andrew Hill
+===
+- Gepspatial DB in the cloud, mapnik for the tiles, API, UI, can be deployed
+on its own, or you can pay for hosting
+- Drag and drop shapefiles (dbf files), also direct url imports
+- SQLAPI is in json format
+- uses osm2pgsql
+- The power lies in access to carto db
+- You can dynamically query information from the map tiles themselves
+- leaflet, gmaps, backbone, d3
+- <a href="http://github.com/cartodb/torque" target="_blank">github.com/cartodb/torque</a>: placing temporal data
+
+===
+Public Labratory, Grassroots mapping, Mathew Lippencot
+===
+- Collecting ariel imagery with kites/map
+- uses cern open hardware license, GPL v3
+- creates kits for camera stabalizing and kites
+- collects images and stitches them in PS
+- Map knitter helps stitching in FOSS
+- Potlatch 2 allows for submitting traces to OSM
+- There has been upstream support from google who is using their maps.  Google 
+provides a link back to the Mapknitter website where you have access to all 
+the xiff data and more.
+- Able to quickly and cheaply create maps where drones fail
+</pre>
+    </div>
+  </div>
+
+<br><br>
+<br>
+~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="mailto:developers-digest-subscribe@..." target="_blank">developers-digest-subscribe@...</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+message. If you haven&#39;t changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="mailto:developers-unsubscribe@..." target="_blank">developers-unsubscribe@...</a><br>
+<br>
+For addition or removal of addresses, we&#39;ll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="mailto:developers-owner@..." target="_blank">developers-owner@...</a><br></blockquote></div><br><br clear="all"><div><br></div>-- <br><div>Robbie Mackay</div><div><br><div>Software Developer, External Projects</div>
+
+
+
+
+<div>Ushahidi Inc</div><div>m: <a href="tel:%2B64%2027%20576%202243" value="+64275762243" target="_blank">+64 27 576 2243</a><br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div></div>
+
+
+
+<div>skype: robbie.mackay</div></div><br>
+</div></div>
+</div>
+</div></blockquote></div></div></div></blockquote></div><br><br clear="all"><div><br></div>-- <br><div>Robbie Mackay</div><div><br><div>Software Developer, External Projects</div><div>Ushahidi Inc</div><div>m: +64 27 576 2243<br>
+
+<div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div></div><div>skype: robbie.mackay</div></div><br>
+</div>

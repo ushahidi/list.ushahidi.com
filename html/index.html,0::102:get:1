@@ -1,0 +1,52 @@
+<html><head></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; ">Thanks.<div><br><div>
+<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium; "><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><div>Erik Hersman<br><br><a href="http://www.ushahidi.com">www.ushahidi.com</a>&nbsp;|&nbsp;<a href="http://www.ihub.co.ke">www.iHub.co.ke</a></div><div><a href="http://www.afrigadget.com">www.afrigadget.com</a><span class="Apple-converted-space">&nbsp;</span>|<span class="Apple-converted-space">&nbsp;</span><a href="http://www.afrigadget.com">www.whiteafrican.com</a><span class="Apple-converted-space">&nbsp;</span>|<span class="Apple-converted-space">&nbsp;</span><a href="http://twitter.com/whiteafrican">@whiteafrican</a><br>US: 407.427.0412 | Kenya: +254 729.157.257 | Skype: ezungu</div></div></span></div></span></div></span></div></span></span>
+</div>
+<br><div><div>On Nov 3, 2010, at 9:19 PM, Milo van der Linden wrote:</div><br class="Apple-interchange-newline"><blockquote type="cite">David,<div><br></div><div>I will do that now. In Ubuntu I use a product called meld to detect diffs. I will run this across the 2.0 version with my original changes.<br><br><div class="gmail_quote">2010/11/3 David Kobia <span dir="ltr">&lt;<a href="mailto:david@...">david@...</a>&gt;</span><br>
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex;">Milo,<br>Do you mind updating your changes for the 2.0 branch? Then I can merge them in.<br><br>Thanks!<div><div></div>
+<div class="h5"><br><br>
+<br><br><div class="gmail_quote">On Wed, Nov 3, 2010 at 1:59 PM, Milo van der Linden <span dir="ltr">&lt;<a href="mailto:milo@..." target="_blank">milo@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0pt 0pt 0pt 0.8ex;border-left:1px solid rgb(204, 204, 204);padding-left:1ex">
+
+
+Thank you for the information David,&nbsp;<div><br></div><div>I did as you said and it turned out I needed to checkout the 2.0 branch before I could run the second line. For others who share the same trouble:<div><div>
+
+<br></div><div>
+<span style="font-family:monospace;font-size:large;white-space:pre-wrap">$ git branch -m master 1.2</span></div></div><div><font face="monospace"><span style="white-space:pre-wrap;font-size:large">#check that there are no pending commits:</span></font></div>
+
+
+
+<div><font face="monospace"><span style="white-space:pre-wrap;font-size:large">$ git status</span></font></div><div><font face="monospace"><span style="white-space:pre-wrap;font-size:large">#if you have pending commits in the 1.2 branch, commit and push them first</span></font></div>
+
+
+
+<div><font face="monospace"><span style="white-space:pre-wrap;font-size:large"># check out 2.0</span></font></div><div><font face="monospace"><span style="white-space:pre-wrap;font-size:large">$git fetch origin 2.0:2.0</span></font></div>
+
+
+
+<div><font face="monospace"><span style="white-space:pre-wrap;font-size:large">#now you are ready to move 2.0 to master:</span></font></div><div><div><font face="monospace"><span style="white-space:pre-wrap;font-size:large">$ git branch -m 2.0 master</span></font></div>
+
+
+
+<div><font face="monospace"><span style="white-space:pre-wrap;font-size:large"><br></span></font></div></div><div><font face="monospace"><span style="white-space:pre-wrap;font-size:large"><br>
+</span></font>Good luck!</div><div><br></div><div>Kind regards,</div><div><br></div><div>Milo van der Linden</div><div><br><div class="gmail_quote">2010/11/3 David Kobia <span dir="ltr">&lt;<a href="mailto:david@..." target="_blank">david@...</a>&gt;</span><div>
+
+
+<div></div><div><br>
+<blockquote class="gmail_quote" style="margin:0pt 0pt 0pt 0.8ex;border-left:1px solid rgb(204, 204, 204);padding-left:1ex">Hi Guys,<br>I just wanted to let you know that we've now converted (renamed) the <b>2.0</b> branch on github to <b>master</b>. To avoid breaking your local github repos, please do the following:<br>
+
+
+
+<br><pre style="margin-left:40px"><div><font size="4">$ git branch -m master 1.2</font></div><div><font size="4">$ git branch -m 2.0 master</font></div></pre>This will rename your local branches accordingly, so that your local master will match the remote branch which is the original 2.0 branch.<br>
+
+
+
+
+<br>Thanks!<br><font color="#888888"><br>David<br>
+</font></blockquote></div></div></div><br><br clear="all"><br>-- <br>Milo van der Linden<br>Open Source Geospatial consultant<br><br>dogodigi - Geospatial solutions&nbsp; <br>Beukenlaan 2<br>5261LE&nbsp; Vught<br>T. +31616598808<br>
+
+
+
+</div></div>
+</blockquote></div><br>
+</div></div></blockquote></div><br><br clear="all"><br>-- <br>Milo van der Linden<br>Open Source Geospatial consultant<br><br>dogodigi - Geospatial solutions&nbsp; <br>Beukenlaan 2<br>5261LE&nbsp; Vught<br>T. +31616598808<br>
+</div>
+</blockquote></div><br></div></body></html>

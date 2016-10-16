@@ -1,0 +1,100 @@
+<div dir="ltr">thanks for response henry,<div><br></div><div>I was set those at map and unfurtunately didn&#39;t works :( .</div><div>Yesterday I&#39;ve checked the code, but I can&#39;t found a function if optional information included when submit new reports to the map. CMIIW</div>
+</div><div class="gmail_extra"><br><br><div class="gmail_quote">On Sat, Feb 22, 2014 at 8:55 AM, Henry Addo <span dir="ltr">&lt;<a href="mailto:henry@..." target="_blank">henry@...</a>&gt;</span> wrote:<br>
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir="ltr">Yes. You have to set those at Map -&gt; Settings screen.</div><div class="gmail_extra"><div><div class="h5">
+<br><br><div class="gmail_quote">On Sat, Feb 22, 2014 at 12:06 AM, kaka prakasa <span dir="ltr">&lt;<a href="mailto:kaka.prakasa@..." target="_blank">kaka.prakasa@...</a>&gt;</span> wrote:<br>
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><p dir="ltr">Thanks seth</p><div><div>
+<div class="gmail_quote">On Feb 21, 2014 9:55 PM, &quot;Seth Hall&quot; &lt;<a href="mailto:seth@..." target="_blank">seth@...</a>&gt; wrote:<br type="attribution"><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+
+
+                <div style="font-family:Helvetica;font-size:13px">Hey Kaka,</div><div style="font-family:Helvetica;font-size:13px"><br><div>Thanks for reaching out with your question. Henry is our Android wizard, let me Ping him and we will get back to you.</div>
+
+
+
+<div><br></div><div>Thanks and have a good day.</div></div>
+                <div><div><br></div><div>-- </div><div><div><span style="font-size:15px">Seth Hall</span></div><div><span style="font-size:15px">Front-End Designer &amp; Developer</span></div><div><a href="http://ushahidi.com" style="color:rgb(0,106,227);font-size:15px" target="_blank">ushahidi.com</a></div>
+
+
+
+</div></div>
+                  
+                <p style="color:#a0a0a8">On Friday, February 21, 2014 at 7:39 AM, kaka prakasa wrote:</p><blockquote type="cite"><div>
+                    <span><div><div><div dir="ltr"><p style="margin:0px;color:rgb(51,51,51);background-color:rgb(235,242,249);font-size:13px;line-height:18px;font-family:&#39;Proxima Nova&#39;,Proxima,Helvetica,Arial,sans-serif">
+
+
+
+Hi, I was refactoring ushahidi android and iphone for<a href="http://www.matamassa.org/" rel="nofollow" style="color:rgb(59,115,175);text-decoration:none" target="_blank"> http://www.matamassa.org</a> (using ushahidi platform), this project required reporter name and email, since I was modifiying Ushahidi to suit this requirement, Ushahidi Iphone app still can send report but android app cannot send report to <a href="http://www.matamassa.org/" rel="nofollow" style="color:rgb(59,115,175);text-decoration:none" target="_blank">http://www.matamassa.org</a>  </p>
+
+
+
+
+<p style="margin:10px 0px 0px;color:rgb(51,51,51);background-color:rgb(235,242,249);font-size:13px;line-height:18px;font-family:&#39;Proxima Nova&#39;,Proxima,Helvetica,Arial,sans-serif">my question is, does ushahidi android send the user name and email (optional information) to the map?</p>
+
+
+
+
+<div><br></div>-- <br><div dir="ltr"><div>Salam,</div><div>Kaka</div>------------------</div><div dir="ltr"><br></div><div dir="ltr"><div><tt style="font-size:16px">      @-.</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+
+
+
+
+<tt style="font-size:16px">     _  )\\  _</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">    / \/ | \/ \</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+
+
+
+
+<tt style="font-size:16px">   @/`|/\/\/|`\@</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">      /~~~~~\</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+
+
+
+
+<tt style="font-size:16px">     |  ^ ^  |</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">     |   .   |</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+
+
+
+
+<tt style="font-size:16px">     | (\_/) |</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">  .-&quot;-\ \_/ /-&quot;-.</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+
+
+
+
+<tt style="font-size:16px"> / .-. \___/ .-. \</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">@/` /.-.   .-.\ `\@</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+
+
+
+
+<tt style="font-size:16px">   @`   \ /   `@</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">         @</tt><br>skype: prakasa666<br>gtalk: kaka.prakasa<br>
+
+
+
+
+<a href="http://about.me/kaka.e.prakasa" target="_blank">http://about.me/kaka.e.prakasa</a></div></div>
+</div>
+</div></div></span>
+                  
+                  
+                  
+                  
+                </div></blockquote><div>
+                    <br>
+                </div>
+            </blockquote></div>
+</div></div></blockquote></div><br><br clear="all"><div><br></div></div></div><span class="HOEnZb"><font color="#888888">-- <br>Henry!<div>--<br><div>Ushahidi -- Information Collection, Visualization, &amp; Interactive Mapping<br>
+<br><a href="http://www.ushahidi.com" target="_blank">http://www.ushahidi.com</a> | <a href="http://twitter.com/ushahidi" target="_blank">http://twitter.com/ushahidi</a><br>
+
+Ghana: <a href="tel:%2B233243581806" value="+233243581806" target="_blank">+233243581806</a> <br>Skype: eyedol25<br><div>IRC: eyedol on <span style="font-family:helvetica,arial,sans-serif;font-size:14px;color:rgb(17,17,17);line-height:20px"><a href="http://irc.freenode.net" target="_blank">irc.freenode.net</a> #ushahidi</span></div>
+
+
+</div></div>
+</font></span></div>
+</blockquote></div><br><br clear="all"><div><br></div>-- <br><div dir="ltr"><div>Salam,</div><div>Kaka</div>------------------<div><tt style="font-size:16px">      @-.</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+<tt style="font-size:16px">     _  )\\  _</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">    / \/ | \/ \</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+<tt style="font-size:16px">   @/`|/\/\/|`\@</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">      /~~~~~\</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+<tt style="font-size:16px">     |  ^ ^  |</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">     |   .   |</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+<tt style="font-size:16px">     | (\_/) |</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">  .-&quot;-\ \_/ /-&quot;-.</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+<tt style="font-size:16px"> / .-. \___/ .-. \</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">@/` /.-.   .-.\ `\@</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px">
+<tt style="font-size:16px">   @`   \ /   `@</tt><br style="font-family:&#39;times new roman&#39;,&#39;new york&#39;,times,serif;font-size:16px"><tt style="font-size:16px">         @</tt><br>skype: prakasa666<br>gtalk: kaka.prakasa<br>
+<a href="http://about.me/kaka.e.prakasa" target="_blank">http://about.me/kaka.e.prakasa</a></div></div>
+</div>

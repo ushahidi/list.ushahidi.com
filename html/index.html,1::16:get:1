@@ -1,0 +1,79 @@
+<html><head></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; ">Hey Heather,&nbsp;<div>the doc is view only. Can you give access to editing so I can start the testing?<div><br></div><div>Anahi</div><div><br><div apple-content-edited="true">
+<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium; "><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; ">Anahi Ayala Iacucci<br><br>New Media Consultant<br><a href="mailto:anahi@...">anahi@...</a><br><br>Mobile (US): +1 202 550 5214<br>Mobile (Italy): +39 345 80 53 067&nbsp;<br>Mobile (Kenya):&nbsp;+254 706 623 650&nbsp;<br><br></div><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; ">SkypeID: anahiii<br>Twitter: anahi_ayala<br>Blog: <a href="http://crisismapper.wordpress.com">http://crisismapper.wordpress.com</a><br><br></div></span></div></span></div></span></span>
+</div>
+<br><div><div>On Jul 17, 2012, at 8:18 PM, Heather Leson wrote:</div><br class="Apple-interchange-newline"><blockquote type="cite">HI Folks, one update. the test site has been changed. <br><br><b>To Test: </b><br><div>site - <a href="http://trunk.ushahidi.com/" target="_blank">testing.ushahidi.com</a></div>
+<div>username = admin</div>password = testing2012 <br><br>Sorry for the extra noise<br><br>Heather<br><br><div class="gmail_quote">On Tue, Jul 17, 2012 at 9:20 AM, Heather Leson <span dir="ltr">&lt;<a href="mailto:hleson@..." target="_blank">hleson@...</a>&gt;</span> wrote:<br>
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">HI Folks, next week we will be releasing Ushahidi 2.5 Platform. It incorporates bug fixes as well as the items below. Our team has been testing internally. It is now open for community testing until Monday, July 23, 2012. Your input is most welcome. <br>
+
+
+<br>We have an intern who has been testing items and we have fixed a number of the bugs she identified. Thanks Sharon.&nbsp; The feedback sheet provides the things that need to be tested. Let us know if we missed any of the items. You don't need to be a developer to test as there is a site login below.<br>
+
+
+<br><br><b>To Test: </b><br><div>site - <a href="http://trunk.ushahidi.com/" target="_blank">testing.ushahidi.com</a></div>
+<div>username = admin</div>password = testing2012 <br><br><a href="https://docs.google.com/a/ushahidi.com/spreadsheet/ccc?key=0Ajto4YrsWC3bdEYwRWE4QU9HTWpWYVhCRW5Od3ZkREE#gid=4" target="_blank">To track feedback</a><br><br>
+
+<b>New Release items: </b><br>
+<div>Just to clue you in on some of the major changes (and their ramifications) that shall ship with the upcoming release:</div><div><br></div><div><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+
+<li style="margin-left:15px"><b>Mapping</b>: The mapping code for the 
+main page has been refactored and is no longer tied to the timeline. 
+We've consolidated the mapping code into a single JavaScript library; 
+ushahidi.js. This library has an event system which is extensible. The 
+stock events can be triggered for actions such as zoom changes, resizing
+ the map viewport, change of base layer etc. As a by the way, decoupling
+ the timeline from the map effectively means that you can plug in your 
+own timeline. The stock timeline is uses&nbsp;<a href="http://jqplot.com/" style="color:rgb(17,85,204)" target="_blank">jqplot</a>. This change affects those plugins that hook into the main map such the fullscreen map plugin</li>
+
+
+</ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+
+<li style="margin-left:15px"><b>Themes</b>: The views for the front-end 
+have been grouped into directories that are named after the controllers 
+that make use of them; For example, all the views for the reports 
+controller are now in the&nbsp;<font face="'courier new', monospace">themes/default/views/reports</font>&nbsp;directory.
+ Another significant change is that ALL the views (including the 
+*_js.php) for the front-end are now under the themes directory. This 
+change will most definitely affect any custom themes (besides the stock 
+ones) that you may have on your deployment. To make them compatible with
+ the upcoming release, the view files shall have to follow the 
+convention outlined above.</li></ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+
+<li style="margin-left:15px"><b>Settings Table:</b>&nbsp;The structure for 
+the settings table has been modified so that data are stored as 
+key/value pairs. Previously, this table only had one row and each 
+setting was a column. In the new structure, there are only 3 columns:&nbsp;<font face="'courier new', monospace">id</font>,&nbsp;<font face="'courier new', monospace">key</font>,&nbsp;<font face="'courier new', monospace">value</font>. The settings model class (<font face="'courier new', monospace">application/models/settings</font>)
+ has the necessary utility methods for retrieving and saving data 
+from/to the restructured table. There is an upgrade script that shall 
+effect this change on your schema.</li></ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+
+<li style="margin-left:15px"><b>Installer</b>: The installer has been 
+updated to work with the new settings table structure and we now perform
+ the installation check in index.php. Previously, the installation check
+ was being done via a hook (<font face="'courier new', monospace">application/hooks/0_init.php</font>)</li></ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+
+<li style="margin-left:15px"><b>Configuration Files</b>: The following config files are no longer in the repository:&nbsp;<font face="'courier new', monospace">config.php</font>,&nbsp;<font face="'courier new', monospace">auth.php</font>&nbsp;and&nbsp;<font face="'courier new', monospace">encryption.php</font>.
+ Instead, we are only maintaining their templates (.template.php) which 
+are the ones that the installer uses to create the config files to be 
+used by the application. This change will affect users who automatically
+ update/upgrade their deployment straight from GitHub - a<font face="'courier new', monospace">git pull</font>&nbsp;shall&nbsp;<b><font color="#ff0000">DELETE</font></b>&nbsp;the mentioned config files (the ones we're no longer tracking) so please&nbsp;<b>BACKUP</b>&nbsp;these files before engaging in acts of git fu.</li>
+
+
+</ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+
+<li style="margin-left:15px"><b>Permission Tables:</b>&nbsp;User permissions 
+have been refactored into a another table separate table. There is an 
+upgrade script that shall effect this change on your schema.</li></ul></div>Thanks in advance,<br><br>Heather <br><span class="HOEnZb"><font color="#888888"><br><br>&nbsp;<br>-- <br>Heather Leson<br>Director of Community Engagement<br>
+
+<b>Ushahidi</b><br><a href="mailto:hleson@..." target="_blank">hleson@...</a><br>
+<a href="http://www.ushahidi.com/" target="_blank">www.ushahidi.com</a><br>@heatherleson<br><br>
+</font></span></blockquote></div><br><br clear="all"><br>-- <br>Heather Leson<br>Director of Community Engagement<br><b>Ushahidi</b><br><a href="mailto:hleson@..." target="_blank">hleson@...</a><br><a href="http://www.ushahidi.com/" target="_blank">www.ushahidi.com</a><br>
+
+@heatherleson<br><br>
+</blockquote></div><br></div></div></body></html>

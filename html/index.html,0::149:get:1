@@ -1,0 +1,53 @@
+<div>
+            <div>Hi Mike,</div><div><br></div><div>Could you possibly forward us the AGPL code block that we should add to the OpenStreetMap.js that we have included? The script at&nbsp;http://www.openstreetmap.org/openlayers/OpenStreetMap.js itself doesn't include the license information which is what we used. I'm wondering too if the licensing information should be included as a separate file or as a link in the code block? Also, I should clarify that LGPL and AGPL are compatible licenses.</div><div><span><br></span></div><div><span>Thanks,</span></div><div><span><br></span></div><div><span>David Kobia.<br></span>
+                
+                <!-- <p style="color: #a0a0a0;">On Tuesday, April 26, 2011 at 12:19 AM, Mike  Dupont wrote:</p> -->
+                <p style="color: #a0a0a0;">On Tuesday, April 26, 2011 at 12:19 AM, Mike  Dupont wrote:</p>
+                <blockquote type="cite" style="border-left-style:solid;border-width:1px;margin-left:0px;padding-left:10px;">
+                    <span><div><div>Hello,<br>Please check the licenses and the copyright headers of the files you are redistributing, some are GPL and should be marked as such.<br>thanks,<br>mike<br><br><div>---------- Forwarded message ----------<br>
+
+From: <b>Mike  Dupont</b> <span dir="ltr">&lt;<a href="mailto:jamesmikedupont@...">jamesmikedupont@...</a>&gt;</span><br>Date: Sat, Apr 23, 2011 at 6:25 PM<br>Subject: OpenStreetMap.js redistribution<br>
+
+To: "Licensing and other legal discussions." &lt;<a href="mailto:legal-talk@...">legal-talk@...</a>&gt;<br><br><br>Hi,<br>I just found this thread <br><a href="http://lists.openstreetmap.org/pipermail/talk/2010-August/052632.html" target="_blank">http://lists.openstreetmap.org/pipermail/talk/2010-August/052632.html</a> stating the license of the file is AGPL<br>
+
+
+
+here stating it is GPL <a href="http://lists.openstreetmap.org/pipermail/talk/2010-August/052633.html" target="_blank">http://lists.openstreetmap.org/pipermail/talk/2010-August/052633.html</a><br><br>The file is in the osm rails git which is supposedly GPL, but lacking the GNU standard COPYING or copy of the license, and it is lacking any copyright terms in the header.<br>
+
+
+which are of course all optional,<br>rails/public/openlayers/OpenStreetMap.js<br><a href="http://git.openstreetmap.org/rails.git/blob/HEAD:/public/openlayers/OpenStreetMap.js" target="_blank">http://git.openstreetmap.org/rails.git/blob/HEAD:/public/openlayers/OpenStreetMap.js</a><br>
+
+
+<br>but here it is being used in an LGPL environment and I wonder if that is Kosher?<br>so, thus the GPL code is being redistributed without marking, without warning in an LGPLed project and it is also not clearly marked<br>
+
+
+
+<a href="https://github.com/ushahidi/Ushahidi_Web/blob/81041c50a94c1e73e177a7b7a1a9687c2d235f1c/media/js/OpenStreetMap.js" target="_blank">https://github.com/ushahidi/Ushahidi_Web/blob/81041c50a94c1e73e177a7b7a1a9687c2d235f1c/media/js/OpenStreetMap.js</a><br>
+
+
+<br>Also in the openlayers example code this is included:<br><a href="http://trac.osgeo.org/openlayers/browser/trunk/openlayers/tests/manual/geojson-geomcoll-reprojection.html?rev=9181" target="_blank">http://trac.osgeo.org/openlayers/browser/trunk/openlayers/tests/manual/geojson-geomcoll-reprojection.html?rev=9181</a><br>
+
+
+openlayers/tests/manual/geojson-geomcoll-reprojection.html:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src="<a href="http://www.openstreetmap.org/openlayers/OpenStreetMap.js" target="_blank">http://www.openstreetmap.org/openlayers/OpenStreetMap.js</a>" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;<br>
+
+
+<br>Now I am not an expert on javascript licensing, does that mean I can include gpled javascript in any webpage that I want without affecting the license or having to declare where I got it? <br><br>thanks,<br>mike<br><font color="#888888">-- <br>
+
+
+James Michael DuPont<br>Member of Free Libre Open Source Software Kosova and Albania <a href="http://flossk.org" target="_blank">flossk.org</a> <a href="http://flossal.org" target="_blank">flossal.org</a><br>
+
+</font></div><br><br clear="all"><br>-- <br>James Michael DuPont<br>Member of Free Libre Open Source Software Kosova and Albania <a href="http://flossk.org">flossk.org</a> <a href="http://flossal.org">flossal.org</a><br>
+
+
+</div></div></span>
+                
+                
+                
+                
+                </blockquote>
+                
+                <div>
+                    <br>
+                </div>
+            </div>
+        </div>

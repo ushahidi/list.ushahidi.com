@@ -1,0 +1,22 @@
+<div dir="ltr">Hi All,<div><br><div>Just a quick update on Ushahidi 3.0. Now that Uchaguzi is done I&#39;m getting moving building API, and we&#39;re starting to dig into the design and workflow issues. You can see what&#39;s happening on the wiki <a href="https://wiki.ushahidi.com/display/WIKI/REST+API" target="_blank">https://wiki.ushahidi.com/display/WIKI/REST+API</a> and in the Github repo <a href="https://github.com/ushahidi/Lamu" target="_blank">https://github.com/ushahidi/Lamu</a>.</div>
+
+
+<div><br></div><div><br></div><div><b>Tracking the build</b></div><div>We&#39;re trying to keep the processes lightweight, however there&#39;s still a lot to build. I&#39;m tracking a backlog of features and other issues through github issues: <a href="https://github.com/ushahidi/Lamu/issues" target="_blank">https://github.com/ushahidi/Lamu/issues</a></div>
+
+
+<div>As each feature gets started we&#39;ll be adding rough spec details and comments to the ticket description, and when features are complete they&#39;ll be code reviewed using Github pull requests. Each of these steps is a chance for you to comment on how we&#39;re doing and suggest improvements.</div>
+
+
+<div><br></div><div>Most tasks will get assigned to and built by the internal team. But if you want to get involved in v3 development chime in on a ticket and let us know where you can help.</div><div><br>
+</div><div>A lot of discussion is happening between the core team at the moment, but as we get further in we&#39;ll be trying to open that up and get community feedback as well.<br></div><div><br></div><div><br></div><div style>
+
+<b>Early targets and migration</b></div><div style><br></div><div style>As we&#39;re pushing forward with v3, one the big items is going to be migration from Ushahidi 2.x.</div><div style>To ensure this works smoothly we&#39;ve set a couple of early targets:</div>
+
+<div style><br></div><div style>3.0 Alpha will try to cover core 2.x features and include an import script to pull data from 2.x. This will really be for developers and hard-core testers only. At this stage we won&#39;t be aiming for a nice import UI, just a solid import so we can start testing and ensure we don&#39;t lose data.</div>
+
+<div style><br></div><div style>3.0 Beta will go further on migration. Migrating from 2.x will mostly likely be integrated into the UI of the installer. It may not be polished at this stage, but it should be enough have early adopters trying out the process and getting running.</div>
+
+<div><br><br></div><div style>Shout out if you have any more question on the 3.0 build. I&#39;ll try and send more updates every few weeks as we get moving.</div><div><br></div><div>Keep on mapping!</div>
+<div><br></div><div>Robbie</div><div><br></div><div>PS I should have to Posts API ready for code review soon for anyone interested.</div><div><div><br><div>Software Developer, External Projects</div><div>
+Ushahidi Inc</div><div><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div></div><div>skype: robbie.mackay</div></div>
+</div></div></div>

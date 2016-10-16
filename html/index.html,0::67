@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::66">previous</a> - <a href="?0::68">next</a><br />Month: <a href="?0:201006">June 2010</a></div>
+<h4 class="ez_pagetitle">Re: [ushahidi developers] Plugin Video Screen Cast</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> David Kobia &lt;david@...&gt;<br />
+<span class="ez_label">Date:</span> Mon, 7 Jun 2010 17:01:04 -0400<br />
+</div>
+<pre>Ushahidi Plugins are essentially Kohana Modules - no difference,
+except that we're placing markers in the code to allow the plugins to
+hook into Ushahidi's core. You can write new controllers and views
+without using hooks and you are correct about being able to do
+something like <a href="http://example.com/ushahidi/facebook">http://example.com/ushahidi/facebook</a> as long as you
+adhere to Kohana's cascading filesystem. The plugin folder essentially
+mirrors the main application folder.
+
+As far as skills required to develop plugins... yes PHP is necessary.
+
+
+
+
+On Thu, Jun 3, 2010 at 2:25 AM, Soyapi Mumba &lt;soyapim@...&gt; wrote:
+<span class="ez_quot">&gt; How different/similar are Ushahidi plugins from Kohana</span>
+<span class="ez_quot">&gt; Modules/plugins? What extra functionality is available in Ushahidi</span>
+<span class="ez_quot">&gt; Plugins that cannot be accomplished with Kohana's.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; What skills/knowledge are required to develop plugins? Is proficiency</span>
+<span class="ez_quot">&gt; in PHP a must?</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; - Soyapi</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; On Thu, Jun 3, 2010 at 2:37 AM, george &lt;george@...&gt; wrote:</span>
+<span class="ez_quot">&gt;&gt; How do users find plugins - will there be a central database ala wordpress?  How are plugins updated over time?</span>
+<span class="ez_quot">&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt; And just to make sure I understand the documentation - it's possible to write plugins that add completely new controllers / views without using hooks - i.e. <a href="http://example.com/ushahidi/facebook">http://example.com/ushahidi/facebook</a> by just having the views and controllers directories laid out correctly, right?</span>
+<span class="ez_quot">&gt;&gt; george</span>
+<span class="ez_quot">&gt;&gt; On Wed, Jun 2, 2010 at 7:49 AM, Caleb Bell &lt;caleb@...&gt; wrote:</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; Hi Folks,</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; David and I are organizing for a screen cast that will cover Ushahidi Plugins.  The screencast will basically be a conversation between David and I where we'll discuss the plugin system and do some diagraming/visuals along the way. Our hope is to produce a screen cast that will cover the basics of the Ushahidi Plugin system and give a general overview of how to create one.</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; Please reply with any questions you have about the system that you'd like to see covered.  For those of you already familiar with the system, if you think of a question that would be helpful, you can send it on too.</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; Here are a few questions to get the ball rolling:</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; How has the plugin architecture altered the Ushahidi core platform (code-wise or directory-wise)?</span>
+<span class="ez_quot">&gt;&gt;&gt; What is a hook?</span>
+<span class="ez_quot">&gt;&gt;&gt; What is a filter?</span>
+<span class="ez_quot">&gt;&gt;&gt; How do I handle database changes or updates needed for my plugin?</span>
+<span class="ez_quot">&gt;&gt;&gt; How do I get started writing my own plugin?</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; Please send all questions in no later than Friday (June 4) of this week. We'll try to cover as much of them as we can during the screen cast.</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; Cheers!</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; Caleb Bell</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; <a href="http://www.ushahidi.com</span>">www.ushahidi.com</span></a>
+<span class="ez_quot">&gt;&gt;&gt; US: 850.366.3702</span>
+<span class="ez_quot">&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; --</span>
+<span class="ez_quot">&gt; Soyapi Mumba</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; <a href="http://soyapi.com</span>">http://soyapi.com</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; ~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="ez_quot">&gt; List Archive: <a href="http://list.ushahidi.com/</span>">http://list.ushahidi.com/</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Would you like to receive list mail batched in a daily digest instead? Send a message to:</span>
+<span class="ez_quot">&gt; developers-digest-subscribe@...</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; To remove your address from the list, just send a message to</span>
+<span class="ez_quot">&gt; the address in the &quot;List-Unsubscribe&quot; header of any list</span>
+<span class="ez_quot">&gt; message. If you haven't changed addresses since subscribing,</span>
+<span class="ez_quot">&gt; you can also send a message to:</span>
+<span class="ez_quot">&gt; developers-unsubscribe@...</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; For addition or removal of addresses, we'll send a confirmation</span>
+<span class="ez_quot">&gt; message to that address. When you receive it, simply reply to it</span>
+<span class="ez_quot">&gt; to complete the transaction.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; If you need to get in touch with the human owner of this list,</span>
+<span class="ez_quot">&gt; please send a message to:</span>
+<span class="ez_quot">&gt; developers-owner@...</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+</pre></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

@@ -1,0 +1,51 @@
+<div dir="ltr"><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div>Hey folks, <br></div>Its been a couple of weeks.. so time for another V3 team checkin.<br><br></div>What I&#39;ve been working on:<br>
+
+</div>- Wiring up the post edit UI .. <a href="https://github.com/ushahidi/Lamu/pull/158">https://github.com/ushahidi/Lamu/pull/158</a><br></div>This turned out to be a fairly lengthy task. Partly tying up a bunch of loose ends from the create post form. Its now mostly working with a few glitches that I&#39;ll have to fix before merge.<br>
+
+</div>- Login/Register/Authorize clean up and theming<br></div>This doesn&#39;t quite get rid of the weird authorize screen, but at least now it looks good. The remaining thing to do here is to handle errors (ie. incorrect pasword) a little more gracefully.<br>
+
+</div>- Writing up contributor license agreements<br></div>These are based on the Apache CLAs and you can find the individual one here:<br><a href="https://docs.google.com/forms/d/15LyeKTOP36T5u3290o4hsmqv79v-m_s2QSmgMJXpYp8/viewform">https://docs.google.com/forms/d/15LyeKTOP36T5u3290o4hsmqv79v-m_s2QSmgMJXpYp8/viewform</a> and some more info here <a href="https://wiki.ushahidi.com/display/WIKI/Licenses">https://wiki.ushahidi.com/display/WIKI/Licenses</a><br>
+
+</div>Everyone will need to sign one of these before they contribute.<br></div>- Merged the ACL work.. mostly this just means you have to login with demo / testing to do anything.<br></div><div>Later of it will mean we can do some proper integration and only show admin UI if you have access etc.<br>
+
+</div>- Some more docs, in particular: <a href="https://wiki.ushahidi.com/display/WIKI/Release+process">https://wiki.ushahidi.com/display/WIKI/Release+process</a><br><br></div>In the next week or 2:<br></div>- Get post edit cleaned up and merged<br>
+
+</div>- Handle errors in login/register UI<br></div>- Add current user API calls to get logged in user info<br></div>- Use the new API call to wire up frontend with current user, and show/hide things based on access<br></div>
+
+- Dropped off my list from last time.. but absolutely MUST create a &#39;installing V3&#39; screencast<br></div>- Update install instructions with all the awesome feedback we&#39;ve gotten.<br><br></div>V3 is shaping up well, but there&#39;s a LOT to go.. I&#39;ll jump in to help the new folks get running a bit in the next week too.<br>
+
+<div><div><div><br>Robbie<br><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div class="gmail_extra"><br><div class="gmail_quote">
+
+On Fri, Nov 1, 2013 at 5:35 PM, Robbie MacKay <span dir="ltr">&lt;<a href="mailto:robbie@..." target="_blank">robbie@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">
+
+<div dir="ltr"><div>Hey folks,<br></div>We&#39;ve been doing weekly checkins among the V3 team for a few weeks now. These are just a chance for the team to say what they&#39;re working on and shout about anything they need help with. Since the developer release is out the door we&#39;re going to start doing these in public now. This way anyone interested can see where we&#39;re up to, and anyone who wants to help out can.<br>
+
+
+<div><div><div><br> We follow something like the agile standup questions:<br>- What did I build/design/do this week?<br>- What will I do next week?<br>- Is anything blocking you? (questions you need answered, things you need help with, etc)<br>
+
+
+
+<br></div><div>Here&#39;s mine.. This week:<br></div><div>- Finished up the post form location picker widget<br></div><div>- Merged the create post form into master. Its not what I&#39;d call complete yet, but its usable and we needed it for the dev release<br>
+
+
+</div><div>- Created a build process using Phing. I copied this from Kohana and tweaked it a little bit.<br></div><div>- Updated the demo site and moved the url to <a href="http://v3.ushahidi.com" target="_blank">v3.ushahidi.com</a><br>
+
+</div>
+<div><br></div><div>Next week:<br></div><div>- Hopefully merging my ACL work and improving our oauth2 handling in the UI. Killing that horrible &#39;authorize&#39; screen<br></div><div>- Documenting the build process<br>
+
+</div>
+<div>- Creating a couple of screencasts (install, UI walkthrough) and <br></div><div>- Updating the &#39;easy tasks&#39; list for anyone starting on V3 development<br></div><div>- Helping anyone else with their blockers<br>
+
+
+</div><br></div><div>I&#39;ve also taken a decent break this week, and may still take Monday off. Burnt myself out getting the dev release done: not my best plan ever!<span class=""><font color="#888888"><br clear="all">
+
+</font></span></div><span class=""><font color="#888888"><div><div><div><div><br>-- <br><div>
+Robbie Mackay</div><div><br><div>Software Developer, External Projects</div><div>Ushahidi Inc<br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div></div><div>skype: robbie.mackay</div>
+
+
+</div>
+</div></div></div></div></font></span></div></div>
+</blockquote></div><br><br clear="all"><br>-- <br><div>Robbie Mackay</div><div><br><div>Software Developer, External Projects</div><div>Ushahidi Inc</div><div>m: +64 27 576 2243<br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div>
+
+</div><div>skype: robbie.mackay</div></div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::185">previous</a> - <a href="?0::187">next</a><br />Month: <a href="?0:201202">February 2012</a></div>
+<h4 class="ez_pagetitle">Issue with upgrade &quot;call home&quot; url</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> &quot;Mr. Evoltech&quot; &lt;evoltech@...&gt;<br />
+<span class="ez_label">Date:</span> Tue, 07 Feb 2012 20:57:15 -0800<br />
+</div>
+<pre>
+<span class="ez_quot">-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Not sure if anyone has seen this but the upgrade server is giving error
+messages that is causing /admin/upgrade to crash.
+
+ie:
+<a href="http://version.ushahidi.com/2/?v=2.1&amp;u=ushahidi.march-hare.org%2F&amp;ip=127.0.0.1">http://version.ushahidi.com/2/?v=2.1&amp;u=ushahidi.march-hare.org%2F&amp;ip=127.0.0.1</a>
+
+I suspect this is an issue with an upgrade to php that was done on the
+server
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - <a href="http://enigmail.mozdev.org/">http://enigmail.mozdev.org/</a>
+
+iQIcBAEBAgAGBQJPMgCjAAoJEDTy25qNIucjDG4QANYjZQ2xu3uLMetFNMoN9ufU
+Cgzu2unw+UZk3UIL0W0xd5sF/WOMXGDPj5E+8eIe5jrWWn5Ct5PmMxli+pF+JJPt
+6qyL1QV8jrmCDGQbJR6/p9p1FQRJkYfiDO446Lwo7tdmMFszoUt/1QCq/f2a9Igp
+8LiGZFjZRjxrcsVqhVHRWPWPr8Wjkc5HonC1FE7e9E1dSpd8A4Tef5slU+KuSal6
+P6dmzI5hm/ZE7piCWiG1Kpv43rTjowNuKpFPncW3snbgS47/MRRPtF6PKr5fUQZm
+wjLAoydEaWVnyiUq5TzBhQnAi6n4pKhkZMzW/DTBYe5S+4YDjYYUjnXWMdzx1e4i
+XrObhNBe6WmQLJfV3bDoWlW8daIg3v+YuaDu6qeDsbRhLYcAi4vJjYJVq23+EoFp
+v8JBZDTXdH3VB+Vds7/vq8eJYj6EO1E5/qKdB/1bcQIoiZkUwYVxZpC4Ny4z2aJu
+kdhfRzXGDsKwlkTqbresY2PY8pC1VnUbPBa/YFx9JYgtdldV9xBSQpZhBpJgUu6Q
+f4prhflOh80BCiWPlbY2Vk1cvQpdgJ0nhTVkmERxCjEvJx2t5wJd297sjgtLKdvg
+ETRU6MhAHRzbRNUmDzhOvpYUf1CAG42MvUmbGyy2MFNjcj8ojwoRFzbXB3Dml7Dt
+NClUT4GQg66UfcxEVF3q
+=kbN3
+-----END PGP SIGNATURE-----
+
+</pre></span></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

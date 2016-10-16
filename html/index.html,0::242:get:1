@@ -1,0 +1,52 @@
+My take is that using actions is too complicated for the average user. Implementing simple alerts for admins would be useful.<div><br><div>Robbie MacKay<br><br><div class="gmail_quote">On Tue, Jun 12, 2012 at 5:43 PM, Linda Kamau <span dir="ltr">&lt;<a href="mailto:kamaulynder@..." target="_blank">kamaulynder@...</a>&gt;</span> wrote:<br>
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Hi John,<div>Alerting admins when new messages and reports have come in have been a recurrent ask and so whichever way it best fits then I say go for it. At first I thought it would make sense as a plugin but if the notifications bit is easier to build on then we can go with it.<div>
+
+<div class="h5"><br>
+<br><div class="gmail_quote">On Tue, Jun 12, 2012 at 3:07 AM, John Etherton <span dir="ltr">&lt;<a href="mailto:john.etherton@..." target="_blank">john.etherton@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+
+  
+    
+  
+  <div bgcolor="#FFFFFF" text="#000000">
+    So I&#39;ve had a client ask me why after checking &quot;Receive
+    Notifications&quot; that their users never get any notifications.<br>
+    <br>
+    I looked at the code, and it seems like this drop down box does
+    nothing, nothing at all. I think it&#39;s a worthwhile feature to
+    have... I guess I should state that I assume &quot;Receive Notifications&quot;
+    means that the user would get an email saying things like, &quot;New
+    report: &#39;XYZ&#39; Submited via Web by &#39;<a href="mailto:frank123@..." target="_blank">frank123@...</a>.&quot; Is that what
+    everyone else thinks? Though it does seem that &quot;Actions&quot; can
+    accomplish the same thing, though with just a generic email.<br>
+    <br>
+    Is the current thinking of the Ushahidi team to go with Actions and
+    do away with Receive Notifications? Or would it bother anyone if a
+    implemented the functionality I just described?<br>
+    <br>
+    My clients basically want an alert for Admins that lets them know
+    when new messages and reports have come in so they can verify them.
+    Or would it be best to do all this with a plugin?<br>
+    <br>
+    <br>
+    Thanks,<br>
+    <br>
+    <div>John Etherton<br>
+      <a href="tel:%2B1-404-578-1606" value="+14045781606" target="_blank">+1-404-578-1606</a><br>
+      <a href="mailto:john.etherton@..." target="_blank">john.etherton@...</a></div>
+    <br>
+  </div>
+
+</blockquote></div><br><br clear="all"><div><br></div></div></div><span class="HOEnZb"><font color="#888888">-- <br><div>
+
+
+
+
+
+
+
+<p>Too brief? Here&#39;s why! <span><a href="http://emailcharter.org/" target="_blank">http://emailcharter.org</a></span></p></div>Regards<br>Linda Kamau<div>Coder!!</div><br>
+</font></span></div>
+</blockquote></div><br></div></div>

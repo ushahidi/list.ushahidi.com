@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::400">previous</a> - <a href="?0::402">next</a><br />Month: <a href="?0:201307">July 2013</a></div>
+<h4 class="ez_pagetitle">Re: [ushahidi developers] [TrashSwag] Ushahidi upload issue (windows)</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> Evan Sims &lt;evan@...&gt;<br />
+<span class="ez_label">Date:</span> Fri, 5 Jul 2013 12:57:31 -0500<br />
+</div>
+<pre>Hi Mark,
+
+I'm noticing in your POST that you're URL is malformed.
+
+Is: <a href="https://trashswag.com/api?task=report?incident_title=test&amp;incident_description=test&amp;incident_category=1&amp;location_name=163%20Upper%20Madison%20Ave,%20North%20York,%20ON%20M2N,%20Canada&amp;latitude=43.764442&amp;longitude=-79.412505&amp;incident_date=06-26-2013&amp;incident_hour=9&amp;incident_minute=46&amp;incident_ampm=am&amp;task=report">https://trashswag.com/api?task=report?incident_title=test&amp;incident_description=test&amp;incident_category=1&amp;location_name=163%20Upper%20Madison%20Ave,%20North%20York,%20ON%20M2N,%20Canada&amp;latitude=43.764442&amp;longitude=-79.412505&amp;incident_date=06-26-2013&amp;incident_hour=9&amp;incident_minute=46&amp;incident_ampm=am&amp;task=report</a>
+
+Should be: <a href="https://trashswag.com/api?task=report&amp;incident_title=test&amp;incident_description=test&amp;incident_category=1&amp;location_name=163%20Upper%20Madison%20Ave,%20North%20York,%20ON%20M2N,%20Canada&amp;latitude=43.764442&amp;longitude=-79.412505&amp;incident_date=06-26-2013&amp;incident_hour=9&amp;incident_minute=46&amp;incident_ampm=am&amp;task=report">https://trashswag.com/api?task=report&amp;incident_title=test&amp;incident_description=test&amp;incident_category=1&amp;location_name=163%20Upper%20Madison%20Ave,%20North%20York,%20ON%20M2N,%20Canada&amp;latitude=43.764442&amp;longitude=-79.412505&amp;incident_date=06-26-2013&amp;incident_hour=9&amp;incident_minute=46&amp;incident_ampm=am&amp;task=report</a>
+
+<span class="ez_sign">--
+Evan Sims
+Senior Developer, Ushahidi
+Crowdmap Team
+
+var signature = {
+    &quot;blog&quot;: &quot;<a href="http://evansims.com&quot;,">http://evansims.com&quot;,</a>
+    &quot;work&quot;: {
+        &quot;ushahidi&quot;: &quot;<a href="http://ushahidi.com&quot;,">http://ushahidi.com&quot;,</a>
+        &quot;crowdmap&quot;: &quot;<a href="https://crowdmap.com&quot;">https://crowdmap.com&quot;</a>
+    },
+    &quot;contact&quot;: {
+        &quot;gvoice&quot;: &quot;tel:+1.217.631.4001&quot;,
+        &quot;skype&quot;: &quot;<a href="https://skype.evansims.com&quot;">https://skype.evansims.com&quot;</a>
+    },
+    &quot;social&quot;: {
+        &quot;crowdmap&quot;: &quot;<a href="https://crowdmap.com/user/evansims&quot;,">https://crowdmap.com/user/evansims&quot;,</a>
+        &quot;twitter&quot;: &quot;<a href="https://twitter.com/evansims&quot;,">https://twitter.com/evansims&quot;,</a>
+        &quot;adn&quot;: &quot;<a href="https://alpha.app.net/evansims&quot;,">https://alpha.app.net/evansims&quot;,</a>
+        &quot;facebook&quot;: &quot;<a href="https://facebook.com/evansims&quot;,">https://facebook.com/evansims&quot;,</a>
+        &quot;github&quot;: &quot;<a href="https://github.com/evansims&quot;,">https://github.com/evansims&quot;,</a>
+        &quot;gplus&quot;: &quot;<a href="https://google.com/+EvanSims&quot;">https://google.com/+EvanSims&quot;</a>
+    }
+};
+
+
+On Fri, Jul 5, 2013 at 12:48 PM, Mark MacDonnell &lt;markm@...&gt; wrote:
+<span class="ez_quot">&gt; Hello,</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; I’m trying to upload images to an Ushahidi instance (trashswag.com) but it’s</span>
+<span class="ez_quot">&gt; not going through. We’re working on the Windows 8 and Windows Phone 8</span>
+<span class="ez_quot">&gt; platforms. Here’s some details:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; This is the POST url:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; <a href="https://trashswag.com/api?task=report?incident_title=test&amp;incident_description=test&amp;incident_category=1&amp;location_name=165</span>">https://trashswag.com/api?task=report?incident_title=test&amp;incident_description=test&amp;incident_category=1&amp;location_name=165</span></a>
+<span class="ez_quot">&gt; Upper Madison Ave, North York, ON M2N,</span>
+<span class="ez_quot">&gt; Canada&amp;latitude=43.764468&amp;longitude=-79.412508&amp;incident_date=06-25-2013&amp;incident_hour=5&amp;incident_minute=30&amp;incident_ampm=pm&amp;task=report</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; This is the response message:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; {StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content:</span>
+<span class="ez_quot">&gt; System.Net.Http.StreamContent, Headers:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; {</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Transfer-Encoding: chunked</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Connection: keep-alive</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Vary: Accept-Encoding</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Pragma: no-cache</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Cache-Control: must-revalidate, no-cache</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Date: Tue, 25 Jun 2013 21:31:14 GMT</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Set-Cookie: ushahidi=f2f7577b55334f2f1cc2653740e6794b; expires=Tue,</span>
+<span class="ez_quot">&gt; 25-Jun-2013 23:31:14 GMT; path=/; HttpOnly</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Set-Cookie: ushahidi=f2f7577b55334f2f1cc2653740e6794b; expires=Tue,</span>
+<span class="ez_quot">&gt; 25-Jun-2013 23:31:14 GMT; path=/; httponly</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Server: nginx</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Type: application/json; charset=utf-8</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Expires: Sat, 26 Jul 1997 05:00:00 GMT</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; }}</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; And then this is the content of that message:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Id = 1, Status = RanToCompletion, Method = &quot;{null}&quot;, Result =</span>
+<span class="ez_quot">&gt; &quot;{\&quot;code\&quot;:\&quot;001\&quot;,\&quot;message\&quot;:\&quot;Missing Parameter - task.\&quot;}&quot;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; I guess my question becomes this: Why are we being told task is missing when</span>
+<span class="ez_quot">&gt; it's not?</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; FIDDLER OUTPUT</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Message</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; POST</span>
+<span class="ez_quot">&gt; <a href="https://trashswag.com/api?task=report?incident_title=test&amp;incident_description=test&amp;incident_category=1&amp;location_name=163%20Upper%20Madison%20Ave,%20North%20York,%20ON%20M2N,%20Canada&amp;latitude=43.764442&amp;longitude=-79.412505&amp;incident_date=06-26-2013&amp;incident_hour=9&amp;incident_minute=46&amp;incident_ampm=am&amp;task=report</span>">https://trashswag.com/api?task=report?incident_title=test&amp;incident_description=test&amp;incident_category=1&amp;location_name=163%20Upper%20Madison%20Ave,%20North%20York,%20ON%20M2N,%20Canada&amp;latitude=43.764442&amp;longitude=-79.412505&amp;incident_date=06-26-2013&amp;incident_hour=9&amp;incident_minute=46&amp;incident_ampm=am&amp;task=report</span></a>
+<span class="ez_quot">&gt; HTTP/1.1</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Type: multipart/form-data;</span>
+<span class="ez_quot">&gt; boundary=&quot;04b42fc6-24cd-4163-9110-252c7089c2f6&quot;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Host: trashswag.com</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Length: 451858</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Expect: 100-continue</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; --04b42fc6-24cd-4163-9110-252c7089c2f6</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Disposition: form-data; filename=&quot;name&quot;; name=&quot;photo&quot;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Type: application/octet-stream</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Length: 451584</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Transfer-Encoding: binary</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Encoding: binary</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; //Content removed for readability</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; --04b42fc6-24cd-4163-9110-252c7089c2f6--</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Response</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; HTTP/1.1 200 OK</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Server: nginx</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Date: Wed, 26 Jun 2013 13:46:16 GMT</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Type: application/json; charset=utf-8</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Connection: keep-alive</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Vary: Accept-Encoding</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Pragma: no-cache</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Cache-Control: no-cache, must-revalidate</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Expires: Sat, 26 Jul 1997 05:00:00 GMT</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Set-Cookie: ushahidi=a43a13b2c839d526b5d6f886e364af9b; expires=Wed,</span>
+<span class="ez_quot">&gt; 26-Jun-2013 15:46:16 GMT; path=/; HttpOnly</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Set-Cookie: ushahidi=a43a13b2c839d526b5d6f886e364af9b; expires=Wed,</span>
+<span class="ez_quot">&gt; 26-Jun-2013 15:46:16 GMT; path=/; httponly</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Content-Length: 52</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; {&quot;code&quot;:&quot;001&quot;,&quot;message&quot;:&quot;Missing Parameter - task.&quot;}</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Please send me an email if you can help. Any help is greatly appreciated.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; -Mark</span>
+</pre></span></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

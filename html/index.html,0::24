@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::23">previous</a> - <a href="?0::25">next</a><br />Month: <a href="?0:201002">February 2010</a></div>
+<h4 class="ez_pagetitle">Re: [ushahidi developers] Stats Dashboard and Downloadable PDF's</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> Max Froumentin &lt;max@...&gt;<br />
+<span class="ez_label">Date:</span> Tue, 16 Feb 2010 14:42:42 +0100<br />
+</div>
+<pre>Haiti-themed inspiration:
+
+<a href="http://www.good.is/post/design-an-infographic-for-haiti-submissions/">http://www.good.is/post/design-an-infographic-for-haiti-submissions/</a>
+
+Max.
+
+
+
+On 15 February 2010 16:31, Tim Kamau &lt;maqtim@...&gt; wrote:
+<span class="ez_quot">&gt; Couldn't agree more with you guys.</span>
+<span class="ez_quot">&gt; Those who need a trimmed report, choose the fields they need then have an</span>
+<span class="ez_quot">&gt; option to do a summary graph( more than one kind should be availed) based on</span>
+<span class="ez_quot">&gt; the specific statistics they need.That will sure help users get relevant</span>
+<span class="ez_quot">&gt; reports. In addition to that, it may be good to have, by default, a full</span>
+<span class="ez_quot">&gt; report that contains everything since its very likely that given the kind of</span>
+<span class="ez_quot">&gt; situations covered by ushahidi, most folks will want as much if not all data</span>
+<span class="ez_quot">&gt; in one go then sort as they need. That then creates flexibility and allows</span>
+<span class="ez_quot">&gt; for the two.</span>
+<span class="ez_quot">&gt; I also agree, we should allow for those who want to use the reports as a</span>
+<span class="ez_quot">&gt; source of an import into another app or db hence the need for as many</span>
+<span class="ez_quot">&gt; formats......</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Tim.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; On Mon, Feb 15, 2010 at 6:00 PM, Linda Kamau &lt;kamaulynder@...&gt; wrote:</span>
+<span class="ez_quot">&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt; I like the idea.Some food for thought though.</span>
+<span class="ez_quot">&gt;&gt; 1. What if we had the option of different versions e.g PDF,XML,CSV(like in</span>
+<span class="ez_quot">&gt;&gt; <a href="http://haiti.ushahidi.com)">http://haiti.ushahidi.com)</a> or the other version proposed by Kaushal</span>
+<span class="ez_quot">&gt;&gt; 2.On the representation part,can they vary in terms of pie chart,bar</span>
+<span class="ez_quot">&gt;&gt; graphs,line graphs or even gant charts?</span>
+<span class="ez_quot">&gt;&gt; We could borrow ideas from the feltron reports,i like them.</span>
+<span class="ez_quot">&gt;&gt; Wild thought?</span>
+<span class="ez_quot">&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt; Linda Kamau</span>
+<span class="ez_quot">&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt; On Thu, Feb 11, 2010 at 9:05 PM, &lt;ksjhalla@...&gt; wrote:</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; May I suggest a Worl &amp; PDF version option. I built a reporting engine for</span>
+<span class="ez_quot">&gt;&gt;&gt; Wells Fargo and it was always good practice to provide a comprehensive</span>
+<span class="ez_quot">&gt;&gt;&gt; report and allow managers the flexibility to remove fields that were</span>
+<span class="ez_quot">&gt;&gt;&gt; irrelevant and/or add notes to the report before distributing it.</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; Kaushal</span>
+<span class="ez_quot">&gt;&gt;&gt; On Feb 11, 2010, at 10:55 AM, Henry Addo &lt;henry@...&gt; wrote:</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; Good idea in fact. The report is really detailed. If we could provide</span>
+<span class="ez_quot">&gt;&gt;&gt; other versions too, I think people will be interested. Say much trimmed</span>
+<span class="ez_quot">&gt;&gt;&gt; version of the whole report. I'm sure people will be interested in getting</span>
+<span class="ez_quot">&gt;&gt;&gt; specific reports.</span>
+<span class="ez_quot">&gt;&gt;&gt; Another option we could include is a print function so when you hit on</span>
+<span class="ez_quot">&gt;&gt;&gt; the print button it goes to the printer.</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; On Thu, Feb 11, 2010 at 3:23 PM, David Kobia &lt;david@...&gt; wrote:</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; Patrick brought up a very interesting point about a &quot;Create Situation</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; Report&quot; button within an Ushahidi deployment that would create a</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; downloadable PDF from the main page. I just wanted to push this</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; discussion into the mailing list so that we can hopefully get this</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; feature built in. Attached is a sample report from Kenya, along with a</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; mock of a simplified version of what the pdf might look like.</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; Since we're on the subject of stats, you guys should also look at the</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; Feltron Reports that have inspired many -</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; <a href="http://feltron.com/index.php?/content/2008_annual_report/P1/</span>">http://feltron.com/index.php?/content/2008_annual_report/P1/</span></a>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; Other Links:</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; - <a href="http://www.fpdf.org/</span>">http://www.fpdf.org/</span></a>
+<span class="ez_quot">&gt;&gt;&gt;&gt; - <a href="http://sourceforge.net/projects/html2fpdf/</span>">http://sourceforge.net/projects/html2fpdf/</span></a>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; ~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; List Archive: <a href="http://list.ushahidi.com/</span>">http://list.ushahidi.com/</span></a>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; Would you like to receive list mail batched in a daily digest instead?</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; Send a message to:</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; developers-digest-subscribe@...</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; To remove your address from the list, just send a message to</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; the address in the &quot;List-Unsubscribe&quot; header of any list</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; message. If you haven't changed addresses since subscribing,</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; you can also send a message to:</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; developers-unsubscribe@...</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; For addition or removal of addresses, we'll send a confirmation</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; message to that address. When you receive it, simply reply to it</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; to complete the transaction.</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; If you need to get in touch with the human owner of this list,</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; please send a message to:</span>
+<span class="ez_quot">&gt;&gt;&gt;&gt; developers-owner@...</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; --</span>
+<span class="ez_quot">&gt;&gt;&gt; Henry</span>
+<span class="ez_quot">&gt;&gt;&gt; Crowdsourcing Crisis Information</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;&gt; <a href="http://www.ushahidi.com">www.ushahidi.com</a> | twitter.com/ushahidi</span>
+<span class="ez_quot">&gt;&gt;&gt; Ghana: +233243581806</span>
+<span class="ez_quot">&gt;&gt;&gt; Skype: eyedol25</span>
+<span class="ez_quot">&gt;&gt;&gt;</span>
+<span class="ez_quot">&gt;&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+</pre></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

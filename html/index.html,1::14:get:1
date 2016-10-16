@@ -1,0 +1,57 @@
+HI Folks, next week we will be releasing Ushahidi 2.5 Platform. It incorporates bug fixes as well as the items below. Our team has been testing internally. It is now open for community testing until Monday, July 23, 2012. Your input is most welcome. <br>
+
+<br>We have an intern who has been testing items and we have fixed a number of the bugs she identified. Thanks Sharon.  The feedback sheet provides the things that need to be tested. Let us know if we missed any of the items. You don&#39;t need to be a developer to test as there is a site login below.<br>
+
+<br><br><b>To Test: </b><br><div>site - <a href="http://trunk.ushahidi.com" target="_blank">trunk.ushahidi.com</a></div>
+<div>username = admin</div>password = trunk2012 <br><br><a href="https://docs.google.com/a/ushahidi.com/spreadsheet/ccc?key=0Ajto4YrsWC3bdEYwRWE4QU9HTWpWYVhCRW5Od3ZkREE#gid=4">To track feedback</a><br><br><b>New Release items: </b><br>
+
+<div>Just to clue you in on some of the major changes (and their ramifications) that shall ship with the upcoming release:</div><div><br></div><div><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+<li style="margin-left:15px"><b>Mapping</b>: The mapping code for the 
+main page has been refactored and is no longer tied to the timeline. 
+We&#39;ve consolidated the mapping code into a single JavaScript library; 
+ushahidi.js. This library has an event system which is extensible. The 
+stock events can be triggered for actions such as zoom changes, resizing
+ the map viewport, change of base layer etc. As a by the way, decoupling
+ the timeline from the map effectively means that you can plug in your 
+own timeline. The stock timeline is uses <a href="http://jqplot.com/" style="color:rgb(17,85,204)" target="_blank">jqplot</a>. This change affects those plugins that hook into the main map such the fullscreen map plugin</li>
+
+</ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+<li style="margin-left:15px"><b>Themes</b>: The views for the front-end 
+have been grouped into directories that are named after the controllers 
+that make use of them; For example, all the views for the reports 
+controller are now in the <font face="&#39;courier new&#39;, monospace">themes/default/views/reports</font> directory.
+ Another significant change is that ALL the views (including the 
+*_js.php) for the front-end are now under the themes directory. This 
+change will most definitely affect any custom themes (besides the stock 
+ones) that you may have on your deployment. To make them compatible with
+ the upcoming release, the view files shall have to follow the 
+convention outlined above.</li></ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+<li style="margin-left:15px"><b>Settings Table:</b> The structure for 
+the settings table has been modified so that data are stored as 
+key/value pairs. Previously, this table only had one row and each 
+setting was a column. In the new structure, there are only 3 columns: <font face="&#39;courier new&#39;, monospace">id</font>, <font face="&#39;courier new&#39;, monospace">key</font>, <font face="&#39;courier new&#39;, monospace">value</font>. The settings model class (<font face="&#39;courier new&#39;, monospace">application/models/settings</font>)
+ has the necessary utility methods for retrieving and saving data 
+from/to the restructured table. There is an upgrade script that shall 
+effect this change on your schema.</li></ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+<li style="margin-left:15px"><b>Installer</b>: The installer has been 
+updated to work with the new settings table structure and we now perform
+ the installation check in index.php. Previously, the installation check
+ was being done via a hook (<font face="&#39;courier new&#39;, monospace">application/hooks/0_init.php</font>)</li></ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+<li style="margin-left:15px"><b>Configuration Files</b>: The following config files are no longer in the repository: <font face="&#39;courier new&#39;, monospace">config.php</font>, <font face="&#39;courier new&#39;, monospace">auth.php</font> and <font face="&#39;courier new&#39;, monospace">encryption.php</font>.
+ Instead, we are only maintaining their templates (.template.php) which 
+are the ones that the installer uses to create the config files to be 
+used by the application. This change will affect users who automatically
+ update/upgrade their deployment straight from GitHub - a<font face="&#39;courier new&#39;, monospace">git pull</font> shall <b><font color="#ff0000">DELETE</font></b> the mentioned config files (the ones we&#39;re no longer tracking) so please <b>BACKUP</b> these files before engaging in acts of git fu.</li>
+
+</ul><ul style="text-indent:0px;letter-spacing:normal;font-variant:normal;text-align:-webkit-auto;font-style:normal;font-weight:normal;line-height:normal;color:rgb(34,34,34);text-transform:none;font-size:13px;white-space:normal;font-family:arial,sans-serif;word-spacing:0px">
+
+<li style="margin-left:15px"><b>Permission Tables:</b> User permissions 
+have been refactored into a another table separate table. There is an 
+upgrade script that shall effect this change on your schema.</li></ul></div>Thanks in advance,<br><br>Heather <br><br><br> <br>-- <br>Heather Leson<br>Director of Community Engagement<br><b>Ushahidi</b><br><a href="mailto:hleson@..." target="_blank">hleson@...</a><br>
+
+<a href="http://www.ushahidi.com" target="_blank">www.ushahidi.com</a><br>@heatherleson<br><br>

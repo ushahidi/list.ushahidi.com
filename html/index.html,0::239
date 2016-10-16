@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::238">previous</a> - <a href="?0::240">next</a><br />Month: <a href="?0:201206">June 2012</a></div>
+<h4 class="ez_pagetitle">RE: [ushahidi developers] Developers needed</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> &quot;Pablo A. Destefanis&quot; &lt;pdestefanis@...&gt;<br />
+<span class="ez_label">Date:</span> Thu, 7 Jun 2012 08:38:01 -0400<br />
+</div>
+<pre>Hello Loren
+
+Have you had a reply on this one? 
+
+Pablo
+(Skype: pdestefanis)
+
+<span class="ez_quot">&gt; -----Original Message-----</span>
+<span class="ez_quot">&gt; From: LBell [mailto:lbell270@...]</span>
+<span class="ez_quot">&gt; Sent: Monday, June 04, 2012 07:51</span>
+<span class="ez_quot">&gt; To: developers@...</span>
+<span class="ez_quot">&gt; Subject: [ushahidi developers] Developers needed</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; Greetings -</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; I've played around with Ushahidi off and on, and am looking to do a long-</span>
+<span class="ez_quot">&gt; term scale-able implementation.</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; There are a few features we need to add that could likely be handled</span>
+<span class="ez_quot">&gt; through plugins. I know PHP and basic coding - but don't really have the</span>
+time
+<span class="ez_quot">&gt; to get too deep into the Kohana framework right now...</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; So - I would rather throw money at the problem. ;)</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; Is there a place to find Ushahidi developers I can talk to that might be</span>
+<span class="ez_quot">&gt; interested in some freelance work?</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; Ideas / Needs:</span>
+<span class="ez_quot">&gt; -- Delayed Reports: Two (or more) classes of user, public and private.</span>
+<span class="ez_quot">&gt; Private users see real-time reports. Public users see reports delayed by X</span>
+<span class="ez_quot">&gt; days.</span>
+<span class="ez_quot">&gt; -- Suite of SMS tools - including SMS Automate and SMS Parse (comparing</span>
+<span class="ez_quot">&gt; incoming SMS in the local language and slang to a database of keywords to</span>
+<span class="ez_quot">&gt; pinpoint location and other information)</span>
+<span class="ez_quot">&gt; -- Suite of Mapping Tools - enhancing/updating layers to overlay on Google</span>
+<span class="ez_quot">&gt; Maps - the area is poorly mapped, and needs a lot of work.</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; At this moment, we are not sure what our budget is - so I would be</span>
+<span class="ez_quot">&gt; interested to talk to those with Ushahidi experience to get an idea of</span>
+what
+<span class="ez_quot">&gt; this might cost.</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; Thanks - looking forward to it!</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; -Loren Bell</span>
+<span class="ez_quot">&gt; twitter.com/lbell</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; ~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="ez_quot">&gt; List Archive: <a href="http://list.ushahidi.com/</span>">http://list.ushahidi.com/</span></a>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; Would you like to receive list mail batched in a daily digest instead?</span>
+Send a
+<span class="ez_quot">&gt; message to:</span>
+<span class="ez_quot">&gt; developers-digest-subscribe@...</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; To remove your address from the list, just send a message to the address</span>
+in
+<span class="ez_quot">&gt; the &quot;List-Unsubscribe&quot; header of any list message. If you haven't changed</span>
+<span class="ez_quot">&gt; addresses since subscribing, you can also send a message to:</span>
+<span class="ez_quot">&gt; developers-unsubscribe@...</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; For addition or removal of addresses, we'll send a confirmation message to</span>
+<span class="ez_quot">&gt; that address. When you receive it, simply reply to it to complete the</span>
+<span class="ez_quot">&gt; transaction.</span>
+<span class="ez_quot">&gt; </span>
+<span class="ez_quot">&gt; If you need to get in touch with the human owner of this list, please send</span>
+a
+<span class="ez_quot">&gt; message to:</span>
+<span class="ez_quot">&gt; developers-owner@...</span>
+
+</pre></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

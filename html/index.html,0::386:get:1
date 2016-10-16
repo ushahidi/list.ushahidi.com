@@ -1,0 +1,73 @@
+<div dir="ltr">How do I unsubscribe from these emails?</div><div class="gmail_extra"><br><br><div class="gmail_quote">On Tue, May 28, 2013 at 10:20 PM, does.vandousselaere <span dir="ltr">&lt;<a href="mailto:does.vandousselaere@..." target="_blank">does.vandousselaere@...</a>&gt;</span> wrote:<br>
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir="ltr"><p><span lang="EN-GB">Dear
+developers,<span> </span><br>
+<br>
+I&#39;m trying to install an ushahidi application on the godaddy  server (</span><a href="http://hcer.org/talawis" target="_blank"><span lang="EN-GB">hcer.org/talawis</span></a><span lang="EN-GB">, to help communities monitor pollution)
+and I keep on getting the same problem when I access other pages but the main
+page,<span> </span></span><a href="http://hcer.info/talawis/index.php/login/" target="_blank"><span lang="EN-GB">http://hcer.info/talawis/index.php/login/</span></a><span lang="EN-GB"> for example I get this error
+&quot;No input file specified.&quot; I repeated the installation several times
+and the only step I could have done wrong is to make &quot;clean URLs to
+work&quot;.   In fact if I click on
+log-in the links it displays (“</span><a href="http://hcer.info/talawis/index.php/login/" target="_blank"><span lang="EN-GB">http://hcer.info/talawis/index.php/login/</span></a><span lang="EN-GB">” for example) are quite weird are
+probably not displayed well if the clean URLs are not activated.</span> </p>
+
+<p><span lang="EN-GB">I wasn’t
+able to enable the mod_rewrite in Apache as is mentioned in the installation
+instruction (</span><a href="http://forums.ushahidi.com/forums/topic/server-configuration-for-apache-mod-rewrite/" target="_blank"><span lang="EN-GB">http://forums.ushahidi.com/forums/topic/server-configuration-for-apache-mod-rewrite/</span></a><span lang="EN-GB">), but at godaddy they told me that
+mod_rewrite is working for my account.  I
+tried to follow the further instructions and added the following code to the
+main htaccess file:</span></p>
+
+<p style="line-height:15pt;background-color:rgb(251,251,251);vertical-align:baseline"><span style="color:rgb(68,68,68);font-family:Helvetica;font-size:9pt;line-height:15pt">AllowOverride All</span></p>
+
+<p style="line-height:15pt;background-color:rgb(251,251,251);vertical-align:baseline"><span lang="EN-GB" style="font-size:9pt;font-family:Helvetica;color:rgb(68,68,68)">AccessFileName .htaccess</span></p>
+
+<p>(I tried to past this at the end, beginning and in the if loop in the .htaccess file)</p>
+
+<p><span lang="EN-GB">But this
+gave me a HTTP 404 error, so I put the orginal .htaccess file back where it was
+(in the subfolder where I installed ushahidi thus) as I wasn’t sure there was
+an error anyway with “clean URLs”), but then I am still stuck with the “No
+input file specified” error when I tried to access another page than the main
+page.  I’ve been trying to locate the “</span><span lang="EN-GB" style="font-size:9pt;font-family:Helvetica;color:rgb(68,68,68);background-color:rgb(251,251,251)">vhost.conf, httpd.conf, or
+apache2.conf</span>” files on my Godaddy server, but I don’t seem to have
+access so I gave up on this.</p>
+
+<p><span lang="EN-GB">I searched
+the Ushahidi forum for errors related to this “No input file specified” (</span><a href="http://forums.ushahidi.com/forums/topic/no-input-field-specified/" target="_blank"><span lang="EN-GB">http://forums.ushahidi.com/forums/topic/no-input-field-specified/</span></a><span lang="EN-GB"> for example) , but all problems
+that point to these fixes seem to have been resolved in the new versions, so now
+I don’t know where to search any further,</span></p>
+
+<p><span lang="EN-GB">I tried to
+post this on the forum, but there seems to be a bug with the registration
+module (I tried to register with three different email addresses last week, and
+also emailed info@ushahidi and the twitter account to ask them about this bug
+but never received an answer), so now I am trying to contact you through this
+developers list.</span></p>
+
+<p><span lang="EN-GB">The Godaddy
+server is using MySQL 5 and PHP 5.3.  I’m
+installing it in a subfolder, so I thought the error could be solved by
+changing the</span></p>
+
+<p><span lang="EN-GB">“RewriteBase
+/” in “RewriteBase /talawis” or /talawis/ or talawis/</span></p>
+
+<p><span lang="EN-GB">But this
+didn’t change anything.</span></p>
+
+<p><span lang="EN-GB">For those
+who try to access the links, and see other errors that I mention, I’ve probably
+messed it up even further, but if I reinstall everything the errors I get are
+the abovementioned.  Usually ushahidi
+also messes up the title of the site (because it is written in Arabic), but I
+guess that should affect the installation.</span></p>
+
+<p><span lang="EN-GB">Sorry for the
+long list of problems/ideas and thanks for your time,</span></p>
+
+<p><span lang="EN-GB">Does
+Vandousselaere</span></p></div>
+</blockquote></div><br><br clear="all"><div><br></div>-- <br>Regards,<br><br>Mark Mwangi<br><br><a href="http://markmwangi.me.ke" target="_blank">markmwangi.me.ke</a><br><br><br><br><br>
+</div>

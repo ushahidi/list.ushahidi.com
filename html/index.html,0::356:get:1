@@ -1,0 +1,39 @@
+<div dir="ltr"><p style="margin:0px;font-size:11px;font-family:Monaco;color:rgb(18,6,57)"></p><p style="margin:0px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class=""><span style="font-size:11pt;font-family:&#39;Times New Roman&#39;;color:rgb(14,0,45)">Hi all,</span></p>
+
+<p class=""><span style="font-size:11pt;font-family:&#39;Times New Roman&#39;;color:rgb(14,0,45)">It’s been almost 5 months since the last version of the platform
+was released. Well, as you would bet - so much work has gone into the platform
+and we feel its best to have everyone enjoy the additional features and fixes.
+To that effect, we have a code-freeze on to give room for thorough testing
+before release of version 2.7 of the platform. The release is scheduled for
+April 30th, until then we have tagged a 2.7b branch, which is the &quot;beta
+release&quot; and no commits are being added here as testing is in progress.
+The Develop branch remains open for codes commits so go ahead and send in the
+pull requests for any bug or feature you work on.</span></p>
+
+<p class=""><span style="font-size:11pt;font-family:&#39;Times New Roman&#39;;color:rgb(14,0,45)">We shall keep you posted as we get close to the release date.</span></p>
+
+<p class=""><span style="font-size:11pt;font-family:&#39;Times New Roman&#39;;color:rgb(14,0,45)">Github (2.7b - Beta Release) -&gt; <a href="https://github.com/ushahidi/Ushahidi_Web/tree/2.7b"><span style="color:rgb(7,57,200)">https://github.com/ushahidi/Ushahidi_Web/tree/2.7b</span></a></span><span style="font-family:&#39;Times New Roman&#39;"></span></p>
+
+
+<p></p><p></p><div><br></div>-- <br>Regards,<br>Linda Kamau<div><div>Ushahidi Inc.</div><div>Platforms: Ushahidi | Crowdmap | SwiftRiver</div><div>Mobile: iphone | Android</div><div><div>Website: <a href="http://www.ushahidi.com/" target="_blank">http://www.ushahidi.com</a><br>
+Cell:
+ +254 723 674 180<br><div>Skype: lindakamau<br>Twitter: @LKamau<br>
+</div><br></div></div></div>
+</div>

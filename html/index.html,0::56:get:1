@@ -1,0 +1,26 @@
+Hey Jeff,<br><br>I&#39;m not sure right off why this is happening so I&#39;m going to forward it on to the Ushahidi dev list (CC&#39;d). The OpenLayers list may also be a good a place to look.<br><br>Anyone out there have experience with this?<br>
+<br>Brian<br><br><div class="gmail_quote">On Sat, May 22, 2010 at 10:32 PM, Jeffrey Warren <span dir="ltr">&lt;<a href="mailto:warren@...">warren@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+hey brian - how&#39;s it going? We should figure out a way to get some drinks again soon; hangin&#39; out in Amman was a ton of fun.<div><br></div><div>Quick tech question: I&#39;ve been chillin&#39; with the Louisiana Bucket Brigade folks and we were trying to get our balloon map layers to show up in the Ushahidi map. I managed to get a TMS to appear in the OpenLayers sidebar as an overlay but i&#39;m not seeing the actual tiles.</div>
+
+<div><br></div><div>Shannon from LABB said you and perhaps someone else had helped them with a layer issue before; am I missing something? i was just using:</div><div><br></div><div><br></div><div><div><div><font face="&#39;courier new&#39;, monospace">function overlay_getTileURL(bounds) {</font></div>
+
+<div><font face="&#39;courier new&#39;, monospace">    var res = this.map.getResolution();</font></div><div><font face="&#39;courier new&#39;, monospace">    var x = Math.round((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));</font></div>
+
+<div><font face="&#39;courier new&#39;, monospace">    var y = Math.round((bounds.bottom - this.tileOrigin.lat) / (res * this.tileSize.h));</font></div><div><font face="&#39;courier new&#39;, monospace">    var z = this.map.getZoom();</font></div>
+
+<div><font face="&#39;courier new&#39;, monospace">    if (<a href="http://this.map.baseLayer.name" target="_blank">this.map.baseLayer.name</a> == &#39;Virtual Earth Roads&#39; || <a href="http://this.map.baseLayer.name" target="_blank">this.map.baseLayer.name</a> == &#39;Virtual Earth Aerial&#39; || <a href="http://this.map.baseLayer.name" target="_blank">this.map.baseLayer.name</a> == &#39;Virtual Earth Hybrid&#39;) {</font></div>
+
+<div><font face="&#39;courier new&#39;, monospace">       z = z + 1;</font></div><div><font face="&#39;courier new&#39;, monospace">    }</font></div><div><font face="&#39;courier new&#39;, monospace">    if (mapBounds.intersectsBounds( bounds ) &amp;&amp; z &gt;= mapMinZoom &amp;&amp; z &lt;= mapMaxZoom ) {</font></div>
+
+<div><font face="&#39;courier new&#39;, monospace">       //console.log( this.url + z + &quot;/&quot; + x + &quot;/&quot; + y + &quot;.&quot; + this.type);</font></div><div><font face="&#39;courier new&#39;, monospace">       return this.url + z + &quot;/&quot; + x + &quot;/&quot; + y + &quot;.&quot; + this.type;</font></div>
+
+<div><font face="&#39;courier new&#39;, monospace">    } else {</font></div><div><font face="&#39;courier new&#39;, monospace">       return &quot;<a href="http://www.maptiler.org/img/none.png" target="_blank">http://www.maptiler.org/img/none.png</a>&quot;;</font></div>
+
+<div><font face="&#39;courier new&#39;, monospace">    }</font></div><div><font face="&#39;courier new&#39;, monospace">}</font><span style="white-space: pre;"><font face="&#39;courier new&#39;, monospace">		</font></span></div>
+
+<div><font face="&#39;courier new&#39;, monospace">var tmsoverlay = new OpenLayers.Layer.TMS( &quot;TMS Overlay&quot;, &quot;<a href="http://maps.grassrootsmapping.org/may-7-port-fourchon-balloon-oliver/" target="_blank">http://maps.grassrootsmapping.org/may-7-port-fourchon-balloon-oliver/</a>&quot;, { type: &#39;png&#39;, getURL: overlay_getTileURL, alpha: true, isBaseLayer: false }); if (OpenLayers.Util.alphaHack() == false) { tmsoverlay.setOpacity(0.7); }; map.addLayers([tmsoverlay]);</font></div>
+
+<div><br></div></div><div>in the Safari JS console. I tried it from a local TMS too to be sure it wasn&#39;t JS security stopping it. What&#39;s weird is that it&#39;s not actually even making requests for tiles; the issue occurs between when it accepts the new layer and makes tile requests.</div>
+
+<div><br></div><div>Any ideas? Any help is appreciated. I could also bump this to the OpenLayers list or the Ushahidi list?</div><div>Jeff </div></div>
+</blockquote></div><br>

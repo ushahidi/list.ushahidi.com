@@ -1,0 +1,35 @@
+Milo,<br>Do you mind updating your changes for the 2.0 branch? Then I can merge them in.<br><br>Thanks!<br><br>
+<br><br><div class="gmail_quote">On Wed, Nov 3, 2010 at 1:59 PM, Milo van der Linden <span dir="ltr">&lt;<a href="mailto:milo@...">milo@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+
+Thank you for the information David, <div><br></div><div>I did as you said and it turned out I needed to checkout the 2.0 branch before I could run the second line. For others who share the same trouble:<div class="im"><div>
+
+<br></div><div>
+<span style="font-family: monospace; font-size: large; white-space: pre-wrap;">$ git branch -m master 1.2</span></div></div><div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;">#check that there are no pending commits:</span></font></div>
+
+
+<div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;">$ git status</span></font></div><div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;">#if you have pending commits in the 1.2 branch, commit and push them first</span></font></div>
+
+
+<div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;"># check out 2.0</span></font></div><div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;">$git fetch origin 2.0:2.0</span></font></div>
+
+
+<div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;">#now you are ready to move 2.0 to master:</span></font></div><div class="im"><div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;">$ git branch -m 2.0 master</span></font></div>
+
+
+<div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;"><br></span></font></div></div><div><font face="monospace"><span style="white-space: pre-wrap; font-size: large;"><br>
+</span></font>Good luck!</div><div><br></div><div>Kind regards,</div><div><br></div><div>Milo van der Linden</div><div><br><div class="gmail_quote">2010/11/3 David Kobia <span dir="ltr">&lt;<a href="mailto:david@..." target="_blank">david@...</a>&gt;</span><div>
+
+<div></div><div class="h5"><br>
+<blockquote class="gmail_quote" style="margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">Hi Guys,<br>I just wanted to let you know that we&#39;ve now converted (renamed) the <b>2.0</b> branch on github to <b>master</b>. To avoid breaking your local github repos, please do the following:<br>
+
+
+<br><pre style="margin-left: 40px;"><div><font size="4">$ git branch -m master 1.2</font></div><div><font size="4">$ git branch -m 2.0 master</font></div></pre>This will rename your local branches accordingly, so that your local master will match the remote branch which is the original 2.0 branch.<br>
+
+
+
+<br>Thanks!<br><font color="#888888"><br>David<br>
+</font></blockquote></div></div></div><br><br clear="all"><br>-- <br>Milo van der Linden<br>Open Source Geospatial consultant<br><br>dogodigi - Geospatial solutions  <br>Beukenlaan 2<br>5261LE  Vught<br>T. +31616598808<br>
+
+
+</div></div>
+</blockquote></div><br>

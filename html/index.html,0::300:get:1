@@ -1,0 +1,28 @@
+<span style="font-family:verdana,sans-serif"><font>Walter has a question related to this <br><font>&quot;Can someone tell me where I would need to touch if I want to add my own wms layers in ushahidi? Im good with opelayers but dont know if I can add the wms in the traditional way or I&#39;ll need to consider other things.<br>
+
+I know about the wms addon, I cant make it work yet, but I dont think it would be the solution neither. We want to keep the google layer and put wms and kmls on top&quot;</font><br><br><font>Pitch in? <br><br clear="all">
+
+</font></font>Juliana Rotich<br><br>Open Hours: <a href="http://ohours.org/juliana" target="_blank">http://ohours.org/juliana</a><br>Too brief? Here&#39;s why! <a href="http://emailcharter.org" target="_blank">http://emailcharter.org</a><br>
+
+<br><a href="http://www.ushahidi.com" target="_blank">www.ushahidi.com</a> | <a href="http://www.julia.na" target="_blank">www.julia.na</a></span><br><br>
+<br><br><div class="gmail_quote">On Thu, Sep 27, 2012 at 1:43 AM, Robbie MacKay <span dir="ltr">&lt;<a href="mailto:robbie@..." target="_blank">robbie@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+Hi All,<div><br></div><div>WMS support has been a requested feature for a while, and a few people have hacked various ways to get it in (Robert Buckley, Luis Hernando Aguilar, Seth Kigen)</div><div>I improved the mapping helper a while back to make it easier for plugins to add WMS base layers. However I&#39;m keen to get support for overlays into core and maybe make adding baselayers even easier.</div>
+
+
+
+<div>Who else has worked on WMS layers? Has anyone got examples of working WMS overlays?</div><div>Has anyone checked the WMS baselayer support works? Robert Buckley did suggest something wasn&#39;t quite right, and my GIS knowledge isn&#39;t good enough to be sure I didn&#39;t mess something up.</div>
+
+
+
+<div><br></div><div>Any help/experience anyone can share here would be great.</div><div><div><br></div><div>Code examples:</div><div><a href="https://github.com/kigen/Ushahidi-plugin-wms" target="_blank">https://github.com/kigen/Ushahidi-plugin-wms</a></div>
+
+
+
+<div><a href="https://github.com/rjmackay/Ushahidi-plugin-metacarta" target="_blank">https://github.com/rjmackay/Ushahidi-plugin-metacarta</a><span class="HOEnZb"><font color="#888888"><br clear="all"><div><br></div>-- <br>
+
+<div>Robbie Mackay</div><div><br><div>Software Developer, External Projects</div>
+
+<div>Ushahidi Inc</div><div>m: +64 27 576 2243<br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div></div><div>skype: robbie.mackay</div></div><br>
+</font></span></div></div>
+</blockquote></div><br>

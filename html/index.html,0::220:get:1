@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1"
+      http-equiv="Content-Type">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+    <meta http-equiv="content-type" content="text/html;
+      charset=ISO-8859-1">
+    <p style="margin-top: 0px !important; margin-right: 0px;
+      margin-bottom: 15px; margin-left: 0px; padding-top: 0px;
+      padding-right: 0px; padding-bottom: 0px; padding-left: 0px;
+      border-top-width: 0px; border-right-width: 0px;
+      border-bottom-width: 0px; border-left-width: 0px; border-style:
+      initial; border-color: initial; border-image: initial; font-size:
+      13px; font: inherit; color: rgb(51, 51, 51); font-family:
+      Helvetica, arial, freesans, clean, sans-serif; font-style: normal;
+      font-variant: normal; font-weight: normal; letter-spacing: normal;
+      line-height: 20px; orphans: 2; text-align: -webkit-auto;
+      text-indent: 0px; text-transform: none; white-space: normal;
+      widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); ">The code in the download reports controller uses OR's when
+      creating the where statement to filter reports. This means that
+      the resultant SQL is inclusive, not exclusive. A lot of
+      deployments mark reports that are too sensitive for public
+      consumption as "unapproved", and thus an inclusive filtering is a
+      security risk. In general I find myself biased towards exclusive
+      filtering, but I suppose that's personal preference.<br>
+    </p>
+    <p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px !
+      important; margin-left: 0px; padding: 0px; border-width: 0px;
+      font-size: inherit; font-size-adjust: inherit; font-stretch:
+      inherit; -moz-font-feature-settings: inherit;
+      -moz-font-language-override: inherit; color: rgb(51, 51, 51);
+      font-family: Helvetica,arial,freesans,clean,sans-serif;
+      font-style: normal; font-variant: normal; font-weight: normal;
+      letter-spacing: normal; line-height: 20px; orphans: 2;
+      text-indent: 0px; text-transform: none; white-space: normal;
+      widows: 2; word-spacing: 0px; background-color: rgb(255, 255,
+      255);">For example if a user unchecks the "Reports Awaiting
+      Approval" option, but leave an unrelated field checked, say
+      "Verified Reports", then the CSV file will have all the reports
+      that are verified, even the ones that are verified but not
+      approved. In my opinion this is pretty serious, and the Ushahidi
+      community at large should be notified. From my experience the
+      average user will never think, "Is this filtering system exclusive
+      or inclusive?",&nbsp; will never double check the CSV they download,&nbsp;
+      and will assume if they unchecked something, that it won't be in
+      there.<br>
+    </p>
+    <p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px !
+      important; margin-left: 0px; padding: 0px; border-width: 0px;
+      font-size: inherit; font-size-adjust: inherit; font-stretch:
+      inherit; -moz-font-feature-settings: inherit;
+      -moz-font-language-override: inherit; color: rgb(51, 51, 51);
+      font-family: Helvetica,arial,freesans,clean,sans-serif;
+      font-style: normal; font-variant: normal; font-weight: normal;
+      letter-spacing: normal; line-height: 20px; orphans: 2;
+      text-indent: 0px; text-transform: none; white-space: normal;
+      widows: 2; word-spacing: 0px; background-color: rgb(255, 255,
+      255);">I made a fix and you can find it <a
+href="https://github.com/ushahidi/Ushahidi_Web/commit/34cf544e05cbf80a4e35cc60e9e0a8c786b4c64e">here</a>.<br>
+    </p>
+    <p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px !
+      important; margin-left: 0px; padding: 0px; border-width: 0px;
+      font-size: inherit; font-size-adjust: inherit; font-stretch:
+      inherit; -moz-font-feature-settings: inherit;
+      -moz-font-language-override: inherit; color: rgb(51, 51, 51);
+      font-family: Helvetica,arial,freesans,clean,sans-serif;
+      font-style: normal; font-variant: normal; font-weight: normal;
+      letter-spacing: normal; line-height: 20px; orphans: 2;
+      text-indent: 0px; text-transform: none; white-space: normal;
+      widows: 2; word-spacing: 0px; background-color: rgb(255, 255,
+      255);"><b>Ushahidi Developers:</b> Please keep in mind that
+      "approved" and "unapproved" are a big deal for those of us working
+      on deployments, and that you should always default to protecting
+      "unapproved" reports. <br>
+    </p>
+    <p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px
+      !important; margin-left: 0px; padding-top: 0px; padding-right:
+      0px; padding-bottom: 0px; padding-left: 0px; border-top-width:
+      0px; border-right-width: 0px; border-bottom-width: 0px;
+      border-left-width: 0px; border-style: initial; border-color:
+      initial; border-image: initial; font-size: 13px; font: inherit;
+      color: rgb(51, 51, 51); font-family: Helvetica, arial, freesans,
+      clean, sans-serif; font-style: normal; font-variant: normal;
+      font-weight: normal; letter-spacing: normal; line-height: 20px;
+      orphans: 2; text-align: -webkit-auto; text-indent: 0px;
+      text-transform: none; white-space: normal; widows: 2;
+      word-spacing: 0px; -webkit-text-size-adjust: auto;
+      -webkit-text-stroke-width: 0px; background-color: rgb(255, 255,
+      255); ">Thanks,<br>
+    </p>
+    <br>
+    <br>
+    <div class="moz-signature">John Etherton<br>
+      +1-404-578-1606<br>
+      <a href="mailto:john.etherton@...">john.etherton@...</a></div>
+    <br>
+  </body>
+</html>

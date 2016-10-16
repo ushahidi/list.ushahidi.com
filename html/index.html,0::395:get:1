@@ -1,0 +1,80 @@
+<div dir="ltr"><div style>Hi All,</div><div style><br></div><div style>I&#39;m in London with the 3.0 team this week trying to figure on the many many details involved.</div><div style>We&#39;ve just finished up a discussion about how categories will work so I&#39;m writing it up while its fresh. Categories have been a major tool in 2.x but I&#39;ve always felt they&#39;re kind of abused and that often there&#39;s a better way to represent the data we capture via categories.</div>
+
+<div style><br></div><div style>Key discussion points: Do categories need a multi level hierarchy? Do categories need to be multiple select?</div><div style><br></div><div style>Categories will be single select. But we temper this by adding multiple category types, and possibly giving report types a colour and icon.</div>
+
+<div style>Categories won&#39;t have a hierarchy, since this info is often better handled by a custom field instead.</div><div style><br></div><div style>Here&#39;s an example to explain.. lets take a subset of the Uchaguzi categories</div>
+
+<div style><br></div><div style><span id="docs-internal-guid-0b1e2cbc-863a-8abc-315d-bc402e2519ee"><ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Polling Station Administration</span></p></li><ul style="margin-top:0pt;margin-bottom:0pt">
+
+<li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Ballot Box Irregularities</span></p>
+
+</li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Polling Station Closed Before Voting Concluded</span></p>
+
+</li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Missing/Inadequate Voting Materials</span></p>
+
+</li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Polling Station Logistical Issues</span></p>
+
+</li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Campaign material in polling station</span></p>
+
+</li></ul><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Positive Event</span></p>
+
+</li><ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt">
+
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Civilian Peace Efforts</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Everything Fine</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Police Peace Efforts</span></p></li></ul><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Security Issues</span></p></li><ul style="margin-top:0pt;margin-bottom:0pt">
+
+<li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Presence of weapons</span></p>
+
+</li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Purchase of weapons</span></p>
+
+</li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Mobilisation towards violence</span></p>
+
+</li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Threat of violence</span></p>
+
+</li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Ambush</span></p>
+
+</li></ul><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Voting Issues</span></p>
+
+</li><ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt">
+
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Voting Irregularities</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Purchasing of Voters Cards</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Voters Issued Invalid Ballot Papers</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Voter Integrity Irregularities</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Irregularities with voter assistance</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Voter Register Irregularities</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Voter Identification Issues</span></p></li></ul><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="white-space:pre-wrap">Urgent</span></p></li><ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Resolved</span></p></li><li style="list-style-type:circle;font-family:Arial;color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">
+
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Unresolved</span></li></ul></ul></span></div><div style><br></div><div style>Restructuring this for 3.0, we could would create 4 &#39;Post types&#39; with their own forms:</div>
+
+<div style>Polling Admin issue, Positive Event, Security issue, Voting Issue.</div><div style>And a tag type of &#39;Status&#39; with tags resolved and unresolved.</div><div style><br></div><div style>The submission flow then becomes.</div>
+
+<div style>1. Create post</div><div style>2. Select post types (ie. security issue)</div><div style>3. Enter report details</div><div style>This would a custom field for specific issue detail. ie. &#39;Threat of violence&#39;</div>
+
+<div style>4. Submit</div><div style>5. Admin approves and tags with &#39;Resolved&#39; or &#39;Unresolved&#39;</div><div style>--</div><div style><br class="">Single select categories means we can visualise the different categories on the map, showing different icons for categories. While tag and post types mean in future we can switch which bit of the data we&#39;re visualizing.</div>
+
+<div style><br></div><div style>For example if you were mapping earthquake damage you could add tag types for &#39;Severity&#39; and &#39;Building type&#39;. Then we might be able to alternate which of these you visualise on a map, ie. heat mapping severity of damage, while also filtering based on type of building.</div>
+
+<div style><br></div><div style>I&#39;m not totally sure how this will all come together, but I think this model of categories gives us a better base and better data to build on later.</div><div><br></div>-- <br><div>Robbie Mackay</div>
+
+<div><br><div>Software Developer, External Projects</div><div>Ushahidi Inc</div><div>m: +64 27 576 2243<br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div></div><div>skype: robbie.mackay</div>
+
+</div>
+</div>

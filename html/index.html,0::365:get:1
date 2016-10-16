@@ -1,0 +1,4 @@
+I&#39;m in a unique position of suddenly having a bit of time on my hands, and a fledgling Ushahidi-based project I&#39;m establishing. Getting my development flow set up but am not sure whether I should:<div><br></div><div>
+A) Build / Update the plugins I need on the current (2.7) version of Ushahidi or </div><div>B) Wait for 3.0 alpha to drop and start there...</div><div><br></div><div>I don&#39;t particularly want to duplicate the effort if 2.7 is going to be supplanted by 3.0 in the near-ish future... I would rather sort it out by contributing to 3.0 directly (or via plugins that play nice with 3.0).</div>
+<div><br></div><div>Also, along the same lines, if I find quick fixes I would like to submit to Ushahidi (currently), to which branch should I submit a pull request (2.7 or Master or Develop)?</div><div><br></div><div>Thanks, LB<br>
+<div><br></div></div>

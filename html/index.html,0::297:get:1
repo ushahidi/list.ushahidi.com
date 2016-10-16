@@ -1,0 +1,148 @@
+<html>
+<head>
+<style><!--
+.hmmessage P
+{
+margin:0px;
+padding:0px
+}
+body.hmmessage
+{
+font-size: 10pt;
+font-family:Tahoma
+}
+--></style></head>
+<body class='hmmessage'><div dir='ltr'>
+<br>Thanks for the info John. The helloworld file worked perfectly on my Ushahidi 2.5 setup and when I looked over the helloworld.php code, it really clarified things for me. &nbsp;Can the wiki page be updated with the helloworld example&nbsp;<span style="font-size: 10pt; ">along with added explanation about the readme.txt file that needs to be included in the plugin folder?</span><div><br></div><div>Peter<br><div><span style="font-size: 10pt; "><br></span></div><div><span style="font-size: 10pt; ">&nbsp;</span></div><div><div><div><div id="SkyDrivePlaceholder"></div><hr id="stopSpelling">Date: Thu, 4 Oct 2012 23:36:49 -0600<br>From: john.etherton@...<br>To: developers@...; telemachus18@...<br>Subject: Re: [ushahidi developers] Need info for writing plugins<br><br>
+  
+    
+  
+  
+    <div class="ecxmoz-cite-prefix">Peter,<br>
+      <br>
+      So I think the problem with the wiki page is that it doesn't talk
+      about the readme.txt file that's needed for Ushahidi to recognize
+      the folder as containing a plugin. That does need to be changed.<br>
+      <br>
+      I've attached a hello world plugin. Drop the <i>helloworld</i>
+      folder into the <i>/plugins</i> folder of your ushahidi install
+      then activate it on the back-end. When you look at the main page
+      you should see "Hello World" in big letters on the sites home
+      page.<br>
+      <br>
+      I hope that helps.<br>
+      <div class="ecxmoz-signature"><br>
+        <br>
+        John Etherton<br>
+        +1-404-578-1606<br>
+        <a href="mailto:john.etherton@...">john.etherton@...</a><br>
+      </div>
+      On 10/04/2012 11:14 PM, B P Chin wrote:<br>
+    </div>
+    <blockquote cite="mid:SNT116-W608D54599BBB49AEEC5FD9DF8B0@...">
+      <style><!--
+.ExternalClass .ecxhmmessage P
+{padding:0px;}
+.ExternalClass body.ecxhmmessage
+{font-size:10pt;font-family:Tahoma;}
+
+--></style>
+      <div dir="ltr">
+        <div><br>
+        </div>
+        <div>Hi John,</div>
+        <div><br>
+        </div>
+        <div>I followed the instructions at
+          <a class="ecxmoz-txt-link-freetext" href="https://wiki.ushahidi.com/display/WIKI/How+To+Write+A+Plugin" target="_blank">https://wiki.ushahidi.com/display/WIKI/How+To+Write+A+Plugin</a>
+          but it doesn't create</div>
+        <div>a plugin with checkbox etc. in the Ushahidi Addons page,
+          and there is no "Activate" link in the Addons page. I'm
+          running Ush 2.5 and</div>
+        <div>I just want to generate a simple "Hello World" message
+          plugin to test things out.&nbsp;</div>
+        <div><br>
+        </div>
+        <div>Also, the instructions on this page make no mention of the
+          Events class. Methods in the Events class need to be</div>
+        <div>called in order for a plugin to work right? &nbsp;<span style="font-size:10pt">Maybe you can also recommend what
+            methods and Classes I need to call from Ushahidi system
+            files.&nbsp;</span></div>
+        <div><br>
+        </div>
+        <div>Eventually, I want to write a plugin that connects social
+          media feeds into Ushahidi's map but for now</div>
+        <div>I'm just starting out and trying to write a simple plugin
+          that'll generate a simple message (e.g. "Hello World".)</div>
+        <div>Thanks for any advice.</div>
+        <div><br>
+        </div>
+        <br>
+        <br>
+        <div>
+          <hr id="ecxstopSpelling">Date: Tue, 2 Oct 2012 22:14:42 -0600<br>
+          From: <a class="ecxmoz-txt-link-abbreviated" href="mailto:john.etherton@...">john.etherton@...</a><br>
+          To: <a class="ecxmoz-txt-link-abbreviated" href="mailto:developers@...">developers@...</a><br>
+          Subject: Re: [ushahidi developers] Need info for writing
+          plugins<br>
+          <br>
+          <div class="ecxmoz-cite-prefix">Peter,<br>
+            <br>
+            What do you want your plugin to do. <br>
+            <br>
+            Also the documentation looks correct to me. Can you be more
+            specific about the trouble your having? Are you having run
+            time errors, or are things just not functioning like you
+            want?<br>
+            <br>
+            Thanks,<br>
+            <div class="ecxmoz-signature"><br>
+              <br>
+              John Etherton<br>
+              +1-404-578-1606<br>
+              <a href="mailto:john.etherton@...">john.etherton@...</a><br>
+            </div>
+            On 10/02/2012 07:43 PM, B P Chin wrote:<br>
+          </div>
+          <blockquote cite="mid:SNT116-W47EEE2B7A99ADA2848DF3BDF850@...">
+            <style><!--
+.ExternalClass .ecxhmmessage P
+{padding:0px;}
+.ExternalClass body.ecxhmmessage
+{font-size:10pt;font-family:Tahoma;}
+
+--></style>
+            <div dir="ltr"> <br>
+              Hi folks,<br>
+              <br>
+              I'm based in Canada and I'm trying to write Ushahidi
+              plugins. I specifically need info about what class and
+              library files are needed to make a plugin work, and <br>
+              also some examples on how to create a plugin.<br>
+              <br>
+              I've searched online extensively for info on writing
+              Ushahidi plugins/Kohana plugins but haven't found any
+              adequate info<br>
+              on how to do this. I also followed the documentation at<br>
+              <a href="https://wiki.ushahidi.com/display/WIKI/How+To+Write+A+Plugin" target="_blank">https://wiki.ushahidi.com/<wbr>display/WIKI/How+To+Write+A+<wbr>Plugin</a>
+              to write a plugin but it doesn't work. This documentation
+              page also needs<br>
+              updating or revising because the instructions don't work.&nbsp;
+              <br>
+              <br>
+              I've also asked Ushahidi developers but haven't heard back
+              from them.&nbsp; Can anyone help me? Thanks.<br>
+              <br>
+              <br>
+              Peter Chin<br>
+              <br>
+              <br>
+              <br>
+            </div>
+          </blockquote>
+          <br>
+        </div>
+      </div>
+    </blockquote>
+    <br></div></div></div></div> 		 	   		  </div></body>
+</html>

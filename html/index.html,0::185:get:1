@@ -1,0 +1,35 @@
+My wishlist posted:<div><br></div><div><a href="https://github.com/ushahidi/Ushahidi_Web/issues/186">https://github.com/ushahidi/Ushahidi_Web/issues/186</a></div><div><br></div><div>george<br clear="all"><br>George Chamales<br>
+
+Rogue Genius LLC<div><a href="http://roguegenius.com" target="_blank">http://roguegenius.com</a><br>Phone:  718.288.7718<br>Skype:  notgeorge<br><br></div><br>
+<br><br><div class="gmail_quote">On Sun, Feb 5, 2012 at 11:26 PM, Robbie MacKay <span dir="ltr">&lt;<a href="mailto:robbie@...">robbie@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+<div class="gmail_quote"><div class="im"><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div bgcolor="#FFFFFF" text="#000000"><div><span style="white-space:pre-wrap"><br>
+
+
+      &gt; I&#39;d like to see a MVC architecture taken to ushahidi&#39;s
+      mapping system. Where the map is just a view, and things like
+      timelines and category filters become controls, all using a
+      standardized API. Makes me smile just thinking about it.</span><br>
+    <br></div>
+    This makes a lot of sense and I have to say I am a bit surprised
+    that the core dev team did not take this approach from the begining
+    since ushahidi is so map and by relationship openlayers centric. 
+    OpenLayers is an amazing library that has a ton of features of which
+    ushahidi core uses a small subset of.  Making it easier for plugin
+    developers to hook into the mapping interface and leverage the power
+    of OpenLayers whiloe maintaining the MVC architecture that the rest
+    of the system would be fantastic.<br>
+    <br>
+    Thanks!<br>
+    evoltech<br>
+    <span style="white-space:pre-wrap"><br></span></div></blockquote><div> </div></div><div>Hello All,</div><div><br></div><div>I agree it would be great to clean up the mapping system and make it easier to extend.</div>
+
+
+<div>I asked around among the internal team to see what was already on the roadmap. Apparently separating the timeline from the map is on the roadmap, which will get some way towards what you&#39;re suggesting.</div><div>
+
+
+<br></div><div>It would be great if you could try to break your request down into a few issues and post them here: <a href="https://github.com/ushahidi/Ushahidi_Web/issues" target="_blank">https://github.com/ushahidi/Ushahidi_Web/issues</a></div>
+
+
+<div><br></div><div>Thanks,</div><div>Robbie</div><div> </div></div>
+</blockquote></div><br></div>

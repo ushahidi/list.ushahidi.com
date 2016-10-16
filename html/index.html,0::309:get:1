@@ -1,0 +1,18 @@
+<html><head><style data-externalstyle="true">
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+}
+
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst, p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle, p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+margin-top:0in;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:.5in;
+margin-bottom:.0001pt;
+line-height:115%;
+}
+</style></head><body><div data-externalstyle="false" style="font-family:Calibri,'Segoe UI',Meiryo,'Microsoft YaHei UI','Microsoft JhengHei UI','Malgun Gothic','Khmer UI','Nirmala UI',Tunga,'Lao UI',Ebrima,sans-serif;font-size:16px;"><div>WMS Plugin just got a major update to solve some of the major issues that: many have been encountering when&nbsp;adding WMS map layers to Ushahidi. </div><div>The most important feature that comes with the latest upgrade is the ability to add WMS based overlays and still have Google, OSM or Bing Maps remaining as the base layers.&nbsp; The previous version didn’t allow for this scenario to occur, hence forced one to use WMS base layers in order to add overlays. </div><div data-focusfrompointer="true">&nbsp;</div><div data-focusfrompointer="true">Another important feature that comes with this update is,&nbsp;an interface that will enable plugin configuration and easy layer management.</div><div data-focusfrompointer="true">&nbsp;</div><div>I have been able to test it with Ushahidi version 2.5 and 2.6&nbsp;and it &nbsp;is working perfectly.</div><div data-focusfrompointer="true">If you are free to test it further, find it here..&nbsp; <a tabindex="-1" href="https://github.com/kigen/Ushahidi-plugin-wms/downloads">https://github.com/kigen/Ushahidi-plugin-wms/downloads</a>&nbsp; I will appreciate&nbsp;any feedback. If you need any&nbsp;help find me on Skype.</div><div>&nbsp;</div><div data-focusfrompointer="true">I would like to register my appreciation to Robert Buckley who&nbsp;has helped me with lots of &nbsp;invaluable feedback on features, testing &amp; bug reporting.&nbsp; Thank you!</div><div data-focusfrompointer="true">&nbsp;</div><div data-focusfrompointer="true">Finally, there has been a common&nbsp;interest&nbsp;within the&nbsp;community to have WMS support baked into the core platform and I think I will be great to have it in core.&nbsp; I would love to be able to help out in moving most of the functionality in the plugin to the core. Hopefully soon!</div><div data-focusfrompointer="true">&nbsp;</div><div data-focusfrompointer="true">best regards,</div><div data-focusfrompointer="true">&nbsp;</div><div data-focusfrompointer="true" data-signatureblock="true">Seth Kigen<br>@Kigen | Kigen@... | +254725 541 201 | Skype: sekiki2004</div><div data-focusfrompointer="true" data-signatureblock="true">&nbsp;</div></div></body></html>

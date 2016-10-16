@@ -1,0 +1,83 @@
+<html><head></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; ">Hey everyone,<div><br></div><div>Following John Etherton's request, about lessons learnt from profiling, here's some notes:</div><div><ul class="MailOutline"><li><b>Profiling</b> - The Chrome developer tools and Firebug + YSlow (Firefox) are pretty good tools for ascertaining which resources are taking a while to load and debugging JavaScript. They also provide suggestions for reducing the footprint of your webpage. Kohana 2.x has an inbuilt profiling library -&nbsp;<a href="http://docs.kohanaphp.com/libraries/profiler">http://docs.kohanaphp.com/libraries/profiler</a></li><li>Enable logging of slow queries on MySQL (slow_query_log=1 in my.cnf). You also need to set the long_query_time parameter (i.e. the benchmark for classifying a query as slow e.g. 2.5s).</li><li>MySQL's <b>EXPLAIN</b> statement for obtaining information about the execution of an SQL statement.</li><li><b>Coding Practice</b>: For some operations e.g. clustering, pre-fetch the data and perform the computation in-memory; a take-away from Nigel McNie's post -&nbsp;<a href="http://nigel.mcnie.name/blog/fixing-website-performance-issues-whack-a-mole">http://nigel.mcnie.name/blog/fixing-website-performance-issues-whack-a-mole</a></li><li><b>Caching (static assets - JS, Images &amp; CSS) and load-balancing</b>: Varnish, HA Proxy</li><li><b>Server Configuration</b> - Run PHP in FPM mode and Apache in MPM mode. When PHP is run as an Apache module, the interpreter is loaded on each request. Therefore if you have N concurrent users, N copies of the PHP module are loaded.</li></ul><div><br></div></div><div>How about having a sizable dataset which we can all have a go at and see whether some of the concepts shared in this email chain are a good fit?</div><div><br></div><div>Finally, I think it would also be nice to eventually push some of the lessons and concepts shared on here into the Wiki (<a href="https://wiki.ushahidi.com">https://wiki.ushahidi.com</a>) e.g. how to run the platform on CouchDB when Dave Cottlehubber gets round to it :)</div><div><br></div><div>Thanks.</div><div><br><div><div>On Jul 17, 2012, at 3:35 AM, Aaron Huslage wrote:</div><br class="Apple-interchange-newline"><blockquote type="cite">Well you've essentially made one with the clustering system. It works, but is prone to errors and needs constant love from the application or it gets munged up...a target for bugs, basically. If you get that "for free" with a geo plugin then you can ignore it from the app's perspective. Depends on the needs.<div>
+<br></div><div>I'd say that anything more than basic display on a map with clustering is really beyond the scope of Ushahidi itself. If you need real geo work, you might want to pull the data into QGIS or something. That makes the scope of Ushahidi fairly well defined (export some known format geodata) and keeps things clean.</div>
+<div><br></div><div>If we take that approach as a given, then the geo features we need in any backend are really pretty basic.<br><br><div class="gmail_quote">On Mon, Jul 16, 2012 at 8:29 PM, Brian Herbert <span dir="ltr">&lt;<a href="mailto:brian@..." target="_blank">brian@...</a>&gt;</span> wrote:<br>
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+                <div style="font-family:Helvetica;font-size:13px">Pablo (and all),<div><br></div><div>The reason there's a separate location table is exactly why you thought there was a location table. When Ushahidi was first being written, the idea was to reuse locations as places.</div>
+<div><br></div><div>The problem I think with storing all of the lat,lon data in points is it makes the queries a bit more complex, which can't be abstracted out in Kohana's ORM. From the direction this discussion is going though, it looks like some kind of support for a "geo ORM" might be necessary.</div>
+<span class="HOEnZb"><font color="#888888"><div><br></div><div>Brian</div></font></span></div><div class="HOEnZb"><div class="h5">
+                <div></div><p style="color:#a0a0a8">On Tuesday, July 17, 2012 at 8:44 AM, Aaron Huslage wrote:</p>
+                <blockquote type="cite" style="border-left-style:solid;border-width:1px;margin-left:0px;padding-left:10px">
+                    <span><div><div><div>With postgis tables the Geometric types are very much more efficient in both storage and searching. GIST indexes provide a fabulous method for quick retrieval. If we could get even half of that optimization into mySQL that would be a boon.&nbsp;<br>
+
+<br>--<div>Aaron Huslage</div><div>sent via mobile device</div></div><div><br>On Jul 16, 2012, at 7:24 PM, "Pablo A. Destéfanis" &lt;<a href="mailto:pdestefanis@..." target="_blank">pdestefanis@...</a>&gt; wrote:<br>
+
+<br></div><blockquote type="cite"><div>
+<div><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; "><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">I’ve been wondering that for a *<b>long</b>* time </span><span style="font-size:11.0pt;font-family:Wingdings;color:#1f497d">J</span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> My conclusion is that it’s just a legacy bit of design, where maybe the system was expecting several reports from each location, rather the more common 1-1 relationship we have now. (Original devs, you may now laugh at my conclusion…)</span></div><p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">&nbsp;</span></p><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">What I usually end up doing is storing POINT(longitude,latitude), as to work with a geometry for each location (which is to say, for each incident). So we can add to the question, why do we save lat/lon, when we could use a geometry? (and derive lat/lon as needed). </span></div><p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">&nbsp;</span></p><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">We now have one geom-enabled table, to store geometries associated with incidents. Having this optional 1-many relationship between a report and several locations could make sense. </span></div><p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">&nbsp;</span></p><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">If anyone has any info on performance of indexed geometry fields vs the traditional lat/long, please comment. I assume that for simple lookups, the floats will be faster.</span></div><p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">&nbsp;</span></p><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">Pablo</span></div><p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">&nbsp;</span></p><div><div style="border:none;border-top:solid #b5c4df 1.0pt;padding:3.0pt 0in 0in 0in"><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">
+<b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:windowtext">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:windowtext"> John Etherton [mailto:<a href="mailto:john.etherton@..." target="_blank">john.etherton@...</a>] <br>
+
+<b>Sent:</b> Monday, July 16, 2012 17:12<br><b>To:</b> <a href="mailto:developers@..." target="_blank">developers@...</a><br><b>Subject:</b> Re: [ushahidi developers] PHP/MySQL</span></div></div>
+</div><p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">
+&nbsp;</p><div><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">For that matter does it make sense to store locations in separate tables from the incidents?</div><div><p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">
+&nbsp;</p></div><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; ">On 07/16/2012 05:01 PM, David Kobia wrote:</div>
+</div><blockquote style="margin-top:5.0pt;margin-bottom:5.0pt"><pre>For starters,</pre><pre>Just testing last week, I noticed quite a difference between</pre><pre>- `longitude` float(10,6) NOT NULL DEFAULT '0',</pre>
+
+<pre>- `latitude` float(10,6) NOT NULL DEFAULT '0',</pre><pre>&nbsp;</pre><pre>and the current</pre><pre>- `latitude` double NOT NULL DEFAULT '0',</pre><pre>- `longitude` double NOT NULL DEFAULT '0',</pre>
+
+<pre>&nbsp;</pre><pre>Doubles are twice as large and extremely wasteful. Also, there really</pre><pre>isn't any need to know within a millimeter, the latitude/longitude. 6</pre><pre>decimal places will more than suffice (XXXX.XXXXXX). Combine this with</pre>
+
+<pre>indexing and we might be getting somewhere.</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>On Mon, Jul 16, 2012 at 6:25 PM, Pablo A. Destéfanis</pre><pre><a href="mailto:pdestefanis@..." target="_blank">&lt;pdestefanis@...&gt;</a> wrote:</pre>
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt"><pre>I agree with Emmanuel, and let me add:</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; While PostGIS is excellent, quite a lot can be done with MySQL’s</pre>
+
+<pre>spatial extensions. I don’t swear over it, but the complexity of porting the</pre><pre>app needs to be weighed against the limitations (also known as the “how many</pre><pre>ppl would need it”).</pre><pre>&nbsp;</pre><pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you have a big site, you can always offload your data to your</pre><pre>DB of choice. To me that is part of the “a factory installation won’t cut</pre><pre>it”</pre><pre>&nbsp;</pre><pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Not sure how the NoSQL option will.</pre>
+
+<pre>&nbsp;</pre><pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I do not have info on slow queries with me, but I’m sure code</pre><pre>could be tightened. While I can’t point to examples, I do recall this from</pre><pre>looking at several query-logs in MySQL.</pre>
+
+<pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>Last, if anyone is interested in testing this, I would love to stay in</pre><pre>touch.</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>Cheers,</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>Pablo</pre>
+
+<pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>From: Emmanuel Kala [<a href="mailto:emkala@..." target="_blank">mailto:emkala@...</a>]</pre><pre>Sent: Monday, July 16, 2012 14:50</pre><pre>To: <a href="mailto:developers@..." target="_blank">developers@...</a></pre>
+
+<pre>Subject: Re: [ushahidi developers] PHP/MySQL</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>Some notes:</pre><pre>&nbsp;</pre><pre>Scale is a function of design</pre><pre>MySQL scales quite well...when you know what you're doing but it's not very</pre>
+
+<pre>inspiring for geo-spatial work. PostgreSQL (+PostGIS) has clearly become the</pre><pre>preferred choice for such.</pre><pre>For high traffic deployments, a factory installation won't cut it - some</pre><pre>load balancing, caching, DB tuning etc work has to be done&nbsp; in addition to</pre>
+
+<pre>exorcising ghosts that are always inherent in the machine</pre><pre>The NoSQL options, e.g. Redis, are pretty good for caching (Reddit and big</pre><pre>xxx sites)</pre><pre>Profiling code has provided great insights on what sections of the</pre>
+
+<pre>application are yielding beastly load times</pre><pre>&nbsp;</pre><pre>Thanks.</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>On Mon, Jul 16, 2012 at 10:59 PM, João Peixoto <a href="mailto:joao.mpfp@..." target="_blank">&lt;joao.mpfp@...&gt;</a> wrote:</pre>
+
+<pre>&nbsp;</pre><pre>Hello all,</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>First post here, not really an Ushahidi developer yet, for the moment the</pre><pre>NGO I work with has a couple projects that use it and since we love it,</pre>
+
+<pre>we're starting customization to meet our needs (which differ a bit from the</pre><pre>typical Crwodmap sites - it's a biking support site).</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>On Mon, Jul 16, 2012 at 4:51 PM, David Kobia <a href="mailto:david@..." target="_blank">&lt;david@...&gt;</a> wrote:</pre>
+
+<pre>&nbsp;</pre><pre>[...]</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>An option might be to ensure that database interaction is abstracted</pre><pre>enough that it doesn't matter what the underlying database is... and</pre>
+
+<pre>this is something that might be worth looking into.</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>I'd love to see some DB abstraction on Ushahidi. If possible, have a "quick</pre><pre>and dirty" approach using mysql that allows a quick deployment, but as a</pre>
+
+<pre>site scales up and requires further optimizations, allow better back-ends</pre><pre>for efficiency.</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>My 2 cents!</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>JP</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>--</pre><pre>&nbsp;</pre><pre>Kind Regards,</pre><pre>&nbsp;</pre><pre>Emmanuel Kala</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>Skype: emmanuel.kala</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>Judgement comes from experience, experience comes from poor judgement</pre></blockquote><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>&nbsp;</pre><pre>~~~~~~~~~~~~~~~~~~~~~~~~~~</pre><pre>List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a></pre>
+
+<pre>&nbsp;</pre><pre>Would you like to receive list mail batched in a daily digest instead? Send a message to:</pre><pre><a href="mailto:developers-digest-subscribe@..." target="_blank">developers-digest-subscribe@...</a></pre>
+
+<pre>&nbsp;</pre><pre>To remove your address from the list, just send a message to</pre><pre>the address in the "List-Unsubscribe" header of any list</pre><pre>message. If you haven't changed addresses since subscribing,</pre>
+
+<pre>you can also send a message to:</pre><pre><a href="mailto:developers-unsubscribe@..." target="_blank">developers-unsubscribe@...</a></pre><pre>&nbsp;</pre><pre>For addition or removal of addresses, we'll send a confirmation</pre>
+
+<pre>message to that address. When you receive it, simply reply to it</pre><pre>to complete the transaction.</pre><pre>&nbsp;</pre><pre>If you need to get in touch with the human owner of this list,</pre><pre>please send a message to:</pre>
+
+<pre><a href="mailto:developers-owner@..." target="_blank">developers-owner@...</a></pre><pre>&nbsp;</pre></blockquote><p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">&nbsp;</p>
+</div></div></blockquote></div></div></span>
+                 
+                 
+                 
+                 
+                </blockquote>
+                 
+                <div>
+                    <br>
+                </div>
+            </div></div></blockquote></div><br><br clear="all"><div><br></div>-- <br>Aaron Huslage<br><a href="http://blog.hact.net/" target="_blank">http://blog.hact.net</a><br>IM: AIM - ahuslage;&nbsp;GTalk - <a href="mailto:huslage@..." target="_blank">huslage@...</a>; Skype - huslage<br>
+<br>
+</div>
+</blockquote></div><br></div></body></html>

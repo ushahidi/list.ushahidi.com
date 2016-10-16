@@ -1,0 +1,128 @@
+Yeah, I had seen evidence of that. So I&#39;ll probably just sit on 2.7 for all deployments until the app is updated or 3.0 fits the bill. Do you forsee any API headaches as long as I&#39;m using the app in combination with my own hosted 2.7 instances?<div>
+<br></div><div><span></span>-B</div><div><br></div><div><br><br>On Thursday, July 11, 2013, Robbie MacKay  wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir="ltr">
+Hi Bill,<div>3.0 is a full rewrite of the codebase and API. So there will definitely be some lag before the mobile app catches up.</div><div>However we are building a mobile friendly web UI with 3.0 which might help in the mean time, depending on your mobile needs.</div>
+
+
+<div><br></div><div>Robbie</div></div><div class="gmail_extra"><br><br><div class="gmail_quote">On Fri, Jul 12, 2013 at 7:26 AM, Bill Morris <span dir="ltr">&lt;<a href="javascript:_e({}, &#39;cvml&#39;, &#39;bill.boykinmorris@...&#39;);" target="_blank">bill.boykinmorris@...</a>&gt;</span> wrote:<br>
+
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">I would add to Heather&#39;s hesitation by mentioning that the ushahidi<br>
+mobile app requires &quot;category&quot; in the submitted schema, and I have no<br>
+idea what the update schedule is for that channel (devs seem a bit<br>
+overworked already:<br>
+<a href="https://github.com/ushahidi/Ushahidi_Android/issues" target="_blank">https://github.com/ushahidi/Ushahidi_Android/issues</a>).<br>
+<br>
+The mobile app is clutch for a number of projects I&#39;m working on, so<br>
+it would be jarring to suddenly lose access with an update to 3.0.<br>
+<br>
+-Bill<br>
+<div><div><br>
+<br>
+On Thu, Jul 11, 2013 at 12:45 PM, Heather Leson &lt;<a>hleson@...</a>&gt; wrote:<br>
+&gt; Hey, I am a touch confused on this based on the various user groups.<br>
+&gt;<br>
+&gt; While I agree that too many categories might be a poor path for deployments,<br>
+&gt; I think we need to be flexible.<br>
+&gt;<br>
+&gt; Categories are currently used for Top keywords, sub-categories and sometimes<br>
+&gt; location, actions and, even, task groups. See the analysis of Corruption<br>
+&gt; mappers. I like to say there is a difference between - what the deployer<br>
+&gt; wants to collect/analysis and what the reporter has 1. time for 2.<br>
+&gt; comprehension of what is being requested = eg. what is the difference<br>
+&gt; between &quot;damage&quot; and &quot;instrastructure damage&quot;. Part of this is up to the<br>
+&gt; deployers to teach and define well, but the ways that categories get<br>
+&gt; selected matter.<br>
+&gt;<br>
+&gt; I think that some groups use &quot;location&quot; within categories to give better<br>
+&gt; drill into the data. IF polygons, layers and even search worked at a decent,<br>
+&gt; usable level, then this would maybe not be a kluge.<br>
+&gt;<br>
+&gt; Sometimes deployers use categories for workflow for large teams. How will<br>
+&gt; this be addressed?<br>
+&gt;<br>
+&gt; I am not sure that &#39;tags&#39; will assist the researchers and reporters. Can you<br>
+&gt; please go into how this will work inside the deployment and for exports?<br>
+&gt;<br>
+&gt; +1 on Rob&#39;s questions which are still outstanding.<br>
+&gt;<br>
+&gt; Heather<br>
+&gt;<br>
+&gt; On Thu, Jun 27, 2013 at 3:24 PM, Rob Baker &lt;<a>rrbaker@...</a>&gt; wrote:<br>
+&gt;&gt;<br>
+&gt;&gt; As long as filtering is available for both (and from more than just one<br>
+&gt;&gt; section of the public site), this seems to make sense so far.  Will the<br>
+&gt;&gt; report status options be separated from the categories?  Having the status<br>
+&gt;&gt; and context categories in the same place for Uchaguzi definitely felt like<br>
+&gt;&gt; the biggest-but-functional hack of that deployment.<br>
+&gt;&gt;<br>
+&gt;&gt; Thanks for sharing this with the larger team,<br>
+&gt;&gt; R<br>
+&gt;&gt;<br>
+&gt;&gt;<br>
+&gt;&gt; On Thu, Jun 27, 2013 at 11:45 AM, Seth Hall &lt;<a>seth@...</a>&gt; wrote:<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Yes, this makes great sense and seem very streamlined and provides good<br>
+&gt;&gt;&gt; options.<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; --<br>
+&gt;&gt;&gt; Seth Hall<br>
+&gt;&gt;&gt; Front-End Designer &amp; Developer<br>
+&gt;&gt;&gt; <a href="http://ushahidi.com" target="_blank">ushahidi.com</a><br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; On Thursday, June 27, 2013 at 4:39 PM, Robbie MacKay wrote:<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Hi All,<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; I&#39;m in London with the 3.0 team this week trying to figure on the many<br>
+&gt;&gt;&gt; many details involved.<br>
+&gt;&gt;&gt; We&#39;ve just finished up a discussion about how categories will work so I&#39;m<br>
+&gt;&gt;&gt; writing it up while its fresh. Categories have been a major tool in 2.x but<br>
+&gt;&gt;&gt; I&#39;ve always felt they&#39;re kind of abused and that often there&#39;s a better way<br>
+&gt;&gt;&gt; to represent the data we capture via categories.<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Key discussion points: Do categories need a multi level hierarchy? Do<br>
+&gt;&gt;&gt; categories need to be multiple select?<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Categories will be single select. But we temper this by adding multiple<br>
+&gt;&gt;&gt; category types, and possibly giving report types a colour and icon.<br>
+&gt;&gt;&gt; Categories won&#39;t have a hierarchy, since this info is often better<br>
+&gt;&gt;&gt; handled by a custom field instead.<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Here&#39;s an example to explain.. lets take a subset of the Uchaguzi<br>
+&gt;&gt;&gt; categories<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Polling Station Administration<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Ballot Box Irregularities<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Polling Station Closed Before Voting Concluded<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Missing/Inadequate Voting Materials<br>
+&gt;&gt;&gt;<br>
+&gt;&gt;&gt; Polling Station Logistical Issues<br>
+&gt;&gt;</div></div>~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="javascript:_e({}, &#39;cvml&#39;, &#39;developers-digest-subscribe@...&#39;);" target="_blank">developers-digest-subscribe@...</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+message. If you haven&#39;t changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="javascript:_e({}, &#39;cvml&#39;, &#39;developers-unsubscribe@...&#39;);" target="_blank">developers-unsubscribe@...</a><br>
+<br>
+For addition or removal of addresses, we&#39;ll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="javascript:_e({}, &#39;cvml&#39;, &#39;developers-owner@...&#39;);" target="_blank">developers-owner@...</a><br>
+<br>
+</blockquote></div><br><br clear="all"><div><br></div>-- <br><div>Robbie Mackay</div><div><br><div>Software Developer, External Projects</div><div>Ushahidi Inc</div><div>m: +64 27 576 2243<br><div>e: <a href="javascript:_e({}, &#39;cvml&#39;, &#39;robbie@...&#39;);" target="_blank">robbie@...</a></div>
+
+
+</div><div>skype: robbie.mackay</div></div>
+</div>
+</blockquote></div>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::330">previous</a> - <a href="?0::332">next</a><br />Month: <a href="?0:201301">January 2013</a></div>
+<h4 class="ez_pagetitle">Ushahidi problems for OSGeoLive 6.5</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> Angelos Tzotsos &lt;gcpp.kalxas@...&gt;<br />
+<span class="ez_label">Date:</span> Fri, 04 Jan 2013 15:57:12 +0200<br />
+</div>
+<pre>Dear Ushahidi developers,
+
+Happy New Year.
+
+My name is Angelos and I am the release manager for the OSGeoLive 
+distribution.
+<a href="http://live.osgeo.org">http://live.osgeo.org</a>
+
+Ushahidi is pre-installed on OSGeoLive.
+<a href="http://live.osgeo.org/en/overview/ushahidi_overview.html">http://live.osgeo.org/en/overview/ushahidi_overview.html</a>
+
+I am writting to this list since we are having some issues with our 
+current installation script and we would like this to be fixed in order 
+to move to our beta release the following days. I have tried to follow 
+our contact list but there was no response so far.
+
+I am sending you the corresponding e-mail from the OSGeoLive mailing list.
+
+Could someone please take a look at this?
+<a href="http://trac.osgeo.org/osgeo/ticket/1041">http://trac.osgeo.org/osgeo/ticket/1041</a>
+
+The source code of the installation script can be found here:
+<a href="http://trac.osgeo.org/osgeo/browser/livedvd/gisvm/trunk/bin/install_ushahidi.sh?rev=9533">http://trac.osgeo.org/osgeo/browser/livedvd/gisvm/trunk/bin/install_ushahidi.sh?rev=9533</a>
+
+Our current nightly build with the issue can be downloaded here:
+<a href="http://aiolos.survey.ntua.gr/gisvm/dev/osgeo-live-debug-build9530.iso">http://aiolos.survey.ntua.gr/gisvm/dev/osgeo-live-debug-build9530.iso</a>
+
+Best regards,
+Angelos
+
+On 12/28/2012 10:47 PM, Angelos Tzotsos wrote:
+<span class="ez_quot">&gt; Hi,</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; There has been lot of bug fixing action lately and several nightly </span>
+<span class="ez_quot">&gt; builds.</span>
+<span class="ez_quot">&gt; The last one is available here:</span>
+<span class="ez_quot">&gt; <a href="http://aiolos.survey.ntua.gr/gisvm/dev/</span>">http://aiolos.survey.ntua.gr/gisvm/dev/</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Before moving to our final alpha6 build I would like to provide an </span>
+<span class="ez_quot">&gt; update on the active issues:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; 1. Mapfish is not working</span>
+<span class="ez_quot">&gt; <a href="http://trac.osgeo.org/osgeo/ticket/917</span>">http://trac.osgeo.org/osgeo/ticket/917</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; 2. Sahana is not working</span>
+<span class="ez_quot">&gt; <a href="http://trac.osgeo.org/osgeo/ticket/1039</span>">http://trac.osgeo.org/osgeo/ticket/1039</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; 3. Ushahidi is not working</span>
+<span class="ez_quot">&gt; <a href="http://trac.osgeo.org/osgeo/ticket/1041</span>">http://trac.osgeo.org/osgeo/ticket/1041</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; 4. i3geo has some installation issues (hopefully the last commits have </span>
+<span class="ez_quot">&gt; fixed it)</span>
+<span class="ez_quot">&gt; <a href="http://trac.osgeo.org/osgeo/ticket/1043</span>">http://trac.osgeo.org/osgeo/ticket/1043</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; 5. GeoNetwork fails to start internal geoserver with 1GB of RAM</span>
+<span class="ez_quot">&gt; <a href="http://trac.osgeo.org/osgeo/ticket/1032</span>">http://trac.osgeo.org/osgeo/ticket/1032</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; What was fixed the last days:</span>
+<span class="ez_quot">&gt; - GeoServer</span>
+<span class="ez_quot">&gt; - Cartaro</span>
+<span class="ez_quot">&gt; - EOxServer</span>
+<span class="ez_quot">&gt; - gvSIG</span>
+<span class="ez_quot">&gt; - Mapbender</span>
+<span class="ez_quot">&gt; - Tilemill</span>
+<span class="ez_quot">&gt; - osm2pgsql</span>
+<span class="ez_quot">&gt; - QGIS Server</span>
+<span class="ez_quot">&gt; - Spatialite GUI</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; We would like to have the above issues fixed for our first beta </span>
+<span class="ez_quot">&gt; release early January, so we kindly ask involved projects to step up </span>
+<span class="ez_quot">&gt; and provide fixes, in order to make the first beta as stable as possible.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Best Wishes,</span>
+<span class="ez_quot">&gt; Angelos</span>
+<span class="ez_quot">&gt;</span>
+
+
+<span class="ez_sign">-- 
+Angelos Tzotsos
+Remote Sensing Laboratory
+National Technical University of Athens
+<a href="http://users.ntua.gr/tzotsos">http://users.ntua.gr/tzotsos</a>
+
+</pre></span></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

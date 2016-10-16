@@ -1,0 +1,48 @@
+<div dir="ltr">You should make sure you&#39;ve these android SDK versions installed. They&#39;re needed by the libraries.<br><br>android-7<div>android-8<br>android-16<br>android-17</div></div><div class="gmail_extra"><br><br>
+
+<div class="gmail_quote">On Sat, May 31, 2014 at 4:32 AM, kaka prakasa <span dir="ltr">&lt;<a href="mailto:kaka.prakasa@..." target="_blank">kaka.prakasa@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+<p dir="ltr">Have you, follow the instruction from wiki?</p>
+<p dir="ltr">-<br>
+sent from my NEXUS 5 </p><div class="HOEnZb"><div class="h5">
+<div class="gmail_quote">On May 30, 2014 3:14 AM, &quot;Gabriel Machado&quot; &lt;<a href="mailto:gabrielmcf@..." target="_blank">gabrielmcf@...</a>&gt; wrote:<br type="attribution"><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+<div dir="ltr">Hi people!<div><br></div><div>I&#39;m from Brazil and I&#39;m doing using Ushahidi at my site <a href="http://mapadacopa.org" target="_blank">mapadacopa.org</a>.</div><div><br></div><div>I&#39;ve not announced it to public yet because i want to lauch it with the apps. But i&#39;m having problem compiling the app using the land SDK with the ADT from google.</div>
+
+
+
+
+<div><br></div><div>I&#39;m on a Debian 7 and using the ADT 22.6.3 (<a href="http://developer.android.com/tools/sdk/eclipse-adt.html" target="_blank">http://developer.android.com/tools/sdk/eclipse-adt.html</a>).</div><div>
+
+
+<br></div><div>
+
+I&#39;ve cloned the 2.9.4 branch on GitHub (<a href="https://github.com/ushahidi/Ushahidi_Android" target="_blank">https://github.com/ushahidi/Ushahidi_Android</a>), but i have tried with the master branch as well and it gives always an erros on Core library.</div>
+
+
+
+
+<div><br></div><div>Eclipe (4.3.1) gives me this message when i import the project:</div><div><br></div><div><div>[2014-05-29 15:46:58 - abs] Unable to resolve target &#39;android-16&#39;</div><div>[2014-05-29 15:46:58 - google-play-services_lib] Unable to resolve target &#39;android-8&#39;</div>
+
+
+
+
+<div>[2014-05-29 15:46:59 - Core] Unable to resolve target &#39;android-17&#39;</div><div>[2014-05-29 15:46:59 - Coretest] Unable to resolve target &#39;android-7&#39;</div><div>[2014-05-29 15:47:00 - abs] Unable to resolve target &#39;android-16&#39;</div>
+
+
+
+
+<div>[2014-05-29 15:47:00 - Core] Unable to resolve target &#39;android-17&#39;</div></div><div><br></div><div>The Core library gives me two erros, on the AdminActivity.java and on ReportVideoView.java files. The erros is on the command setPluginsEnabled(true).</div>
+
+
+
+
+<div><br></div><div>I would be very thankfull if you could help me!</div><div><br></div><div>Abraços e beijos.</div></div>
+</blockquote></div>
+</div></div></blockquote></div><br><br clear="all"><div><br></div>-- <br>Henry!<div>--<br><div>Ushahidi -- Information Collection, Visualization, &amp; Interactive Mapping<br><br><a href="http://www.ushahidi.com" target="_blank">http://www.ushahidi.com</a> | <a href="http://twitter.com/ushahidi" target="_blank">http://twitter.com/ushahidi</a><br>
+
+Ghana: +233243581806 <br>Skype: eyedol25<br><div>IRC: eyedol on <span style="font-family:helvetica,arial,sans-serif;font-size:14px;color:rgb(17,17,17);line-height:20px"><a href="http://irc.freenode.net" target="_blank">irc.freenode.net</a> #ushahidi</span></div>
+
+</div></div>
+</div>

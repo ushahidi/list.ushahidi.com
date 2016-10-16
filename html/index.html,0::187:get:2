@@ -1,0 +1,21 @@
+diff --git a/application/libraries/Upgrade.php b/application/libraries/Upgrade.php
+index 1f1e371..6d83b64 100644
+--- a/application/libraries/Upgrade.php
++++ b/application/libraries/Upgrade.php
+@@ -522,9 +522,13 @@
+ 			urlencode($_SERVER['REMOTE_ADDR']) : "";
+ 
+ 		$version_url = "http://version.ushahidi.com/2/?v=".$current.
+-			"&u=".$url."&ip=".$ip_address;		
+-		
+-		$version_json_string = @file_get_contents($version_url);
++      "&u=".$url."&ip=".$ip_address;		
++
++    $version_json_string = @file_get_contents($version_url);
++    preg_match('/({.*})$/', $version_json_string, $matches);
++
++    Kohana::log('info', print_r($matches, 1));
++    $version_json_string = $matches[0];
+ 		
+ 		// If we didn't get anything back...
+ 		if ( ! $version_json_string )

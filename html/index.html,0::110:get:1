@@ -1,0 +1,18 @@
+Is he running the latest code? I&#39;ve implemented a delay so it doesn&#39;t load points for zoom levels if you aren&#39;t on that zoom level anymore. In other words, before, you would click the + button to zoom in multiple times and it would load every zoom level. Now it waits a second to load the new view so it won&#39;t load every zoom level. I hope that makes sense :)<br>
+
+<br><div class="gmail_quote">On Mon, Dec 27, 2010 at 12:23 PM, Erik Hersman <span dir="ltr">&lt;<a href="mailto:erik@...">erik@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+
+<div style="word-wrap: break-word;">If anyone is online...<div><br></div><div>John McLear (@johnmclear)  is having an issue where he&#39;s got a large data set and the closer he zooms in the longer and longer the points on the map take to show up, even if there aren&#39;t that many on that particular map view.  Anyone have an idea what this could be and how to fix it?</div>
+
+<div><br></div><div>He was kind enough to make a video of it:</div><div><br></div><div><a href="http://www.youtube.com/watch?v=Jdj6avFH0Zg" target="_blank">http://www.youtube.com/watch?v=Jdj6avFH0Zg</a></div><div><br><div>
+
+
+<div style="word-wrap: break-word;"><span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<div>Erik Hersman<br><br><a href="http://www.ushahidi.com" target="_blank">www.ushahidi.com</a> | <a href="http://www.ihub.co.ke" target="_blank">www.iHub.co.ke</a></div><div><a href="http://www.afrigadget.com" target="_blank">www.afrigadget.com</a><span> </span>|<span> </span><a href="http://www.afrigadget.com" target="_blank">www.whiteafrican.com</a><span> </span>|<span> </span><a href="http://twitter.com/whiteafrican" target="_blank">@whiteafrican</a><br>
+
+</div></div></span></div></span></div></span></div></div></div></div></blockquote></div><br>

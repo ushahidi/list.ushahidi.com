@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::89">previous</a> - <a href="?0::91">next</a><br />Month: <a href="?0:201011">November 2010</a></div>
+<h4 class="ez_pagetitle">Re: [ushahidi developers] praguewatch.cz questions</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> george &lt;george@...&gt;<br />
+<span class="ez_label">Date:</span> Tue, 2 Nov 2010 09:10:40 -0700<br />
+</div>
+<pre>I've also been in touch with them via email - totally agree that it's
+a combination of 2.0 and apps.
+
+I intend to work on just about everything except the FB plugin for
+them if we can work out the details.  The &quot;let reporters edit their
+own reports&quot; plugin is something that I've been thinking about for
+months now.
+
+Before I get into it, is anyone currently working on any of the
+following features:
+
+- Alerts by category
+- Detailed report info in map infobox
+- Search reports by category (or any other parameter for that matter)
+- Allow reporters to edit reports they create
+
+george
+
+George Chamales
+Rogue Genius LLC
+Phone:  718.288.7718
+Skype:  notgeorge
+
+
+
+
+
+On Mon, Nov 1, 2010 at 6:38 PM, Brian Herbert &lt;brianherbert@...&gt; wrote:
+<span class="ez_quot">&gt; I've actually been in touch with these guys via email and you are correct to</span>
+<span class="ez_quot">&gt; say it's in 2.0 and/or.check apps.ushahidi.com and/or it should be a plugin.</span>
+<span class="ez_quot">&gt; In fact the praguewatch guy is in the dev chat on Skype and wrote a long</span>
+<span class="ez_quot">&gt; message the other day about upgrading to 2.0.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Brian</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; On Nov 1, 2010 7:48 PM, &quot;Chris Blow&quot; &lt;cblow@...&gt; wrote:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Hey guys,</span>
+<span class="ez_quot">&gt; can we get together a response to this blog post? I am in touch with these</span>
+<span class="ez_quot">&gt; guys and trying to get them to upgrade to the latest 2.0.</span>
+<span class="ez_quot">&gt; As far as I know the answer to his questions are:</span>
+<span class="ez_quot">&gt; A: &quot;it's in 2.0&quot;</span>
+<span class="ez_quot">&gt; or</span>
+<span class="ez_quot">&gt; B: &quot;<a href="http://apps.ushahidi.com&quot;</span>">http://apps.ushahidi.com&quot;</span></a>
+<span class="ez_quot">&gt; Does anyone else have specifics to add, particularly re facebook stuff,</span>
+<span class="ez_quot">&gt; which I have not done?</span>
+<span class="ez_quot">&gt; PS I propose this is an underlying structure to all ushahidi</span>
+<span class="ez_quot">&gt; troubleshooting, with perhaps the addition of &quot;C: check your .htaccess&quot;</span>
+<span class="ez_quot">&gt; PPS it's kind of hilarious that we are getting feature questions through</span>
+<span class="ez_quot">&gt; guest posts on the blog. :)</span>
+<span class="ez_quot">&gt; c</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; <a href="http://blog.ushahidi.com/index.php/2010/10/21/praguewatch-cz/</span>">http://blog.ushahidi.com/index.php/2010/10/21/praguewatch-cz/</span></a>
+<span class="ez_quot">&gt; My question is if there is a code available for the following things we</span>
+<span class="ez_quot">&gt; would like to implement:</span>
+<span class="ez_quot">&gt; - the possibility to send alerts from the map only for some categories (I</span>
+<span class="ez_quot">&gt; saw that e.g. Haiti ushahidi has implemented</span>
+<span class="ez_quot">&gt; it <a href="http://haiti.ushahidi.com/alerts);</span>">http://haiti.ushahidi.com/alerts);</span></a>
+<span class="ez_quot">&gt; - the possibility for the user to be able to see a list of names of reports</span>
+<span class="ez_quot">&gt; when s/he clicks on a cluster of reports on the map (this was implemented</span>
+<span class="ez_quot">&gt; in <a href="http://voiceofkibera.org/main)</span>">http://voiceofkibera.org/main)</span></a>
+<span class="ez_quot">&gt; - the possibility to choose one category and see the list of all reports</span>
+<span class="ez_quot">&gt; within that category (as is e.g.</span>
+<span class="ez_quot">&gt; here <a href="http://www.nigerdeltawatch.org/reports);</span>">http://www.nigerdeltawatch.org/reports);</span></a>
+<span class="ez_quot">&gt; - sharing of the individual reports on facebook, etc. (has anyone</span>
+<span class="ez_quot">&gt; implemented it?);</span>
+<span class="ez_quot">&gt; - an editor of reports so that one needs not know html to change the</span>
+<span class="ez_quot">&gt; formatting (has anyone implemented it?);</span>
+<span class="ez_quot">&gt; - the possibility to have rss feeds for each page/report and a sharing</span>
+<span class="ez_quot">&gt; button for facebook.</span>
+<span class="ez_quot">&gt; However, the most important and biggest change that we need to look into is</span>
+<span class="ez_quot">&gt; the possibility to adjust moderator rights better (e.g. we would need one</span>
+<span class="ez_quot">&gt; person/organisation to be able to update information about one report but</span>
+<span class="ez_quot">&gt; not to be able to change other parts of the site). This may prove too</span>
+<span class="ez_quot">&gt; difficult and expensive to program however.</span>
+</pre></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

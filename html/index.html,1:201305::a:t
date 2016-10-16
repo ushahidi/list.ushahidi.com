@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - community@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?1">community@list.ushahidi.com</a></span></h2>
+      <div id="ez_menubar">
+        <span class="menulabel">Month</span>: <a href="?1:201304::a:t">previous</a> - <a href="?1:201306::a:t">next</a><br />
+        <span class="menulabel">Order</span>: <a href="?1:201305::a:t">by thread</a> - <a href="?1:201305::a:d">by date</a> - <a href="?1:201305::a:s">by subject</a> (<a href="?1:201305::a:t">ascending</a> - <a href="?1:201305::d:t">descending</a>)
+      </div>
+      <h4 class="ez_pagetitle">May 2013</h4>
+      <ul class="ez_threadlist">
+        <li>
+          <b>Re: [liberationtech] ISIF Asia Awards</b> (1 May 2013 18:02:20)<br />
+          <ul class="messagelist">
+<li><a href="?1::115">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Weekly, Crowdmap Beta and Umati Monitoring Dangerous Speech Google Hangout</b> (3 May 2013 15:05:59)<br />
+          <ul class="messagelist">
+<li><a href="?1::116">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: Umati Research Hang-out: May 7th</b> (6 May 2013 20:12:58)<br />
+          <ul class="messagelist">
+<li><a href="?1::117">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: [PDF '13] Google Fellowship Application Now Open</b> (10 May 2013 13:42:50)<br />
+          <ul class="messagelist">
+<li><a href="?1::118">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: Join our Online Conversation on Social Media!</b> (13 May 2013 13:43:30)<br />
+          <ul class="messagelist">
+<li><a href="?1::119">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Join us for Upgrade Day: 30th - 31st May, 2013</b> (21 May 2013 13:42:20)<br />
+          <ul class="messagelist">
+<li><a href="?1::120">Angela Oduor</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Community updates: Environmental Mapping video and Internet Security</b> (22 May 2013 19:47:30)<br />
+          <ul class="messagelist">
+<li><a href="?1::121">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: Have you tested new Crowdmap?</b> (23 May 2013 17:28:27)<br />
+          <ul class="messagelist">
+<li><a href="?1::122">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: [liberationtech] New online course: "Introduction to Technology for Human Rights"</b> (24 May 2013 14:25:03)<br />
+          <ul class="messagelist">
+<li><a href="?1::123">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: [liberationtech] FW: Call for Papers (Abstracts) Community Informatics and the Millenium Development Goals (MDGs)</b> (27 May 2013 23:08:18)<br />
+          <ul class="messagelist">
+<li><a href="?1::124">Heather Leson</a></li>
+          </ul>
+        </li>
+      </ul>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

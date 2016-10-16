@@ -1,0 +1,13 @@
+<div dir="ltr">Hey guys, <div><br></div><div>I am getting very confused about the RSS feed feature of Ushahidi. By saying RSS feed feature I mean the functionality to create RSS feed from the reports sent in to Ushahidi by users (not from other websites or news feeds). </div>
+
+<div><br></div><div>In the documentation it says that: users can sub-scribe RSS feeds of the reports. But in Ushahidi system - &quot;Get Alert&quot; &amp; &quot;My Alerts&quot;, I can only find options of &#39;SMS&#39; and &#39;Email&#39;. </div>
+
+<div><br></div><div>In this post from Ushahidi Forum (<a href="http://forums.ushahidi.com/forums/topic/rss-feed-derived-from-deployment/" target="_blank">http://forums.ushahidi.com/forums/topic/rss-feed-derived-from-deployment/</a>), a member states that this feature can be enabled by go to &#39;Settings&#39; -- &#39;Enable RSS&#39;<font color="#444444" face="Open Sans, Helvetica, Arial, sans-serif"><span style="font-size:12px;line-height:20px">. But in the system (v2.7), I couldn&#39;t find such option. The only close one is in &#39;Settings  -- Website -- Include RSS News Feed on Website?&#39; . And after selecting &#39;Yes&#39; to this option, I couldn&#39;t get any Feeds when I go to my deployment page and add &#39;/feed&#39; at the end... </span></font></div>
+
+<div><font color="#444444" face="Open Sans, Helvetica, Arial, sans-serif"><span style="font-size:12px;line-height:20px"><br></span></font></div><div><font color="#444444" face="Open Sans, Helvetica, Arial, sans-serif"><span style="font-size:12px;line-height:20px">Does anyone know how this actually works and could you give me some advice on this..?? </span></font></div>
+
+<div><font color="#444444" face="Open Sans, Helvetica, Arial, sans-serif"><span style="font-size:12px;line-height:20px"><br></span></font></div><div><font color="#444444" face="Open Sans, Helvetica, Arial, sans-serif"><span style="font-size:12px;line-height:20px">Thank you very much in advance!</span></font></div>
+
+<div><br></div><div><font color="#444444" face="Open Sans, Helvetica, Arial, sans-serif"><span style="font-size:12px;line-height:20px">Best Regards, </span></font></div><div><font color="#444444" face="Open Sans, Helvetica, Arial, sans-serif"><span style="font-size:12px;line-height:20px">Qing</span></font></div>
+
+<div><br></div><div><br></div></div>

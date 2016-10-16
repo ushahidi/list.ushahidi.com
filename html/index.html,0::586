@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::585">previous</a> - <a href="?0::587">next</a><br />Month: <a href="?0:201509">September 2015</a></div>
+<h4 class="ez_pagetitle">Re: [ushahidi developers] Video Walkthrough of installing v3 on Ubuntu</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> Angelos Tzotsos &lt;gcpp.kalxas@...&gt;<br />
+<span class="ez_label">Date:</span> Thu, 17 Sep 2015 10:38:34 +0300<br />
+</div>
+<pre>Hi all,
+
+Is there any chance that someone would update the ushahidi install 
+script for OSGeoLive and issue a pull request?
+<a href="https://github.com/OSGeo/OSGeoLive/blob/master/bin/install_ushahidi.sh">https://github.com/OSGeo/OSGeoLive/blob/master/bin/install_ushahidi.sh</a>
+
+Also, does this new version work with PostgreSQL as an alternative?
+
+Best,
+Angelos
+
+
+On 09/17/2015 09:47 AM, Angela Oduor Lungati wrote:
+<span class="ez_quot">&gt; Hey Folks,</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Jason Mule just walked us through how to install Ushahidi v3 on Ubuntu, and we recorded it for everyone who wants to give it a go</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Here's the video walkthrough: <a href="https://www.youtube.com/watch?v=E6ckr9V5Cns">https://www.youtube.com/watch?v=E6ckr9V5Cns</a> &lt;<a href="https://www.youtube.com/watch?v=E6ckr9V5Cns&gt;</span>">https://www.youtube.com/watch?v=E6ckr9V5Cns&gt;</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Documentation: <a href="http://docs.ushahidi.org/install/installing-on-linux.html">http://docs.ushahidi.org/install/installing-on-linux.html</a> &lt;<a href="http://docs.ushahidi.org/install/installing-on-linux.html&gt;</span>">http://docs.ushahidi.org/install/installing-on-linux.html&gt;</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Remember, if you hit any snags, you can always reach us on Hipchat &lt;<a href="https://www.hipchat.com/g9I7z8M9a&gt;/IRC">https://www.hipchat.com/g9I7z8M9a&gt;/IRC</a> &lt;<a href="http://irc.lc/freenode/ushahidi&gt;/Gitter">http://irc.lc/freenode/ushahidi&gt;/Gitter</a> &lt;<a href="https://gitter.im/ushahidi/Community&gt;">https://gitter.im/ushahidi/Community&gt;</a> :).</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Have a great day ahead!</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; PS: If you’d like a deeper dive into how to use v3 after installation, join me and Jess Shorland at 5p.m EAT | 10a.m EDT &lt;<a href="https://plus.google.com/u/2/b/105364701372360854381/events/cubt86k4h3s5mvdl4udvod81ej4&gt;</span>">https://plus.google.com/u/2/b/105364701372360854381/events/cubt86k4h3s5mvdl4udvod81ej4&gt;</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Angela Oduor Lungati.</span>
+<span class="ez_quot">&gt; Ushahidi Inc &lt;<a href="http://ushahidi.com/&gt;.</span>">http://ushahidi.com/&gt;.</span></a>
+<span class="ez_quot">&gt; Platforms: Ushahidi &lt;<a href="http://download.ushahidi.com/&gt;">http://download.ushahidi.com/&gt;</a> | Crowdmap &lt;<a href="https://crowdmap.com/&gt;">https://crowdmap.com/&gt;</a> | CrisisNET &lt;<a href="http://crisis.net/&gt;">http://crisis.net/&gt;</a> | SwiftRiver &lt;<a href="https://wiki.ushahidi.com/display/WIKI/SwiftRiver&gt;</span>">https://wiki.ushahidi.com/display/WIKI/SwiftRiver&gt;</span></a>
+<span class="ez_quot">&gt; Mobile: iOS &lt;<a href="http://bit.ly/ushahidi_ios_app&gt;">http://bit.ly/ushahidi_ios_app&gt;</a> | Android &lt;<a href="http://bit.ly/Ushahidi_android_app&gt;">http://bit.ly/Ushahidi_android_app&gt;</a> | SMSSync  &lt;<a href="http://smssync.ushahidi.com/&gt;</span>">http://smssync.ushahidi.com/&gt;</span></a>
+<span class="ez_quot">&gt; Skype: ngelzy</span>
+<span class="ez_quot">&gt; Twitter: @AngieNicoleOD &lt;<a href="https://twitter.com/AngieNicoleOD&gt;</span>">https://twitter.com/AngieNicoleOD&gt;</span></a>
+<span class="ez_quot">&gt;</span>
+
+
+<span class="ez_sign">-- 
+Angelos Tzotsos, PhD
+OSGeo Charter Member
+<a href="http://users.ntua.gr/tzotsos">http://users.ntua.gr/tzotsos</a>
+
+</pre></span></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

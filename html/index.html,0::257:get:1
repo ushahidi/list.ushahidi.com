@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1"
+      http-equiv="Content-Type">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+    <div class="moz-cite-prefix">Can you share with us what profiling
+      has taught you, and what you recommend for load balancing,
+      caching, and DB tuning.&nbsp; <br>
+      <br>
+      <div class="moz-signature">Thanks,<a
+          href="mailto:john.etherton@..."></a></div>
+      On 07/16/2012 02:49 PM, Emmanuel Kala wrote:<br>
+    </div>
+    <blockquote
+cite="mid:CAEZkR6pe=3kXkE=xYquYZzTxE9eP=mB-GPgbhnC=KWn40s=uug@..."
+      type="cite">Some notes:
+      <div>
+        <ul>
+          <li>Scale is a function of design</li>
+          <li>MySQL scales quite well...when you know what you're doing
+            but it's not very inspiring for geo-spatial work. PostgreSQL
+            (+PostGIS) has clearly become the preferred choice for such.</li>
+          <li>For high traffic deployments, a factory installation won't
+            cut it - some load balancing, caching, DB tuning etc work
+            has to be done &nbsp;in addition to exorcising ghosts that are
+            always inherent in the machine</li>
+          <li>
+            The NoSQL options, e.g. Redis, are pretty good for caching
+            (Reddit and big xxx sites)</li>
+          <li>Profiling code has provided great insights on what
+            sections of the application are yielding beastly load times</li>
+        </ul>
+        <div>Thanks.</div>
+        <br>
+        <div class="gmail_quote">On Mon, Jul 16, 2012 at 10:59 PM, Jo&atilde;o
+          Peixoto <span dir="ltr">&lt;<a moz-do-not-send="true"
+              href="mailto:joao.mpfp@..." target="_blank">joao.mpfp@...</a>&gt;</span>
+          wrote:<br>
+          <blockquote class="gmail_quote" style="margin:0 0 0
+            .8ex;border-left:1px #ccc solid;padding-left:1ex">
+            Hello all,
+            <div><br>
+            </div>
+            <div>First post here, not really an Ushahidi developer yet,
+              for the moment the NGO I work with has a couple projects
+              that use it and since we love it, we're starting
+              customization to meet our needs (which differ a bit from
+              the typical Crwodmap sites - it's a biking support site).</div>
+            <div><br>
+            </div>
+            <div>On Mon, Jul 16, 2012 at 4:51 PM, David Kobia <span
+                dir="ltr">&lt;<a moz-do-not-send="true"
+                  href="mailto:david@..." target="_blank">david@...</a>&gt;</span>
+              wrote:</div>
+            <div>
+              <div class="gmail_quote">
+                <blockquote class="gmail_quote" style="margin:0 0 0
+                  .8ex;border-left:1px #ccc solid;padding-left:1ex">
+                  [...]
+                  <div class="im"><br>
+                    <br>
+                    An option might be to ensure that database
+                    interaction is abstracted<br>
+                    enough that it doesn't matter what the underlying
+                    database is... and<br>
+                    this is something that might be worth looking into.<br>
+                  </div>
+                </blockquote>
+                <div><br>
+                </div>
+                <div>I'd love to see some DB abstraction on Ushahidi. If
+                  possible, have a "quick and dirty" approach using
+                  mysql that allows a quick deployment, but as a site
+                  scales up and requires further optimizations, allow
+                  better back-ends for efficiency.</div>
+                <div><br>
+                </div>
+                <div>My 2 cents!</div>
+                <span class="HOEnZb"><font color="#888888">
+                    <div><br>
+                    </div>
+                    <div>JP&nbsp;</div>
+                  </font></span></div>
+            </div>
+          </blockquote>
+        </div>
+        <br>
+        <br clear="all">
+        <div><br>
+        </div>
+        -- <br>
+        <div>Kind Regards,</div>
+        <div>Emmanuel Kala</div>
+        <div><br>
+        </div>
+        <div>Skype: emmanuel.kala</div>
+        <div><br>
+        </div>
+        Judgement comes from experience, experience comes from poor
+        judgement<br>
+      </div>
+    </blockquote>
+    <br>
+    <br>
+  </body>
+</html>

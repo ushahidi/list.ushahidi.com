@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - community@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?1">community@list.ushahidi.com</a></span></h2>
+      <div id="ez_menubar">
+        <span class="menulabel">Month</span>: <a href="?1:201208::d:d">previous</a> - <a href="?1:201210::d:d">next</a><br />
+        <span class="menulabel">Order</span>: <a href="?1:201209::d:t">by thread</a> - <a href="?1:201209::d:d">by date</a> - <a href="?1:201209::a:s">by subject</a> (<a href="?1:201209::a:d">ascending</a> - <a href="?1:201209::d:d">descending</a>)
+      </div>
+      <h4 class="ez_pagetitle">September 2012</h4>
+      <ul class="ez_threadlist">
+<li><a href="?1::47">Re: [liberationtech] CALLS FOR PROPOSALS ICT for democracy and freedom of expression</a> (Heather Leson)</li>
+<li><a href="?1::46">Re: Tech resource search: open source communities</a> (Heather Leson)</li>
+<li><a href="?1::45">Ushahidi Haiti Datum</a> (Heather Leson)</li>
+<li><a href="?1::44">CandleVoice in memory of US Ambassador Chris Stevens</a> (Heather Leson)</li>
+<li><a href="?1::43">Voting open for Deployment of the Week - Sept. 26th</a> (Heather Leson)</li>
+<li><a href="?1::42">Ushahidi Weekly - Reports, Translations and Women's Technical Organizations in Africa</a> (Heather Leson)</li>
+<li><a href="?1::41">Ushahidi Haiti Datum</a> (Michael Camponovo)</li>
+<li><a href="?1::40">CandleVoice in memory of US Ambassador Chris Stevens</a> (Donna Baranski-Walker)</li>
+<li><a href="?1::39">CandleVoice in memory of US Ambassador Chris Stevens</a> (Heather Leson)</li>
+<li><a href="?1::38">Deployment of the week - voting open</a> (Heather Leson)</li>
+<li><a href="?1::37">Re: [liberationtech] Invitation: online dialogue on internet governance (Africa)</a> (Heather Leson)</li>
+<li><a href="?1::36">https://alnur.crowdmap.com/ to bring calm, memory of Chris Stevens</a> (Donna Baranski-Walker)</li>
+<li><a href="?1::35">Re: Calling NGOs for their best ICT use for Society Empowerment:: Apply now</a> (Heather Leson)</li>
+<li><a href="?1::34">Re: This one is due Sept 14th: Call for Papers - Citizen Data at a Crossroads: How should Volunteered Geographic Information (VGI) be conceptualized? NNTR</a> (Heather Leson)</li>
+<li><a href="?1::33">Re: [liberationtech] Two Calls for Proposals within Information and Communication Technology</a> (Heather Leson)</li>
+<li><a href="?1::32">Deployment of the Week - open for voting</a> (Heather Leson)</li>
+<li><a href="?1::31">Yo! Philly Votes Election Protection App</a> (Heather Leson)</li>
+<li><a href="?1::30">Ushahidi weekly: Mini-grants, election monitoring and translations</a> (Heather Leson)</li>
+<li><a href="?1::29">Re: [CrisisMappers] State of the Map (OpenStreetMap Conference)</a> (Heather Leson)</li>
+      </ul>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

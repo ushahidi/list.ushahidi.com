@@ -1,0 +1,29 @@
+Interesting that you bring this up Chris... I&#39;m currently working on an <b>admin side</b> addon for the guys at the UN that helps them identify <b>related</b> incidents using certain variables:<br><ul><li>Distance - with a slider that can be used to change radius size</li>
+
+<li>Time - with a slider that can be used to change time frame (e.g. hour, day, week, month etc)</li><li>Category (optional)<br></li></ul>Once the related incidents have been identified, a new single report can then be created, with a summary or new description.<br>
+
+<br>I can definitely see how what you&#39;re suggesting would be useful not just for the admin side, but on the front end to crowdsource the task. The above approach is more analysis than anything, but would be complemented by the crowdsourced effort too.<br>
+
+<br><br><br><div class="gmail_quote">On Sat, May 15, 2010 at 11:55 PM, Chris Blow <span dir="ltr">&lt;<a href="mailto:cblow@...">cblow@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+
+<div style="word-wrap: break-word;">Hello, <br><div><br></div><div>I sketched a little idea for reconciling reports and would be interested in getting some feedback: </div><div><br></div><div><a href="http://www.flickr.com/photos/unthinkingly/4610396204/" target="_blank">http://www.flickr.com/photos/unthinkingly/4610396204/</a></div>
+
+<div><br></div><div>The idea is to expose a simple Yes/no queuing system for linking reports, to help some of the problems with duplicate reports we see in the Haiti instance.</div><div><br></div><div>There would need to be a table of &quot;similar sounding&quot; reports -- which possibly could be populated with SiLCC.</div>
+
+<div><br></div><div>Does that make sense?</div><div><br></div><div>PS: not a feature request! Just an idea :)</div><div><br></div><div>c</div><div><span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+
+<div><div><font color="#898a8a" face="Arial" size="3"><span style="font-size: 11px;"><br></span></font></div></div></div></span><br></div></span><br></div></span><br></div></span><br></div></span><br></div></span><br></div>
+
+</span><br> </div><br></div></blockquote></div><br>

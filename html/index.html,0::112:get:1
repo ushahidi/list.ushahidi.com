@@ -1,0 +1,40 @@
+This is an issue I&#39;ve been trying to fix for some time too, and is 
+especially noticeable on deployments with +10K reports or on deployments with a few thousand points but on shared hosting. The way the 
+clustering algorithm works is that it cycles through all the available 
+clusters or points each time to determine what to group together. As you
+ zoom in, the number of clusters increases even if they&#39;re well outside 
+the viewport, and the more reports there are in the system, you&#39;ll 
+notice the system start to take major hits as it performs the clustering
+ calculation on higher zoom levels. You can see this with my own 
+deployment at <a href="http://crime.mapatl.com">http://crime.mapatl.com</a> which has +30K points.<br><br>Here are some ways of fixing this issue:<br><ul><li>Caching
+ - Turn on caching in the admin (+v2.0). By default the system uses 
+filecaching, so each zoom level for each category will create an 
+individual json file. This means your system won&#39;t have to perform the 
+clustering calculation each time. If you can use Xcache or APC caching 
+over File caching, you&#39;ll notice better performance. Increase the cache 
+expiration to a day if possible or &#39;forever&#39; in cases where the data 
+doesn&#39;t really change. This way the calculation will only be done once.</li><li>Restrict
+ the calculation only to the viewport - this is written into the code 
+but I disabled it because the calculation has to be repeated each time 
+you pan (not just zoom) and can become quite cumbersome to the user - 
+combined with the next point (cpu) it can be quite smooth.<br></li><li>More
+ CPU!! This is the easy and expensive way out. If you have a 100K 
+reports, you can always throw more firepower at it and perform the 
+clustering in record time.<br></li><li>I&#39;d been working on a python 
+script which perhaps can perform the calculations faster than PHP. In my
+ initial tests though, the performance wasn&#39;t all that much different - 
+I&#39;ll put it up somewhere and let some python gurus figure it out. PHP 
+functions are both its strength and weakness - in a looped calculation 
+like this one, each function is called tens of thousands of times and 
+that&#39;s what makes the cpu beg for mercy. Bottomline, the more points you add to the 
+system, the greater the need for a lower level programming language - time for some HipHop PHP?<br></li></ul><br><br clear="all">David Kobia<br><a href="http://www.ushahidi.com">www.ushahidi.com</a><br>Crowdsourcing Crisis Information<br>
+<br>Skype: dkobia<br>
+<br><br><div class="gmail_quote">On Mon, Dec 27, 2010 at 12:23 PM, Erik Hersman <span dir="ltr">&lt;<a href="mailto:erik@...">erik@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+<div style="word-wrap: break-word;">If anyone is online...<div><br></div><div>John McLear (@johnmclear)  is having an issue where he&#39;s got a large data set and the closer he zooms in the longer and longer the points on the map take to show up, even if there aren&#39;t that many on that particular map view.  Anyone have an idea what this could be and how to fix it?</div>
+<div><br></div><div>He was kind enough to make a video of it:</div><div><br></div><div><a href="http://www.youtube.com/watch?v=Jdj6avFH0Zg" target="_blank">http://www.youtube.com/watch?v=Jdj6avFH0Zg</a></div><div><br><div>
+
+<div style="word-wrap: break-word;"><span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+<span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><div style="word-wrap: break-word;">
+<div>Erik Hersman<br><br><a href="http://www.ushahidi.com" target="_blank">www.ushahidi.com</a> | <a href="http://www.ihub.co.ke" target="_blank">www.iHub.co.ke</a></div><div><a href="http://www.afrigadget.com" target="_blank">www.afrigadget.com</a><span> </span>|<span> </span><a href="http://www.afrigadget.com" target="_blank">www.whiteafrican.com</a><span> </span>|<span> </span><a href="http://twitter.com/whiteafrican" target="_blank">@whiteafrican</a><br>
+</div></div></span></div></span></div></span></div></div></div></div></blockquote></div><br>

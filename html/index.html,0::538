@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::537">previous</a> - <a href="?0::539">next</a><br />Month: <a href="?0:201501">January 2015</a></div>
+<h4 class="ez_pagetitle">Re: [ushahidi developers] Announcing Ushahidi v3.0.0.0-beta.13 release!</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> Angelos Tzotsos &lt;gcpp.kalxas@...&gt;<br />
+<span class="ez_label">Date:</span> Fri, 30 Jan 2015 00:54:38 +0200<br />
+</div>
+<pre>Hi all,
+
+I would like to ask if your upcoming version 3.0 is going to support 
+PostgreSQL or SQLite as potential back-ends.
+We (OSGeoLive project) would like to use PostgreSQL instead of MySQL to 
+demonstrate Ushahidi in our next release (9.0 in August).
+Any chance this feature could be added on your roadmap?
+
+Best,
+Angelos
+
+On 01/23/2015 05:45 PM, Angela Oduor Lungati wrote:
+<span class="ez_quot">&gt; Hey folks!</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; We just released another beta version of Ushahidi v3.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Take it out for a spin on our demo site &lt;<a href="http://v3.ushahidi.com/&gt;,">http://v3.ushahidi.com/&gt;,</a> but keep</span>
+<span class="ez_quot">&gt; in mind that this is not ready for production, but we continue to get</span>
+<span class="ez_quot">&gt; closer.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; username: demo</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; password: testing</span>
+<span class="ez_quot">&gt; What’s in it?</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; A sneak peek into some of the things to expect from this release:-</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     New features like:-</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;        We’ve also added the category and user management UI</span>
+<span class="ez_quot">&gt;        -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Improvements such as:-</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;        Form attributes API has been refactored to match the new architecture</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Have a look at our release notes</span>
+<span class="ez_quot">&gt; &lt;<a href="https://github.com/ushahidi/platform/releases/tag/v3.0.0-beta.13&gt;">https://github.com/ushahidi/platform/releases/tag/v3.0.0-beta.13&gt;</a> and blog</span>
+<span class="ez_quot">&gt; post announcement for more details on changes in this release.</span>
+<span class="ez_quot">&gt; How can you help?Developers</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Download</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://github.com/ushahidi/platform/releases/tag/v3.0.0-beta.13&gt;</span>">https://github.com/ushahidi/platform/releases/tag/v3.0.0-beta.13&gt;</span></a>
+<span class="ez_quot">&gt; and Install</span>
+<span class="ez_quot">&gt;     the platform</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Installing+Ushahidi+3.x&gt;</span>">https://wiki.ushahidi.com/display/WIKI/Installing+Ushahidi+3.x&gt;</span></a>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Set up a development build</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Setting+up+an+Ushahidi+3.x+development+build&gt;</span>">https://wiki.ushahidi.com/display/WIKI/Setting+up+an+Ushahidi+3.x+development+build&gt;</span></a>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Follow our developer processes</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Ushahidi+v3.x%2C+Development+process&gt;</span>">https://wiki.ushahidi.com/display/WIKI/Ushahidi+v3.x%2C+Development+process&gt;</span></a>
+<span class="ez_quot">&gt;     to send in bug reports and submit changes.</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;        If you’re not already set up on Phabricator &lt;<a href="http://phabricator.org/&gt;,</span>">http://phabricator.org/&gt;,</span></a>
+<span class="ez_quot">&gt;        please head over to the Ushahidi Phabricator page</span>
+<span class="ez_quot">&gt;        &lt;<a href="https://phabricator.ushahidi.com/&gt;and">https://phabricator.ushahidi.com/&gt;and</a> sign up. Once your account is</span>
+<span class="ez_quot">&gt;        approved, here’s a guide to get you started</span>
+<span class="ez_quot">&gt;        &lt;<a href="https://phabricator.ushahidi.com/w/help/phabricator/&gt;.</span>">https://phabricator.ushahidi.com/w/help/phabricator/&gt;.</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Users/Deployers</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Have a look at our roadmap</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://phabricator.ushahidi.com/project/board/1/&gt;,to">https://phabricator.ushahidi.com/project/board/1/&gt;,to</a> track progress on</span>
+<span class="ez_quot">&gt;     tasks, and add your voice into anything you feel is a high priority for you.</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Community Paths</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://drive.google.com/a/ushahidi.com/?ddrp=1#folders/0B5redy59hE0qbzRqNjRMYjF2RTQ&gt;:</span>">https://drive.google.com/a/ushahidi.com/?ddrp=1#folders/0B5redy59hE0qbzRqNjRMYjF2RTQ&gt;:</span></a>
+<span class="ez_quot">&gt;     We continue to seek insights on how to meet your goals and expectations on</span>
+<span class="ez_quot">&gt;     v3 based on your experience with Ushahidi v2. Share your experiences with</span>
+<span class="ez_quot">&gt;     us. Instructions here</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1kNWUXVfJs8KGj0LSbIGZ9UiC_Wr8PFlXJsnHJ2Lm4N0/edit#heading=h.koyyn2qxwob1&gt;</span>">https://docs.google.com/a/ushahidi.com/document/d/1kNWUXVfJs8KGj0LSbIGZ9UiC_Wr8PFlXJsnHJ2Lm4N0/edit#heading=h.koyyn2qxwob1&gt;</span></a>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;        Disaster response</span>
+<span class="ez_quot">&gt;        &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1IbIE2c_08t1j_PWg32A05lkPAo7AWY59R40Cgcdqf98/edit#heading=h.n9fhyp2b7g3&gt;</span>">https://docs.google.com/a/ushahidi.com/document/d/1IbIE2c_08t1j_PWg32A05lkPAo7AWY59R40Cgcdqf98/edit#heading=h.n9fhyp2b7g3&gt;</span></a>
+<span class="ez_quot">&gt;        -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;        Human Rights Mapping</span>
+<span class="ez_quot">&gt;        &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1Frd2RveoCBJR_G0uwlt9wpKXigg1RhF5PeqqxoX3J2M/edit&gt;</span>">https://docs.google.com/a/ushahidi.com/document/d/1Frd2RveoCBJR_G0uwlt9wpKXigg1RhF5PeqqxoX3J2M/edit&gt;</span></a>
+<span class="ez_quot">&gt;        -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;        Anti-Corruption Mapping</span>
+<span class="ez_quot">&gt;        &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1sD5b-DZUgCMhVCensP26XjvG1hGwT2s3YlbHgUHL-PM/edit&gt;</span>">https://docs.google.com/a/ushahidi.com/document/d/1sD5b-DZUgCMhVCensP26XjvG1hGwT2s3YlbHgUHL-PM/edit&gt;</span></a>
+<span class="ez_quot">&gt;        -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;        Election Monitoring</span>
+<span class="ez_quot">&gt;        &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1LWk_rlVrihlerXRovfXusaoXtHFpLVfJSga5CQJkKiQ/edit&gt;</span>">https://docs.google.com/a/ushahidi.com/document/d/1LWk_rlVrihlerXRovfXusaoXtHFpLVfJSga5CQJkKiQ/edit&gt;</span></a>
+<span class="ez_quot">&gt;        -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;        Environmental Mapping</span>
+<span class="ez_quot">&gt;        &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/180qknWEoSxJcSrRBHlCqxYp91EN-Nzfaq6M6ENsHjCM/edit&gt;</span>">https://docs.google.com/a/ushahidi.com/document/d/180qknWEoSxJcSrRBHlCqxYp91EN-Nzfaq6M6ENsHjCM/edit&gt;</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Translators!</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Our “Translators Power Ushahidi” campaign</span>
+<span class="ez_quot">&gt;     &lt;<a href="http://www.ushahidi.com/blog/2014/08/25/translators-power-ushahidi/&gt;">http://www.ushahidi.com/blog/2014/08/25/translators-power-ushahidi/&gt;</a> is</span>
+<span class="ez_quot">&gt;     still going strong, and we’re looking to see even bigger keeping our</span>
+<span class="ez_quot">&gt;     translation campaign alive and looking to you to help us get Ushahidi v3</span>
+<span class="ez_quot">&gt;     translated into as many languages as possible. The translation</span>
+<span class="ez_quot">&gt;     repository for v3 on Transifex</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://www.transifex.com/projects/p/ushahidi-v3/&gt;">https://www.transifex.com/projects/p/ushahidi-v3/&gt;</a> continues to show</span>
+<span class="ez_quot">&gt;     progress with upto 15 languages at 76% translation, but we need your</span>
+<span class="ez_quot">&gt;     help as we dash towards the finish line. DIG IN! Here’s a quick guide on</span>
+<span class="ez_quot">&gt;     how to get started</span>
+<span class="ez_quot">&gt;     &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Localization+and+Translation+-+How+to&gt;</span>">https://wiki.ushahidi.com/display/WIKI/Localization+and+Translation+-+How+to&gt;</span></a>
+<span class="ez_quot">&gt;     ;)</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Everyone!</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     -</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Join our discussions on IRC &lt;<a href="http://irc.lc/freenode/ushahidi&gt;">http://irc.lc/freenode/ushahidi&gt;</a> and</span>
+<span class="ez_quot">&gt; the mailing</span>
+<span class="ez_quot">&gt;     list &lt;<a href="http://list.ushahidi.com/&gt;.</span>">http://list.ushahidi.com/&gt;.</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; We are grateful for you, the Ushahidi community for all your input and</span>
+<span class="ez_quot">&gt; feedback! Do feel free to reach out to any of us with questions, comments</span>
+<span class="ez_quot">&gt; and concerns.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; In the meantime, stay tuned on our blog &lt;<a href="http://blog.ushahidi.com/&gt;,">http://blog.ushahidi.com/&gt;,</a> meetup</span>
+<span class="ez_quot">&gt; page &lt;<a href="http://www.meetup.com/Ushahidi-Community/&gt;,">http://www.meetup.com/Ushahidi-Community/&gt;,</a> twitter</span>
+<span class="ez_quot">&gt; &lt;<a href="https://twitter.com/uchaguzi&gt;,">https://twitter.com/uchaguzi&gt;,</a> facebook page</span>
+<span class="ez_quot">&gt; &lt;<a href="https://www.facebook.com/UchaguziKenya2013&gt;">https://www.facebook.com/UchaguziKenya2013&gt;</a> and wiki</span>
+<span class="ez_quot">&gt; &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Uchaguzi+-+Kenyan+Elections+2013&gt;</span>">https://wiki.ushahidi.com/display/WIKI/Uchaguzi+-+Kenyan+Elections+2013&gt;</span></a>
+<span class="ez_quot">&gt; for more announcements.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Have a great week!</span>
+
+
+<span class="ez_sign">-- 
+Angelos Tzotsos
+Remote Sensing Laboratory
+National Technical University of Athens
+<a href="http://users.ntua.gr/tzotsos">http://users.ntua.gr/tzotsos</a>
+
+</pre></span></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

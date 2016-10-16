@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - community@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?1">community@list.ushahidi.com</a></span></h2>
+      <div id="ez_menubar">
+        <span class="menulabel">Month</span>: <a href="?1:201210::d:t">previous</a> - <a href="?1:201212::d:t">next</a><br />
+        <span class="menulabel">Order</span>: <a href="?1:201211::d:t">by thread</a> - <a href="?1:201211::d:d">by date</a> - <a href="?1:201211::a:s">by subject</a> (<a href="?1:201211::a:t">ascending</a> - <a href="?1:201211::d:t">descending</a>)
+      </div>
+      <h4 class="ez_pagetitle">November 2012</h4>
+      <ul class="ez_threadlist">
+        <li>
+          <b>Re: [CrisisMappers] CFP: ISCRAM 2013 - Hidden Work and Values in the Design of Humanitarian Systems</b> (30 Nov 2012 13:23:19)<br />
+          <ul class="messagelist">
+<li><a href="?1::67">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>New software release and upgrade day reminder</b> (29 Nov 2012 13:34:31)<br />
+          <ul class="messagelist">
+<li><a href="?1::66">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: Call for contributions on "Technology-Based Classification Processes in Infrastructures"</b> (29 Nov 2012 03:33:18)<br />
+          <ul class="messagelist">
+<li><a href="?1::65">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Deployment of the Week voting open</b> (27 Nov 2012 20:57:18)<br />
+          <ul class="messagelist">
+<li><a href="?1::64">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Corruption Mapping and more in the Weekly</b> (23 Nov 2012 17:41:28)<br />
+          <ul class="messagelist">
+<li><a href="?1::63">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: [CrisisMappers] Internews final report on the 6-month project "Integrate Local Media and ICTs into Humanitarian Response in the Central African Republic (CAR)"</b> (22 Nov 2012 14:37:55)<br />
+          <ul class="messagelist">
+<li><a href="?1::62">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: [CrisisMappers] ICT in Emergency Crowdmap Survey</b> (21 Nov 2012 13:40:59)<br />
+          <ul class="messagelist">
+<li><a href="?1::61">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: [CrisisMappers] Fwd: Social Media and Semantic Technologies in Emergency Response (SMERST 2013)</b> (21 Nov 2012 13:24:36)<br />
+          <ul class="messagelist">
+<li><a href="?1::60">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: [DW-X] cfp CeDEM13 Conference for E-Democracy and Open Government 22-23 May 2013, Danube University Krems, Austria 22-23 May 2013</b> (20 Nov 2012 01:01:43)<br />
+          <ul class="messagelist">
+<li><a href="?1::59">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Re: [CrisisMappers] Looking for 2 consultants for crisismap for agrarian conflict in Indonesia</b> (19 Nov 2012 22:12:31)<br />
+          <ul class="messagelist">
+<li><a href="?1::58">Heather Leson</a></li>
+          </ul>
+        </li>
+        <li>
+          <b>Community Updates</b> (2 Nov 2012 21:55:36)<br />
+          <ul class="messagelist">
+<li><a href="?1::57">Heather Leson</a></li>
+          </ul>
+        </li>
+      </ul>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

@@ -1,0 +1,59 @@
+We made a fork of the android app a while back that had YouTube functionality. I don&#39;t think it ever got finished so we didn&#39;t submit a PR. I&#39;ll see if I can find the code later and put it up so you can get a head start at least. <span></span><br>
+<br>On Wednesday, March 19, 2014, Brian Herbert &lt;<a href="mailto:brian@...">brian@...</a>&gt; wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+    <div>
+        Hey all,
+    </div><div><br></div><div>If someone has the time to work on this, what you need to do is upload to a third party like YouTube first, then save the link. Since I&#39;m not a mobile dev, I&#39;m not sure how complicated this might be on Android.</div>
+<div><br></div><div>Hope this helps.</div><div><br></div><div>Brian</div>
+    <div></div>
+     
+    <p style="color:#a0a0a8">On Thursday, March 20, 2014 at 4:48, Tarik Nesh-Nash wrote:</p>
+    <blockquote type="cite" style="border-left-style:solid;border-width:1px;margin-left:0px;padding-left:10px">
+        <div><div><div dir="ltr">Hi community,<div><br></div><div>After some investigation from Giuseppe and myself, we found out that the android ushahidi app does not support uploading videos (ushahidi v2.6).</div><div>
+<br></div><div>Would you know if anybody on the community is interested on building such feature?</div>
+<div><br></div><div>Cheers</div><div>Tarik<br><div><br></div><div><br></div></div></div><div><br><br><div>On Wed, Mar 19, 2014 at 4:36 PM, Giuseppe Calamita <span dir="ltr">&lt;<a href="javascript:_e(%7B%7D,&#39;cvml&#39;,&#39;giuseppe.calamita@...&#39;);" target="_blank">giuseppe.calamita@...</a>&gt;</span> wrote:<br>
+<blockquote type="cite"><div><div lang="EN-US" link="blue" vlink="purple"><div><p style="margin:0px"><span style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#595959">Hello Tarik,<u></u><u></u></span></p>
+
+<p style="margin:0px"><span style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#595959"><u></u> <u></u></span></p><p style="margin:0px"><span style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#595959">I do suggest you to use the Ushahidi 2.7.x because it features the app you need and the polygon function when submitting a report: which is not available at the moment in the Ushahidi 3.0 beta. Feel free to ask me anything about your deployment </span><span style="font-size:14.0pt;font-family:Wingdings;color:#595959">J</span><span style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#595959"><u></u><u></u></span></p>
+
+<p style="margin:0px"><span style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#595959"><u></u> <u></u></span></p><p style="margin:0px"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"><u></u> <u></u></span></p>
+
+<table border="0" cellpadding="0" width="187" style="width:140.25pt"><tbody><tr><td style="padding:.75pt .75pt .75pt .75pt"><p style="margin:0px"><b><i><span lang="IT" style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:gray">Giuseppe Calamita</span></i></b><i><span lang="IT" style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#888888"> </span></i><i><span lang="IT" style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#1f497d"><u></u><u></u></span></i></p>
+
+<p style="margin:0px"><span lang="IT" style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:gray">Tel: </span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:gray"><a href="tel:%28%2B39%29%20333-6195143" target="_blank"><span lang="IT">(+39) 333-6195143</span></a></span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> <span lang="IT"><u></u><u></u></span></span></p>
+
+<p style="margin:0px"><span lang="IT" style="font-size:13.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">Skype:</span><span lang="IT" style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> </span><span lang="IT" style="font-size:13.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#1f497d">calamita_g</span><span lang="IT" style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"><u></u><u></u></span></p>
+
+</td></tr></tbody></table><p style="margin:0px"><a href="http://jgesmvdfuk9xg5y.mxsvr.net/mkfph0b5qm" target="_blank"><span>&lt;image001.png&gt;</span></a><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> </span><a href="http://jgesmvdfuk9xg5y.mxsvr.net/esot8p3ayd" target="_blank"><span>&lt;image002.png&gt;</span></a><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> </span><a href="http://jgesmvdfuk9xg5y.mxsvr.net/8xdxqjql5q" target="_blank"><span>&lt;image003.png&gt;</span></a><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"><u></u><u></u></span></p>
+
+<p style="margin:0px"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"><u></u> <u></u></span></p><p style="margin:0px"><span style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#595959"><u></u> <u></u></span></p>
+
+<p style="margin:0px"><span style="font-size:14.0pt;font-family:&quot;Bodoni MT&quot;,&quot;serif&quot;;color:#595959"><u></u> <u></u></span></p><p style="margin:0px"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"><u></u> <u></u></span></p>
+
+<p style="margin:0px"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Tarik Nesh-Nash [mailto:<a href="javascript:_e(%7B%7D,&#39;cvml&#39;,&#39;tarikn@...&#39;);" target="_blank">tarikn@...</a>] <br>
+
+<b>Sent:</b> Wednesday, March 19, 2014 3:12 PM<br><b>To:</b> <a href="javascript:_e(%7B%7D,&#39;cvml&#39;,&#39;developers@...&#39;);" target="_blank">developers@...</a>; wail tazi<br><b>Subject:</b> [ushahidi developers] Re: Ushahidi Android App<u></u><u></u></span></p>
+
+<div><div><p style="margin:0px"><u></u> <u></u></p><div><div><div><blockquote style="border:none;border-left:solid #cccccc 1.0pt;padding:0in 0in 0in 6.0pt;margin-left:4.8pt;margin-right:0in"><div><p style="text-align:justify;margin:0px">
+
+Hello,<u></u><u></u></p><div><p style="text-align:justify;margin:0px"><u></u> <u></u></p></div><div><p style="text-align:justify;margin:0px">We are building an Ushahidi instance to open up to engage citizens on the constitutional process in Libya. The current site under development is <a href="http://jgesmvdfuk9xg5y.mxsvr.net/fw6b8ohvd7" target="_blank">http://dostourlibya.com</a><u></u><u></u></p>
+
+</div><div><p style="text-align:justify;margin:0px"><u></u> <u></u></p></div><div><p style="text-align:justify;margin:0px">We want to add a feature where citizens will use their smartphones to record a video and upload it to our ushahidi site. We found out that the feature is implemented for iPhones but not for android.<u></u><u></u></p>
+
+</div><div><p style="text-align:justify;margin:0px"><u></u> <u></u></p></div><div><p style="text-align:justify;margin:0px">Is anybody working or interested on building this feature on the community? <u></u><u></u></p>
+</div><div><p style="text-align:justify;margin:0px"><u></u> <u></u></p></div><div><p style="text-align:justify;margin:0px">Cheers<u></u><u></u></p></div><div><p style="text-align:justify;margin:0px"><span style="color:#888888">Tarik<u></u><u></u></span></p>
+
+</div><div><p style="text-align:justify;margin:0px"><span style="color:#888888"><u></u> <u></u></span></p></div></div></blockquote></div></div></div></div></div></div></div><img border="0" alt="" src="http://mxsvr.net/jgesmvdfuk9xg5y/signature.gif"></div>
+</blockquote></div><br></div>
+</div></div>
+         
+         
+         
+         
+    </blockquote>
+     
+    <div>
+        <br>
+    </div>
+</blockquote><br><br>-- <br><div dir="ltr">Aaron Huslage<br>+1-919-600-1712<br>IM: GTalk - <a href="mailto:huslage@..." target="_blank">huslage@...</a>; Skype - huslage<br><div><br></div><div><span style="font-family:arial;font-size:small">PGP: 0x360DE590 / 30D4 B15B 74B2 F0E9 35D4  ABE0 2CB7 AC60 360D E590</span><br>
+</div></div><br>

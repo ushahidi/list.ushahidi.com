@@ -1,0 +1,194 @@
+<html><head></head><body bgcolor="#FFFFFF"><div><span class="Apple-style-span" style="-webkit-tap-highlight-color: rgba(26, 26, 26, 0.292969); -webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); ">I'm skeptical. MVC works pretty well for me. I personally suck at php and love rails but everybody speaks php so who cares? There's nothing architecturally unsound about php or MVC in my view.&nbsp;</span></div><div><span class="Apple-style-span" style="-webkit-tap-highlight-color: rgba(26, 26, 26, 0.292969); -webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); "><br></span></div><div><span class="Apple-style-span" style="-webkit-tap-highlight-color: rgba(26, 26, 26, 0.292969); -webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); ">What alternative architecture would you recommend George?&nbsp;</span>I am especially interested in how post MVC styles are more secure.</div><div><br></div><div>But rather than talking about A Big Rewrite what about just improving the codebase? For example, from your comment George it sounds like the app is forcing your hand (as it writes crappy code). Why couldn't you use models and controllers for the enhancement? What are the actual architectural limitations here?&nbsp;</div><div><br></div><div>PS I would still like to see a "Featherweight Ushahidi" version that is a reduced functionality version of the app. But I was imagining something largely compatible with upstream, and I still think that would be preferable.&nbsp;</div><div><br></div><div>PPS criticisms of Wordpress and Drupal are fun but those php ecosystems have been important for Ushahidi too, and I think Ushahidi will do well to integrate more with them more, regardless of the evolution of the codebase ...</div><div><br></div><div>Good conversation to have!</div><div><br></div><div>cheers</div><div>c</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br>On Mar 9, 2012, at 9:49 AM, George Chamales &lt;<a href="mailto:george@...">george@...</a>&gt; wrote:<br><br></div><div></div><blockquote type="cite"><div>Hey, while we're talking revolution, I think the whole MVC approach should be scrapped.<div><br></div><div>At its best, a well-implemented MVC architecture leads to set-in-stone data models with ad-hoc visualizations and ad-hoc controllers. &nbsp;The anything-goes approach to views make it difficult to tweak the layout, have an obnoxious tendency to sneak javascript validation logic into the static content, and break when you change your underlying controller logic - that's not what I consider a separation of functionality. &nbsp;</div>
+
+
+<div><br></div><div>Controllers give you one place to put your logic, but stop far short of imposing any sort of logic around how your logic should be laid out. &nbsp;As a result, we end up with code that's insecure (because security's just slapped in wherever it seems fitting) and extremely hard to modify (because everything's a jumbled mess). &nbsp;I think there are places where MVC is the lesser of all evils, but there's got to be a more logical way to organize an application than cutting it into three pieces and saying "voila, it is architected!"</div>
+
+
+<div><br></div><div>I think about the hassle that I had building out Ushahid's custom forms system. &nbsp;The basic functionality was there (thanks David!) and extending it wasn't the most obnoxious thing that I've ever done, but the MVC format was effectively worthless - as the entire sub-system ended up being implemented as a set of key-value tables in MySQL reminiscent of the worst of Wordpress. &nbsp;Again, MVC is far better than nothing, and it's certainly loads better than the bad-old-days of architecture-free development that brought us Drupal, but "less bad" is not the same thing as "good."</div>
+
+
+<div><br></div><div>If I were to take Ushahidi apart, I'd say it's got the following decent features:</div><div>* Users &amp; Roles</div><div>* Pretty Themes</div><div>* Modules</div><div>* Frontend / Admin Interface</div>
+
+
+<div><br></div><div>Everything else - mapping system, search, api, reports model, custom forms, and don't even get me started on checkins - is either half-baked, poorly implemented, poorly documented, or some combination of all three. &nbsp;If I were to start over, I'd scrap everything except for those four pieces (although I'd probably re-write the user system to include groups).</div>
+
+
+<div><br></div><div>As for programming language, I'm not sure that I'd go the Node.js approach - I've done a bit of work with node now and while it's fun and theoretically fast, it's still really, really, sometimes painfully new. &nbsp;My concern is that if the goal is something that others can build off of, then it would make sense to start from a place where there's already a rich ecosystem of libraries and add-ons that can be leveraged. &nbsp;Not sure that I'd go with RoR either - but maybe that's just because I think that two of the biggest problems with web programming is that it's done by web programmers using web programming languages.</div>
+
+
+<div><br></div><div>And before I forget: &nbsp;Chris - we're going to be tearing down the oven in the backyard at some point in the near future and need to do a few last firings if you're interested. &nbsp;Everyone else on the list is invited if you happen to be in the Bay Area.</div>
+
+
+<div><br></div><div>george</div><div><br></div><div><div>George Chamales<br>Rogue Genius LLC<div><a href="http://roguegenius.com" target="_blank">http://roguegenius.com</a><br>Phone:&nbsp; <a href="tel:718.288.7718" value="+17182887718" target="_blank">718.288.7718</a><br>
+
+Skype:&nbsp; notgeorge<br>
+<br></div><br>
+<br><br><div class="gmail_quote">On Fri, Mar 9, 2012 at 8:14 AM, Rob Baker <span dir="ltr">&lt;<a href="mailto:rrbaker@..." target="_blank">rrbaker@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+<div bgcolor="#FFFFFF"><div>If we're hacking<i> /application</i>, maybe time to make a lightweight RoR or Node version instead? &nbsp;(Yes, I said it -- all aboard as the bandwagon is leaving the station.)</div><div><br></div>
+
+
+
+
+<div>Anyway, it's a smart decision, Chris, bit do wonder if that much hacking ultimately toward something simpler couldn't be better spent on a model using newer frameworks. If Ushahidi does adopt a more aggressive development cycle this year this would be out on the fringe like the Sharek build in no time. &nbsp;Not assuming or saying this would need to stay upstream to the core, but if that much hacking is going into slash and burn, maybe this is one of those rare times where starting a new (very small, very manageable) project makes more sense and could be more fun.</div>
+
+
+
+
+<div><br></div><div>In other words, an opportunity to focus on the models of response that work, not the segments of (Kohana v2/OpenLayers) code that apply. &nbsp;But this could also be more crack smoke.</div><div><br></div><div>
+
+
+
+
+Thanks for thinking about this though -- very cool and glad to hear it's still in the works.</div><span><font color="#888888"><div><br></div><div>R</div></font></span><div><div><div><br><br>
+On Mar 9, 2012, at 5:46 AM, Chris Blow &lt;<a href="mailto:unthinkingly@..." target="_blank">unthinkingly@...</a>&gt; wrote:<br>
+
+<br></div><div></div><blockquote type="cite"><div><div><br></div>guys, thanks for all the input on the ushahidigram concept last month — spent some time hacking on it over the last few weekends and now want to rethink my approach.<div>
+
+
+
+
+<br></div><div>I had a hard time removing functionality to get the simplicity I am going for: I think if you want to remove 80% of the features from Ushahidi, a theme on top of it all is just not the way to go. Overriding validation, and other deep assumptions about the data seems especially tricky. (By contrast removing unnecessary javascript and markup seemed easy ... just override them with empty files! But when I started to see how many files I wanted to override in this way, it started to smell strongly of crack smoke.) Most importantly to me, it seems it would be brittle over time — tightly coupled to the upstream with no benefit ... it would probably just have to be frozen to a particular release. So, it would be a kind of dead-end theme that wouldn't do that much for the community and would take a surprising amount of effort.</div>
+
+
+
+
+<div><div><br></div><div>... but I'm starting to think it might be cool to do a proper fork of ushahidi though — a super-minimalist "ushahidi bootstrap" that could be extended up into an app like ushahidigram. I'm imagining this would be basically a step up from Kohana, but not merely MVC bits on the floor — a real app that runs immediately, yet does not assume any required fields and uses strictly minimal view layer. It could make fewer assumptions about what you want to do: just authentication, a few basic templates, maybe plugin support and some mapping examples. Something that is still based on the ushahidi core reporting model, but assumes you are going to run with it in a new direction. This would be a largely incompatible fork, hacking extensively in /application and changing the database schema ... &nbsp;but somehow it seems like a lot of people might really find this approach useful for developers in the community.</div>
+
+
+
+
+<div><br></div><div>sound crazy? thoughts?</div><div><br></div><div>c</div><div><br></div><div><br><div><div><div><div><br></div><div><br><div><div>On Feb 3, 2012, at 9:34 AM, George Chamales wrote:</div><br><blockquote type="cite">
+
+
+
+
+Few thoughts:<div><br></div><div>Could utilize the mapping system if the photos come in with lat/lon in the metadata.</div><div><br></div><div>If no geo info then set lat,lon to null island and use a javascript header include to disable the map if it detects lat,lon is 0,0.<br clear="all">
+
+
+
+
+
+
+<br>Could parse metadata on upload of photo to determine if there's geo information and unhide the map to allow users to tweak.</div><div><br></div><div>InfoWindow plugin could be tweaked to provide thumbnails in map pop-up bubble for geolocated pictures.</div>
+
+
+
+
+
+
+<div><br></div><div>Custom forms could be used to capture additional info about the image pulled from metadata (exposure, camera type, etc.)</div><div><br></div><div><br></div><div>Fun idea, I'd be happy to get together to brainstorm as well.</div>
+
+
+
+
+
+
+<div><br></div><div>george</div><div><br>George Chamales<br>Rogue Genius LLC<div><a href="http://roguegenius.com/" target="_blank">http://roguegenius.com</a><br>Phone:&nbsp; <a href="tel:718.288.7718" value="+17182887718" target="_blank">718.288.7718</a><br>
+
+
+
+
+Skype:&nbsp; notgeorge<br><br></div><br>
+<br><br><div class="gmail_quote">On Thu, Feb 2, 2012 at 5:25 PM, Chris Blow <span dir="ltr">&lt;<a href="mailto:unthinkingly@..." target="_blank">unthinkingly@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+
+
+
+
+Hello,<br>
+<br>
+Would anyone be interesting in collaborating on an instagram clone built in ushahidi?<br>
+<br>
+I think it would be a good exercise because it could leverage the native mobile clients / or be a cool HTML5 mobile thing — but mostly I want it to be extremely streamlined and customized just to photos. We could hide virtually ever feature and carefully craft the few things we do expose. It could be ridiculously minimalist and, if I could just snap and upload, I would use it every day. &nbsp;It doesn't have to be a perfect instagram clone, just an easy to setup photosharing hub with a one-click experience.<br>
+
+
+
+
+
+
+
+<br>
+Perhaps it could be useful to corporate teams, or geeky families, or friendly darknets and people of the underground. (It would not have the huge instagram social network, but I'm attracted to the idea of a smaller hub of a few people ... :)<br>
+
+
+
+
+
+
+
+<br>
+One problem we talked about at the meetup last in SF was the fact that Ushahidi proper is not really appropriate for day to day use. Also it is just not fun to think about disaster apps all the time. But we know that, in disasters, people use what they are used to. So maybe this would be something that would help bridge use between normal days and things are on fire days.<br>
+
+
+
+
+
+
+
+<br>
+I think I really want to work on something with ushahidi that is just 100% fun this year.<br>
+<br>
+I was reminded of the checkins feature which we were playing with at SXSW last year. That theme is freaking excellent. But I don't use checkin apps. (But I do use the hell out of instagram.) &nbsp;Is that theme still active? Would it make sense for the ushahidigram theme to be a fork or extension of that one?<br>
+
+
+
+
+
+
+
+<br>
+It should be trivial to build most of it, since it is largely a subset of features. And the social features (which are in Instagram but not Ushahidi) are quite simple.<br>
+<br>
+Anyway, I am eager to make another theme in sass (CSS) and to work out my html5 brain-muscles. I went ahead and started pushing to a repository last night. Could use help with the mobile version. Anyone done an any mobile HTML5 features yet? If not, this would be a cool ways to start on a few features without rewriting all the JS and HTML at once .... &nbsp;I started pushing here: <a href="https://github.com/unthinkingly/ushahidigram" target="_blank">https://github.com/unthinkingly/ushahidigram</a> would be happy to see a fork and some contributors.<br>
+
+
+
+
+
+
+
+<br>
+Or just tell me what you think please!<br>
+<br>
+c<br>
+<br>
+PS: Also, since most photosharing sites are generally run by assholes from Yahoo now, I want a way to buffer and broker my photos before they get sent to to them (eg flickr, instagram). &nbsp;Kind of like this brokers to foursquare: <a href="http://nearfuturelaboratory.com/2012/01/22/privatesquare" target="_blank">http://nearfuturelaboratory.com/2012/01/22/privatesquare</a><br>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="mailto:developers-digest-subscribe@..." target="_blank">developers-digest-subscribe@...</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the "List-Unsubscribe" header of any list<br>
+message. If you haven't changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="mailto:developers-unsubscribe@..." target="_blank">developers-unsubscribe@...</a><br>
+<br>
+For addition or removal of addresses, we'll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="mailto:developers-owner@..." target="_blank">developers-owner@...</a><br>
+<br>
+</blockquote></div><br></div>
+</blockquote></div><br></div></div></div></div></div></div></div></blockquote></div></div></div>
+</blockquote></div><br></div></div>
+</div></blockquote></body></html>

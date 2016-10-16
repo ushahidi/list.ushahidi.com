@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - community@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" 
+									href="http://list.ushahidi.com/index.cgi?1:::rss" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span>community@list.ushahidi.com</span></h2>
+<h4 class="ez_pagetitle">Available months:</h4>
+<ul style="margin-bottom:30px">
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201608">August 2016</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201604">April 2016</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201602">February 2016</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201511">November 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201510">October 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201509">September 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201508">August 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201507">July 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201506">June 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201505">May 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201504">April 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201503">March 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201502">February 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201501">January 2015</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201411">November 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201410">October 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201409">September 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201408">August 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201407">July 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201406">June 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201405">May 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201404">April 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201403">March 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201402">February 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201401">January 2014</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201312">December 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201310">October 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201309">September 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201308">August 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201307">July 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201306">June 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201305">May 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201304">April 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201303">March 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201302">February 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201301">January 2013</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201212">December 2012</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201211">November 2012</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201210">October 2012</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201209">September 2012</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201208">August 2012</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201207">July 2012</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201206">June 2012</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201205">May 2012</a></li>
+<li style="font-weight:bold;font-size:1.2em"><a href="?1:201204">April 2012</a></li>
+</ul>
+
+		<div class="ez_infoblock">	
+			<h4>&raquo;&nbsp;<a href="javascript:showDiv('subscriptions')" class="ez_infoblock_item">How to Subscribe/Unsubscribe</a></h4>
+			<div id="subscriptions" class="ez_info">
+			<p class="ez_medium">To subscribe to the list, send empty e-mail to:<br />
+			<a href="mailto:community-subscribe@list.ushahidi.com">
+			community-subscribe@list.ushahidi.com</a></p>
+			
+			<p class="ez_medium">To unsubscribe from the list, send empty e-mail to:<br />
+			<a href="mailto:community-unsubscribe@list.ushahidi.com">
+			community-unsubscribe@list.ushahidi.com</a></p>
+			</div>
+		</div>
+		
+		<div class="ez_infoblock">	
+			<h4>&raquo;&nbsp;<a href="javascript:showDiv('commands')" class="ez_infoblock_item">Other Commands</a></h4>
+			<div id="commands" class="ez_info">
+			<p class="ez_medium">Send mail to the following for info and FAQ for this list:<br />
+				community-info@list.ushahidi.com<br />
+				community-faq@list.ushahidi.com</p>
+			<p class="ez_medium">To get messages 123 through 145 (a maximum of 100 per request), mail:<br />
+				community-get.123_145@list.ushahidi.com</p>
+			<p class="ez_medium">To get an index with subject and author for messages 123-456, mail:<br />
+				community-index.123_456@list.ushahidi.com</p>
+			<p class="ez_medium">To receive all messages with the same subject as message 12345,<br />
+				send an empty message to:<br />
+				community-thread.12345@list.ushahidi.com</p>
+			<p class="ez_medium">The messages do not really need to be empty, but I will ignore<br />
+				their content. Only the ADDRESS you send to is important.</p>
+			<p class="ez_medium">You can start a subscription for an alternate address,<br />
+				for example &quot;john@host.domain&quot;, just add a hyphen and your<br />
+				address (with '=' instead of '@') after the command word:<br />
+				community-subscribe-john=host.domain@list.ushahidi.com</p>
+			<p class="ez_medium">To stop subscription for this address, mail:<br />
+				community-unsubscribe-john=host.domain@list.ushahidi.com</p>
+			</div>
+		</div>
+		<h4 class="ez_pagetitle">Search:</h4>
+<form class="ez_medium ez_searchForm" action="?1:::search" method="post"><div><input type="text" name="query" value="" /> <input type="submit" value="Search" /></div></form>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

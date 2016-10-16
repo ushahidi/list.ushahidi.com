@@ -1,0 +1,4 @@
+<div dir="ltr">Hi all,<div><br></div><div style>I&#39;m trying to white label the Android app, but I&#39;m having trouble testing the examples.</div><div style><ul style><li style>Uchaguzi seems to build to my Nexus 4, but it crashes on launch.</li>
+<li style>Beijing, lccm, and Inherity are missing libraries:</li><ul style><li style></li><li style>httpmime-4.1.1.jar</li><li style>httpcore-4.1.jar</li><li style>httpclient-4.1.1.jar</li><li style>apache-mime4j-core-0.7.jar</li>
+</ul></ul><div style>I&#39;m running off of the up-to-date master branch from git, using the Android Developer tools.</div><div style><br></div><div style>If anyone knows how to fix one of these so I can export the app for our deployment, I&#39;d be very appreciative for the help.</div>
+<div style><br></div><div style>Thanks!</div><div style><br></div><div style>Andrew Carreiro</div><div style>Trashswag.com</div></div></div>

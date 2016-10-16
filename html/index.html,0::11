@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::10">previous</a> - <a href="?0::12">next</a><br />Month: <a href="?0:201002">February 2010</a></div>
+<h4 class="ez_pagetitle">Re: [developers] testing</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> Ken Kasina &lt;ken@...&gt;<br />
+<span class="ez_label">Date:</span> Wed, 10 Feb 2010 09:34:47 +0000<br />
+</div>
+<pre>Hi crew, this is I, Ken aka Sir Codealot. Nice to have a list finally.
+
+
+Regards,
+
+On Wednesday, February 10, 2010, Anastasia Zarubina &lt;phpdiva@...&gt; wrote:
+<span class="ez_quot">&gt; I should introduce myself. This is Anastasia a.k.a. phpdiva.</span>
+<span class="ez_quot">&gt; Hi all!</span>
+<span class="ez_quot">&gt; On Feb 10, 2010, at 12:33 AM, Tim Kamau &lt;maqtim@...&gt; wrote:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Tim thought of testing it too. howdy y'all.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; On Wed, Feb 10, 2010 at 11:30 AM, Soyapi Mumba &lt;soyapim@...&gt; wrote:</span>
+<span class="ez_quot">&gt; Hello Developers</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; This is Soyapi aka soyapi on Skype :)</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; - Soyapi</span>
+<span class="ez_quot">&gt; On 02/09/2010 05:14 PM, Brian Herbert wrote:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Hello hello hello hello [echo] [echo] [echo]</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; On Tue, Feb 9, 2010 at 10:12 AM, Max Froumentin &lt;max@...</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; &lt;mailto:max@...&gt;&gt; wrote:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Hello World!</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     Max.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     ~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="ez_quot">&gt;     List Archive: <a href="http://list.ushahidi.com/</span>">http://list.ushahidi.com/</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     To remove your address from the list, just send a message to</span>
+<span class="ez_quot">&gt;     the address in the &quot;List-Unsubscribe&quot; header of any list</span>
+<span class="ez_quot">&gt;     message. If you haven't changed addresses since subscribing,</span>
+<span class="ez_quot">&gt;     you can also send a message to:</span>
+<span class="ez_quot">&gt;     developers-unsubscribe@...</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     &lt;mailto:developers-unsubscribe@...&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     For addition or removal of addresses, I'll send a confirmation</span>
+<span class="ez_quot">&gt;     message to that address. When you receive it, simply reply to it</span>
+<span class="ez_quot">&gt;     to complete the transaction.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     If you need to get in touch with the human owner of this list,</span>
+<span class="ez_quot">&gt;     please send a message to:</span>
+<span class="ez_quot">&gt;     developers-owner@...</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;     &lt;mailto:developers-owner@...&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; ~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="ez_quot">&gt; List Archive: <a href="http://list.ushahidi.com/</span>">http://list.ushahidi.com/</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; To remove your address from the list, just send a message to</span>
+<span class="ez_quot">&gt; the address in the &quot;List-Unsubscribe&quot; header of any list</span>
+<span class="ez_quot">&gt; message. If you haven't changed addresses since subscribing,</span>
+<span class="ez_quot">&gt; you can also send a message to:</span>
+<span class="ez_quot">&gt; developers-unsubscribe@...</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; For addition or removal of addresses, I'll send a confirmation</span>
+<span class="ez_quot">&gt; message to that address. When you receive it, simply reply to it</span>
+<span class="ez_quot">&gt; to complete the transaction.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; If you need to get in touch with the human owner of this list,</span>
+<span class="ez_quot">&gt; please send a message to:</span>
+<span class="ez_quot">&gt; developers-owner@...</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+
+<span class="ez_sign">-- 
+Kennedy Kasina
+(e) ken@...
+(m) +254.720.269.850
+(w) <a href="http://www.ushahidi.com">www.ushahidi.com</a>
+(b) <a href="http://blog.ushahidi.com">http://blog.ushahidi.com</a>
+</pre></span></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

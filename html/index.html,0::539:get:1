@@ -1,0 +1,176 @@
+<div dir="ltr"><div><div>Hi Angelos,<br></div>PostgreSQL is definitely on the roadmap. We have partial support for it: database migrations should work but we haven&#39;t tested all the backend queries against it. However its not a high priority until we&#39;ve got a complete working UI.<br><br></div>Cheers,<br>Robbie.<br><div><div><div><div><div><div class="gmail_extra"><br><div class="gmail_quote">On Fri, Jan 30, 2015 at 11:54 AM, Angelos Tzotsos <span dir="ltr">&lt;<a href="mailto:gcpp.kalxas@..." target="_blank">gcpp.kalxas@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Hi all,<br>
+<br>
+I would like to ask if your upcoming version 3.0 is going to support PostgreSQL or SQLite as potential back-ends.<br>
+We (OSGeoLive project) would like to use PostgreSQL instead of MySQL to demonstrate Ushahidi in our next release (9.0 in August).<br>
+Any chance this feature could be added on your roadmap?<br>
+<br>
+Best,<br>
+Angelos<span class=""><br>
+<br>
+On 01/23/2015 05:45 PM, Angela Oduor Lungati wrote:<br>
+</span><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><span class="">
+Hey folks!<br>
+<br>
+We just released another beta version of Ushahidi v3.<br>
+<br></span>
+Take it out for a spin on our demo site &lt;<a href="http://v3.ushahidi.com/" target="_blank">http://v3.ushahidi.com/</a>&gt;, but keep<span class=""><br>
+in mind that this is not ready for production, but we continue to get<br>
+closer.<br>
+<br>
+username: demo<br>
+<br>
+password: testing<br>
+What’s in it?<br>
+<br>
+A sneak peek into some of the things to expect from this release:-<br>
+<br>
+    -<br>
+<br>
+    New features like:-<br>
+    -<br>
+<br>
+       We’ve also added the category and user management UI<br></span>
+       -<br>
+<br>
+    Improvements such as:-<span class=""><br>
+    -<br>
+<br>
+       Form attributes API has been refactored to match the new architecture<br>
+<br>
+Have a look at our release notes<br></span>
+&lt;<a href="https://github.com/ushahidi/platform/releases/tag/v3.0.0-beta.13" target="_blank">https://github.com/ushahidi/<u></u>platform/releases/tag/v3.0.0-<u></u>beta.13</a>&gt; and blog<span class=""><br>
+post announcement for more details on changes in this release.<br>
+How can you help?Developers<br>
+<br></span>
+    -<br>
+<br>
+    Download<br>
+    &lt;<a href="https://github.com/ushahidi/platform/releases/tag/v3.0.0-beta.13" target="_blank">https://github.com/ushahidi/<u></u>platform/releases/tag/v3.0.0-<u></u>beta.13</a>&gt;<br>
+and Install<br>
+    the platform<br>
+    &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Installing+Ushahidi+3.x" target="_blank">https://wiki.ushahidi.com/<u></u>display/WIKI/Installing+<u></u>Ushahidi+3.x</a>&gt;<span class=""><br>
+    -<br>
+<br>
+    Set up a development build<br></span>
+    &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Setting+up+an+Ushahidi+3.x+development+build" target="_blank">https://wiki.ushahidi.com/<u></u>display/WIKI/Setting+up+an+<u></u>Ushahidi+3.x+development+build</a><u></u>&gt;<br>
+    -<br>
+<br>
+    Follow our developer processes<br>
+    &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Ushahidi+v3.x%2C+Development+process" target="_blank">https://wiki.ushahidi.com/<u></u>display/WIKI/Ushahidi+v3.x%2C+<u></u>Development+process</a>&gt;<span class=""><br>
+    to send in bug reports and submit changes.<br>
+    -<br>
+<br></span>
+       If you’re not already set up on Phabricator &lt;<a href="http://phabricator.org/" target="_blank">http://phabricator.org/</a>&gt;,<span class=""><br>
+       please head over to the Ushahidi Phabricator page<br></span>
+       &lt;<a href="https://phabricator.ushahidi.com/" target="_blank">https://phabricator.ushahidi.<u></u>com/</a>&gt;and sign up. Once your account is<span class=""><br>
+       approved, here’s a guide to get you started<br></span>
+       &lt;<a href="https://phabricator.ushahidi.com/w/help/phabricator/" target="_blank">https://phabricator.ushahidi.<u></u>com/w/help/phabricator/</a>&gt;.<br>
+<br>
+Users/Deployers<br>
+<br>
+    -<br>
+<br>
+    Have a look at our roadmap<br>
+    &lt;<a href="https://phabricator.ushahidi.com/project/board/1/" target="_blank">https://phabricator.ushahidi.<u></u>com/project/board/1/</a>&gt;,to track progress on<span class=""><br>
+    tasks, and add your voice into anything you feel is a high priority for you.<br></span>
+    -<br>
+<br>
+    Community Paths<br>
+    &lt;<a href="https://drive.google.com/a/ushahidi.com/?ddrp=1#folders/0B5redy59hE0qbzRqNjRMYjF2RTQ" target="_blank">https://drive.google.com/a/<u></u>ushahidi.com/?ddrp=1#folders/<u></u>0B5redy59hE0qbzRqNjRMYjF2RTQ</a>&gt;:<span class=""><br>
+    We continue to seek insights on how to meet your goals and expectations on<br>
+    v3 based on your experience with Ushahidi v2. Share your experiences with<br>
+    us. Instructions here<br></span>
+    &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1kNWUXVfJs8KGj0LSbIGZ9UiC_Wr8PFlXJsnHJ2Lm4N0/edit#heading=h.koyyn2qxwob1" target="_blank">https://docs.google.com/a/<u></u>ushahidi.com/document/d/<u></u>1kNWUXVfJs8KGj0LSbIGZ9UiC_<u></u>Wr8PFlXJsnHJ2Lm4N0/edit#<u></u>heading=h.koyyn2qxwob1</a>&gt;<br>
+    -<br>
+<br>
+       Disaster response<br>
+       &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1IbIE2c_08t1j_PWg32A05lkPAo7AWY59R40Cgcdqf98/edit#heading=h.n9fhyp2b7g3" target="_blank">https://docs.google.com/a/<u></u>ushahidi.com/document/d/<u></u>1IbIE2c_08t1j_<u></u>PWg32A05lkPAo7AWY59R40Cgcdqf98<u></u>/edit#heading=h.n9fhyp2b7g3</a>&gt;<br>
+       -<br>
+<br>
+       Human Rights Mapping<br>
+       &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1Frd2RveoCBJR_G0uwlt9wpKXigg1RhF5PeqqxoX3J2M/edit" target="_blank">https://docs.google.com/a/<u></u>ushahidi.com/document/d/<u></u>1Frd2RveoCBJR_<u></u>G0uwlt9wpKXigg1RhF5PeqqxoX3J2M<u></u>/edit</a>&gt;<br>
+       -<br>
+<br>
+       Anti-Corruption Mapping<br>
+       &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1sD5b-DZUgCMhVCensP26XjvG1hGwT2s3YlbHgUHL-PM/edit" target="_blank">https://docs.google.com/a/<u></u>ushahidi.com/document/d/1sD5b-<u></u>DZUgCMhVCensP26XjvG1hGwT2s3Ylb<u></u>HgUHL-PM/edit</a>&gt;<br>
+       -<br>
+<br>
+       Election Monitoring<br>
+       &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/1LWk_rlVrihlerXRovfXusaoXtHFpLVfJSga5CQJkKiQ/edit" target="_blank">https://docs.google.com/a/<u></u>ushahidi.com/document/d/1LWk_<u></u>rlVrihlerXRovfXusaoXtHFpLVfJSg<u></u>a5CQJkKiQ/edit</a>&gt;<br>
+       -<br>
+<br>
+       Environmental Mapping<br>
+       &lt;<a href="https://docs.google.com/a/ushahidi.com/document/d/180qknWEoSxJcSrRBHlCqxYp91EN-Nzfaq6M6ENsHjCM/edit" target="_blank">https://docs.google.com/a/<u></u>ushahidi.com/document/d/<u></u>180qknWEoSxJcSrRBHlCqxYp91EN-<u></u>Nzfaq6M6ENsHjCM/edit</a>&gt;<br>
+<br>
+Translators!<span class=""><br>
+<br>
+    -<br>
+<br>
+    Our “Translators Power Ushahidi” campaign<br></span>
+    &lt;<a href="http://www.ushahidi.com/blog/2014/08/25/translators-power-ushahidi/" target="_blank">http://www.ushahidi.com/blog/<u></u>2014/08/25/translators-power-<u></u>ushahidi/</a>&gt; is<span class=""><br>
+    still going strong, and we’re looking to see even bigger keeping our<br>
+    translation campaign alive and looking to you to help us get Ushahidi v3<br>
+    translated into as many languages as possible. The translation<br>
+    repository for v3 on Transifex<br></span>
+    &lt;<a href="https://www.transifex.com/projects/p/ushahidi-v3/" target="_blank">https://www.transifex.com/<u></u>projects/p/ushahidi-v3/</a>&gt; continues to show<span class=""><br>
+    progress with upto 15 languages at 76% translation, but we need your<br>
+    help as we dash towards the finish line. DIG IN! Here’s a quick guide on<br>
+    how to get started<br></span>
+    &lt;<a href="https://wiki.ushahidi.com/display/WIKI/Localization+and+Translation+-+How+to" target="_blank">https://wiki.ushahidi.com/<u></u>display/WIKI/Localization+and+<u></u>Translation+-+How+to</a>&gt;<br>
+    ;)<br>
+<br>
+Everyone!<br>
+<br>
+    -<br>
+<br>
+    Join our discussions on IRC &lt;<a href="http://irc.lc/freenode/ushahidi" target="_blank">http://irc.lc/freenode/<u></u>ushahidi</a>&gt; and<br>
+the mailing<br>
+    list &lt;<a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a>&gt;.<span class=""><br>
+<br>
+<br>
+We are grateful for you, the Ushahidi community for all your input and<br>
+feedback! Do feel free to reach out to any of us with questions, comments<br>
+and concerns.<br>
+<br></span>
+In the meantime, stay tuned on our blog &lt;<a href="http://blog.ushahidi.com/" target="_blank">http://blog.ushahidi.com/</a>&gt;, meetup<br>
+page &lt;<a href="http://www.meetup.com/Ushahidi-Community/" target="_blank">http://www.meetup.com/<u></u>Ushahidi-Community/</a>&gt;, twitter<br>
+&lt;<a href="https://twitter.com/uchaguzi" target="_blank">https://twitter.com/uchaguzi</a>&gt;<u></u>, facebook page<br>
+&lt;<a href="https://www.facebook.com/UchaguziKenya2013" target="_blank">https://www.facebook.com/<u></u>UchaguziKenya2013</a>&gt; and wiki<br>
+&lt;<a href="https://wiki.ushahidi.com/display/WIKI/Uchaguzi+-+Kenyan+Elections+2013" target="_blank">https://wiki.ushahidi.com/<u></u>display/WIKI/Uchaguzi+-+<u></u>Kenyan+Elections+2013</a>&gt;<span class=""><br>
+for more announcements.<br>
+<br>
+Have a great week!<br>
+</span></blockquote>
+<br>
+<br>
+-- <br>
+Angelos Tzotsos<br>
+Remote Sensing Laboratory<br>
+National Technical University of Athens<br>
+<a href="http://users.ntua.gr/tzotsos" target="_blank">http://users.ntua.gr/tzotsos</a><br>
+<br>
+<br>
+<br>
+<br>
+~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="mailto:developers-digest-subscribe@..." target="_blank">developers-digest-subscribe@<u></u>list.ushahidi.com</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+message. If you haven&#39;t changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="mailto:developers-unsubscribe@..." target="_blank">developers-unsubscribe@list.<u></u>ushahidi.com</a><br>
+<br>
+For addition or removal of addresses, we&#39;ll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="mailto:developers-owner@..." target="_blank">developers-owner@list.<u></u>ushahidi.com</a><br>
+<br>
+</blockquote></div><br><br clear="all"><br>-- <br><div class="gmail_signature"><div dir="ltr"><div>Robbie Mackay</div><div><br><div>Senior Software Developer</div><div>Ushahidi Inc</div><div>m: +64 27 576 2243<br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div></div><div>skype: robbie.mackay</div></div></div></div>
+</div></div></div></div></div></div></div>

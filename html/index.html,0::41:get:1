@@ -1,0 +1,101 @@
+Just to back up Pablo&#39;s point, even from the users&#39; point of view, focusing on the stability would be apropos at this point, as the sharing feature and import functionality have become even more important. <br><br>
+
+With best regards,<br>-J. <br><br><div class="gmail_quote">On Tue, Mar 16, 2010 at 5:10 PM, Pablo A. Destefanis <span dir="ltr">&lt;<a href="mailto:pdestefanis@...">pdestefanis@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+
+I am not sure what Max means with his phrase, but I do think we need to do a<br>
+feature freeze and work on making sure that we have core functionality<br>
+working properly, some examples are the &quot;Import incidents&quot; (from CSV), and<br>
+the sharing of incidents between different instances.<br>
+<br>
+Currently we have many cases when one update to the master code breaks other<br>
+stuff, ie. by uploading files that should not be uploaded (ie. config.php).<br>
+My view is that many of these things came post-Haiti (which is<br>
+understandable).<br>
+<br>
+At any rate, the clean up effort does not need to prevent others from<br>
+contributing to the project, but should allow Ushahidi to have a &quot;stable&quot;<br>
+version. This will become more relevant as we have more projects using the<br>
+application (as in &quot;depending&quot;); my view is that they will be more inclined<br>
+to stability over cutting edge features.<br>
+<br>
+Again, my 0,02, I know that I&#39;m seeing this more from the implementer&#39;s<br>
+point of view rather than the developer&#39;s, that&#39;s why I am trying to find a<br>
+way that serves both.<br>
+<br>
+Cheers,<br>
+<font color="#888888"><br>
+Pablo<br>
+</font><div class="im"><br>
+&gt; -----Original Message-----<br>
+&gt; From: Max Froumentin [mailto:<a href="mailto:max@...">max@...</a>]<br>
+&gt; Sent: Tuesday, March 16, 2010 15:55<br>
+&gt; To: <a href="mailto:developers@...">developers@...</a><br>
+</div><div><div></div><div class="h5">&gt; Subject: Re: [ushahidi developers] Clean Up Time!<br>
+&gt;<br>
+&gt; On 15 March 2010 15:51, David Kobia &lt;<a href="mailto:david@...">david@...</a>&gt; wrote:<br>
+&gt;<br>
+&gt; &gt; ~~~~~~~~~~~~~~~~~~<br>
+&gt; &gt; Cleaning up our User Interface involves the following:<br>
+&gt; &gt; * Making sure our HTML is XHTML Compliant<br>
+&gt;<br>
+&gt; I don&#39;t think that&#39;s fixing any problem we have. I&#39;m more than happy<br>
+&gt; to be convinced otherwise, but in the meantime I think I&#39;ll spend time<br>
+&gt; on cleaning up HTML and CSS, simplifying, optimising and making the<br>
+&gt; main site as mobile-friendly as possible.<br>
+&gt;<br>
+&gt; ...as opposed to the mobile site Caleb and I have been spending some<br>
+&gt; time on, which is moving to the backburner for now. (I&#39;m still hopeful<br>
+&gt; for a discussion about requirements and use cases, btw)<br>
+&gt;<br>
+&gt; Max.<br>
+&gt;<br>
+&gt;<br>
+&gt;<br>
+&gt; ~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+&gt; List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+&gt;<br>
+&gt; Would you like to receive list mail batched in a daily digest instead?<br>
+Send a<br>
+&gt; message to:<br>
+&gt; <a href="mailto:developers-digest-subscribe@...">developers-digest-subscribe@...</a><br>
+&gt;<br>
+&gt; To remove your address from the list, just send a message to<br>
+&gt; the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+&gt; message. If you haven&#39;t changed addresses since subscribing,<br>
+&gt; you can also send a message to:<br>
+&gt; <a href="mailto:developers-unsubscribe@...">developers-unsubscribe@...</a><br>
+&gt;<br>
+&gt; For addition or removal of addresses, we&#39;ll send a confirmation<br>
+&gt; message to that address. When you receive it, simply reply to it<br>
+&gt; to complete the transaction.<br>
+&gt;<br>
+&gt; If you need to get in touch with the human owner of this list,<br>
+&gt; please send a message to:<br>
+&gt; <a href="mailto:developers-owner@...">developers-owner@...</a><br>
+<br>
+<br>
+<br>
+<br>
+~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="mailto:developers-digest-subscribe@...">developers-digest-subscribe@...</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+message. If you haven&#39;t changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="mailto:developers-unsubscribe@...">developers-unsubscribe@...</a><br>
+<br>
+For addition or removal of addresses, we&#39;ll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="mailto:developers-owner@...">developers-owner@...</a><br>
+<br>
+</div></div></blockquote></div><br><br clear="all"><br>-- <br>Juliana Rotich<br>(w) <a href="http://www.ushahidi.com">www.ushahidi.com</a><br>(b) <a href="http://blog.ushahidi.com">http://blog.ushahidi.com</a><br>Twitter: @ushahidi<br>
+
+(p) +1 847 220 7812<br>Crowdsourcing Crisis Information<br>

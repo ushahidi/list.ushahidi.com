@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::149">previous</a> - <a href="?0::151">next</a><br />Month: <a href="?0:201104">April 2011</a></div>
+<h4 class="ez_pagetitle">Re: [ushahidi developers] Fwd: OpenStreetMap.js redistribution</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> Mike  Dupont &lt;jamesmikedupont@...&gt;<br />
+<span class="ez_label">Date:</span> Tue, 26 Apr 2011 20:23:43 +0200<br />
+</div>
+<pre>HI,
+I think the OSM code is GPL see the license here
+<a href="http://trac.openstreetmap.org/browser/LICENSE?rev=18108">http://trac.openstreetmap.org/browser/LICENSE?rev=18108</a> not AGPL, and
+neither of them are allowed to be included into a LGPLed project, only
+LGPL is allowed to be included into AGPL and GPL.
+
+and the header should look like this,
+<a href="http://www.gnu.org/licenses/gpl-2.0.html#SEC4">http://www.gnu.org/licenses/gpl-2.0.html#SEC4</a>
+
+But the Wikipeida map layers  has moved to SlippyMap.js see this
+commit  <a href="http://www.mail-archive.com/mediawiki-cvs@.../msg08963.html">http://www.mail-archive.com/mediawiki-cvs@.../msg08963.html</a>
+//////////////////////////////////////////
+OpenStreetMap javascript routines
+Copyright (C) 2007, 2008, 2009, 2010, 2011 Tom Hughes , Grant Slater
+and Christopher Schmidt from the OpenStreetMap team
+<a href="http://openstreetmap.org/">http://openstreetmap.org/</a>
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//////////////////////////////////////////
+
+
+
+On Tue, Apr 26, 2011 at 5:59 PM, David Kobia &lt;david@...&gt; wrote:
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Hi Mike,</span>
+<span class="ez_quot">&gt; Could you possibly forward us the AGPL code block that we should add to the OpenStreetMap.js that we have included? The script at <a href="http://www.openstreetmap.org/openlayers/OpenStreetMap.js">http://www.openstreetmap.org/openlayers/OpenStreetMap.js</a> itself doesn't include the license information which is what we used. I'm wondering too if the licensing information should be included as a separate file or as a link in the code block? Also, I should clarify that LGPL and AGPL are compatible licenses.</span>
+<span class="ez_quot">&gt; Thanks,</span>
+<span class="ez_quot">&gt; David Kobia.</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; On Tuesday, April 26, 2011 at 12:19 AM, Mike Dupont wrote:</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Hello,</span>
+<span class="ez_quot">&gt; Please check the licenses and the copyright headers of the files you are redistributing, some are GPL and should be marked as such.</span>
+<span class="ez_quot">&gt; thanks,</span>
+<span class="ez_quot">&gt; mike</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; ---------- Forwarded message ----------</span>
+<span class="ez_quot">&gt; From: Mike Dupont &lt;jamesmikedupont@...&gt;</span>
+<span class="ez_quot">&gt; Date: Sat, Apr 23, 2011 at 6:25 PM</span>
+<span class="ez_quot">&gt; Subject: OpenStreetMap.js redistribution</span>
+<span class="ez_quot">&gt; To: &quot;Licensing and other legal discussions.&quot; &lt;legal-talk@...&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Hi,</span>
+<span class="ez_quot">&gt; I just found this thread</span>
+<span class="ez_quot">&gt; <a href="http://lists.openstreetmap.org/pipermail/talk/2010-August/052632.html">http://lists.openstreetmap.org/pipermail/talk/2010-August/052632.html</a> stating the license of the file is AGPL</span>
+<span class="ez_quot">&gt; here stating it is GPL <a href="http://lists.openstreetmap.org/pipermail/talk/2010-August/052633.html</span>">http://lists.openstreetmap.org/pipermail/talk/2010-August/052633.html</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; The file is in the osm rails git which is supposedly GPL, but lacking the GNU standard COPYING or copy of the license, and it is lacking any copyright terms in the header.</span>
+<span class="ez_quot">&gt; which are of course all optional,</span>
+<span class="ez_quot">&gt; rails/public/openlayers/OpenStreetMap.js</span>
+<span class="ez_quot">&gt; <a href="http://git.openstreetmap.org/rails.git/blob/HEAD:/public/openlayers/OpenStreetMap.js</span>">http://git.openstreetmap.org/rails.git/blob/HEAD:/public/openlayers/OpenStreetMap.js</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; but here it is being used in an LGPL environment and I wonder if that is Kosher?</span>
+<span class="ez_quot">&gt; so, thus the GPL code is being redistributed without marking, without warning in an LGPLed project and it is also not clearly marked</span>
+<span class="ez_quot">&gt; <a href="https://github.com/ushahidi/Ushahidi_Web/blob/81041c50a94c1e73e177a7b7a1a9687c2d235f1c/media/js/OpenStreetMap.js</span>">https://github.com/ushahidi/Ushahidi_Web/blob/81041c50a94c1e73e177a7b7a1a9687c2d235f1c/media/js/OpenStreetMap.js</span></a>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Also in the openlayers example code this is included:</span>
+<span class="ez_quot">&gt; <a href="http://trac.osgeo.org/openlayers/browser/trunk/openlayers/tests/manual/geojson-geomcoll-reprojection.html?rev=9181</span>">http://trac.osgeo.org/openlayers/browser/trunk/openlayers/tests/manual/geojson-geomcoll-reprojection.html?rev=9181</span></a>
+<span class="ez_quot">&gt; openlayers/tests/manual/geojson-geomcoll-reprojection.html:        &lt;script src=&quot;<a href="http://www.openstreetmap.org/openlayers/OpenStreetMap.js&quot;">http://www.openstreetmap.org/openlayers/OpenStreetMap.js&quot;</a> type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; Now I am not an expert on javascript licensing, does that mean I can include gpled javascript in any webpage that I want without affecting the license or having to declare where I got it?</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; thanks,</span>
+<span class="ez_quot">&gt; mike</span>
+<span class="ez_quot">&gt; --</span>
+<span class="ez_quot">&gt; James Michael DuPont</span>
+<span class="ez_quot">&gt; Member of Free Libre Open Source Software Kosova and Albania flossk.org flossal.org</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt;</span>
+<span class="ez_quot">&gt; --</span>
+<span class="ez_quot">&gt; James Michael DuPont</span>
+<span class="ez_quot">&gt; Member of Free Libre Open Source Software Kosova and Albania flossk.org flossal.org</span>
+<span class="ez_quot">&gt;</span>
+
+
+
+<span class="ez_sign">--
+James Michael DuPont
+Member of Free Libre Open Source Software Kosova and Albania
+flossk.org flossal.org
+</pre></span></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

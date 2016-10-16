@@ -1,0 +1,7 @@
+<div dir="ltr">Hi all,<div>Been a while since our last release of the Ushahidi platform -&gt; 2.7 and there is a lot that has been done especially bug fixes. In this regard, we are planning on releasing a &quot;Bug-fix&quot; version of the platform dubbed 2.7.1. For this to happen some testing need to be done on the many commits both from the Ushahidi team and our rockstar community developers therefore we will be enforcing a code-freeze from tomorrow (Wednesday - 11pm EAT) to give the quality assurance team time to give the release a clean bill of health.</div>
+<div><br></div><div>With the code-freeze on, this means we will have a 2.7.1b (beta) branch where no code commits will be accepted but the &quot;Develop&quot; branch will remain open for commits. If you have any pending pull requests, send them over before the code-freeze, we will be happy to review. </div>
+<div style><br></div><div><br clear="all"><div><br></div>-- <br>Regards,<br>Linda Kamau<div><div>Ushahidi Inc.</div><div>Platforms: Ushahidi | Crowdmap | SwiftRiver</div><div>Mobile: iphone | Android</div><div><div>Website: <a href="http://www.ushahidi.com/" target="_blank">http://www.ushahidi.com</a><br>
+Cell:
+ +254 723 674 180<br><div>Skype: lindakamau<br>Twitter: @LKamau<br>
+</div><br></div></div></div>
+</div></div>

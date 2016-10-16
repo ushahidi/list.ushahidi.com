@@ -1,0 +1,47 @@
+<div dir="ltr"><div style="font-size:13px;font-family:arial,sans-serif">Hello everyone,</div><div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif">In line with our 2 week release cycle, we churn out yet another beta version of Ushahidi today, dubbed Ushahidi Platform v3.0.0-beta.2.<br>
+
+</div><div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif">This release is <i>not</i> ready for production and remains largely a developer release. However, you can get a sneak peek of what we currently have <a href="http://v3.ushahidi.com/" target="_blank">on our demo site.</a></div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif"><b>What’s changed?</b></div><div style="font-size:13px;font-family:arial,sans-serif">
+
+<b><br></b></div><div style="font-size:13px;font-family:arial,sans-serif">A few improvements have been made <a href="http://www.ushahidi.com/announcing-first-beta-release-ushahidi-v3/" target="_blank">since our first beta release two weeks ago,</a> which include:</div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><ul><li style="margin-left:15px">The map view now shows a <i>full screen</i> map<br></li><li style="margin-left:15px">Sorting users by name now orders properly<br>
+</li>
+<li style="margin-left:15px">Authentication errors are now handled in a more friendly way<br></li><li style="margin-left:15px">OAuth token expiration length has been made consistent, regardless of time zone<br></li><li style="margin-left:15px">
+
+Post detail UI has been improved to show extra information more clearly</li></ul></div><div style="font-size:13px;font-family:arial,sans-serif"><b><br></b></div><div style="font-size:13px;font-family:arial,sans-serif"><b>What’s New?</b></div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><ul><li style="margin-left:15px">We’ve added the ability to change basic map settings (default location, base layer, etc)<br></li><li style="margin-left:15px">The sidebar now shows actual counts for totals and report status counts<br>
+
+</li><li style="margin-left:15px">The form wizard feature has an improved UI and less buggy reordering<br></li><li style="margin-left:15px">The API explorer has an improved UI and now shows more complete information<br></li>
+
+</ul></div><div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif"><b>Documentation</b></div><div style="font-size:13px;font-family:arial,sans-serif"><b><br>
+
+</b></div><div style="font-size:13px;font-family:arial,sans-serif">We realize that there has been a bit of confusion regarding terminology of our products and how they relate to each other, so we’ve taken a first step at clearing this all out for you by changing references of “Lamu” to “Ushahidi Platform”, under which exists <a href="https://wiki.ushahidi.com/display/WIKI/Ushahidi%2C+v2.X" target="_blank">Ushahidi v2.x</a> (what is currently in production), and <a href="https://wiki.ushahidi.com/display/WIKI/Ushahidi%2C+v3.X" target="_blank">Ushahidi v3.x</a> (the new revamped version, which is still in development and yet to be released)</div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif"><b>How Can I help?</b></div><div style="font-size:13px;font-family:arial,sans-serif">
+
+<ul><li style="margin-left:15px">Download and <a href="https://wiki.ushahidi.com/display/WIKI/Installing+Ushahidi+3.x" target="_blank">Install the platform</a><br></li><li style="margin-left:15px"><a href="https://wiki.ushahidi.com/display/WIKI/Setting+up+an+Ushahidi+3.x+development+build" target="_blank">Set up a development build</a><br>
+
+</li><li style="margin-left:15px">Follow our <a href="https://wiki.ushahidi.com/display/WIKI/Ushahidi+v3.x%2C+Development+process" target="_blank">developer processes</a> to send in bug reports and submit changes.<br></li>
+
+<ul><li style="margin-left:15px">If you’re not already set up on <a href="http://phabricator.org/" target="_blank">Phabricator</a>, please head over to <a href="https://phabricator.ushahidi.com/" target="_blank">the Ushahidi Phabricator page</a> and sign up. Once your account is approved, <a href="https://phabricator.ushahidi.com/w/help/phabricator/" target="_blank">here’s a guide to get you started.</a></li>
+
+</ul><li style="margin-left:15px">Join in on our discussions on IRC and our mailing list<br></li></ul></div><div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif">
+
+<br></div><div style="font-size:13px;font-family:arial,sans-serif"><b>What should I expect in the near future?</b></div><div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif">
+
+In the lead up to a full product launch, we plan on having regular releases every two weeks, with regular updates on what will change with each of the releases. <a href="https://phabricator.ushahidi.com/project/board/1/" target="_blank">Review our roadmap</a> on Phabricator to keep yourself updated.</div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif"><b>v3 Meetup &amp; Demo</b></div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif">We had a few hiccups last week that inevitably led to the cancellation of our scheduled live demo. We’re ready to give it another try, so we hope you can join us for our <a href="http://www.meetup.com/Ushahidi-Community/events/191466442/" target="_blank">rescheduled virtual demo walkthrough and Q&amp;A with core devs on Tuesday July 1st, 2014 a</a>t 1.30 P.M PT/4.30P.M EST/ 08.30 P.M UTC (<a href="http://www.timeanddate.com/worldclock/fixedtime.html?iso=20140703T2030" target="_blank">See timezone conversion information</a>).</div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif">We will also record this session for those who may not be able to attend. As earlier mentioned, this is the first to many more virtual and physical discussions that we plan on hosting in the lead up to full product launch. We welcome any feedback/thoughts on what topics you would like to discuss.</div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif">In the meantime, stay tuned on our <a href="http://ushahidi.com/blog" target="_blank">blog</a>, <a href="http://www.meetup.com/Ushahidi-Community/" target="_blank">meetup page</a>, <a href="https://twitter.com/uchaguzi" target="_blank">twitter</a>, <a href="https://www.facebook.com/UchaguziKenya2013" target="_blank">facebook page</a> and <a href="https://wiki.ushahidi.com/" target="_blank">wiki</a> for more announcements,</div>
+
+<div style="font-size:13px;font-family:arial,sans-serif"><br></div><div style="font-size:13px;font-family:arial,sans-serif">Happy v3 beta release day and thank you all for your continued interest.</div><div style="font-size:13px;font-family:arial,sans-serif">
+
+<br></div><div style="font-size:13px;font-family:arial,sans-serif">The Ushahidi Team</div></div>

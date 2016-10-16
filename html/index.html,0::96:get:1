@@ -1,0 +1,77 @@
+Welcome Milo!<br><br>Please email me your Dutch translations so I can get them into our <a href="http://tafsiri.ushahidi.com">http://tafsiri.ushahidi.com</a> system. I will make you an account there and you can be in charge of the Dutch translations. Once I get the files imported there, they will become a part of our official list of languages found at <a href="https://github.com/ushahidi/Ushahidi-Localizations">https://github.com/ushahidi/Ushahidi-Localizations</a>.<br>
+
+<br>Brian<br><br><div class="gmail_quote">On Wed, Nov 3, 2010 at 6:58 AM, Linda Kamau <span dir="ltr">&lt;<a href="mailto:kamaulynder@...">kamaulynder@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+
+<div class="gmail_quote">You got the best approach, fork 2.0, make sure you are on branch 2.0 by doing &quot;git branch&quot; on your forked code. If its on master switch to 2.0 by &quot;git checkout 2.0&quot;. then put your changes, commit then send a pull request.<br>
+
+
+Added you on list of contacts on skype let me add you to the dev chat.<div><div></div><div class="h5"><br><br><br><br>On Nov 3, 2010 1:45 PM, &quot;Milo van der Linden&quot; &lt;<a href="mailto:milo@..." target="_blank">milo@...</a>&gt; wrote:<br type="attribution">
+
+
+&gt; Thank you Linda for the response. I will read through git documentation to<br>
+&gt; find out how to create my own repo and send pull requests! I also added you<br>&gt; to my skype contacts.<br>&gt; <br>&gt; What is the best approach to develop:<br>&gt; <br>&gt; 1. fork the ushahidi-web<br>&gt; 2. work on the fork<br>
+
+
+
+&gt; 3. commit<br>&gt; 4. send out a pull request?<br>&gt; <br>&gt; Or is the workflow different? I want to make sure I take the right approach<br>&gt; <br>&gt; 2010/11/3 Linda Kamau &lt;<a href="mailto:linda@..." target="_blank">linda@...</a>&gt;<br>
+
+
+
+&gt; <br>&gt;&gt; Hi Milo van der Linden,<br>&gt;&gt; Great fixes you have there, much appreciated. The best branch to work with<br>&gt;&gt; would be 2.0. Also you can create a repo for your code/changes then send<br>&gt;&gt; pull requests to the ushahidi team, that way evaluation becomes easy.<br>
+
+
+
+&gt;&gt; Due to the structure changes on skype, it is not possible for people to<br>&gt;&gt; join a public chat but you can add me on your list of contacts and than I<br>&gt;&gt; can invite you to the Ushahidi dev chat where you will meet other deveopers<br>
+
+
+
+&gt;&gt; and be able to share ideas and code.<br>&gt;&gt; My skype id is lindakamau and once aain thank you for our contribution.<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; On Wed, Nov 3, 2010 at 10:55 AM, Milo van der Linden &lt;<a href="mailto:milo@..." target="_blank">milo@...</a>&gt;wrote:<br>
+
+
+
+&gt;&gt;<br>&gt;&gt;&gt; Hello list!<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; I am an Open Source Geospatial Consultant, involved in OSGeo and<br>&gt;&gt;&gt; OpenStreetMap (among others). I am good at OpenLayers, Postgres/PostGIS,<br>
+
+
+
+&gt;&gt;&gt; geoserver and javascript (preferably jQuery) and PHP.<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; I have testdriven Ushahidi and already have some stuff ready that I would<br>&gt;&gt;&gt; like to share:<br>&gt;&gt;&gt; - Dutch translation, 80% ready<br>
+
+
+
+&gt;&gt;&gt; - Fixes for the issues: #1173, #1174, #1177 (needs discussion first) and<br>&gt;&gt;&gt; #1178<br>&gt;&gt;&gt; - I made the main.php and several other pages w3c valid<br>&gt;&gt;&gt; - I am currently working at solving issues #1169 and #1170<br>
+
+
+
+&gt;&gt;&gt; - I have some ideas on letting admins add wms layers<br>&gt;&gt;&gt; - I want to enhance the <a href="http://geonames.org" target="_blank">geonames.org</a> geocoding process by parsing rss<br>&gt;&gt;&gt; first to detect already geocoded feed-items and then only parsing the not<br>
+
+
+
+&gt;&gt;&gt; geocoded items through geonames<br>&gt;&gt;&gt; - I am also in another project for open source heatmaps. I read that this<br>&gt;&gt;&gt; is still a wish, I would be glad to help!<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; Now, I simply did a git clone and started working in the downloaded<br>
+
+
+
+&gt;&gt;&gt; environment. I myself am a long time SVN user and I am having difficulty<br>&gt;&gt;&gt; understanding how to create a patch in git. Because I would prefer to set up<br>&gt;&gt;&gt; a patch that can be tested by your team before ever being granted commit<br>
+
+
+
+&gt;&gt;&gt; rights. This procedure is often used in open source communities to determine<br>&gt;&gt;&gt; the validity of patches before granting new developers full rights on a<br>&gt;&gt;&gt; repository.<br>&gt;&gt;&gt;<br>
+
+
+
+&gt;&gt;&gt; - Should I work on trunk or on the 2.0 branch?<br>&gt;&gt;&gt; - What is the best to hand changes,fixes and patches over to the team for<br>&gt;&gt;&gt; evaluation?<br>&gt;&gt;&gt; - I have been on the irc-channel, but there was little activity, what<br>
+
+
+
+&gt;&gt;&gt; timezone and time of day would be best to enter irc-chat? And if other<br>&gt;&gt;&gt; channels are more active (f.i. Skype) how can I join them?<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; Thank you in advance and I am thrilled by Ushahidi and would love to come<br>
+
+
+
+&gt;&gt;&gt; aboard!<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; Kind regards,<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; Milo van der Linden<br>&gt;&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; --<br>&gt;&gt; Regards,<br>&gt;&gt; Linda Kamau<br>
+
+
+
+&gt;&gt;<br>&gt; <br>&gt; <br>&gt; <br>&gt; -- <br>&gt; Milo van der Linden<br>&gt; Open Source Geospatial consultant<br>&gt; <br>&gt; dogodigi - Geospatial solutions<br>&gt; Beukenlaan 2<br>&gt; 5261LE  Vught<br>&gt; T. +31616598808<br>
+
+
+
+</div></div></div>
+</blockquote></div><br>

@@ -1,0 +1,63 @@
+<div dir="ltr">Dear,<br><br>I am using Ushahidi 2.7 and I am trying to make a more<br>detailed label for the layers I use.† So far I&#39;ve figured out how to<br>add the data, but I don&#39;t want to show it all (in order not to<br>
+
+confuse people).† To do this, I added some html (I underlined this in this email) in<br>&quot;layout.php&quot; (themes/default/views/main/layout.php) and<br>this seems to be working well.† You can see the example here:<a href="http://hcer.info/talawis">http://hcer.info/talawis</a><br>
+
+<br>&lt;blockquote&gt;&lt;!-- Layers (KML/KMZ) --&gt;<br>††††††††††††††† &lt;div class=&quot;layers-filters clearingfix&quot;&gt;<br>††††††††††††††††††† &lt;strong&gt;&lt;?php echo Kohana::lang(&#39;ui_main.layers_filter&#39;);?&gt; <br>
+
+††††††††††††††††††††††† &lt;span&gt;<br>††††††††††††††††††††††††††† [&lt;a href=&quot;javascript:toggleLayer(&#39;kml_switch_link&#39;, &#39;kml_switch&#39;)&quot; id=&quot;kml_switch_link&quot;&gt;<br>††††††††††††††††††††††††††††††† &lt;?php echo Kohana::lang(&#39;ui_main.hide&#39;); ?&gt;<br>
+
+††††††††††††††††††††††††††† &lt;/a&gt;]<br>††††††††††††††††††††††† &lt;/span&gt;<br>††††††††††††††††††† &lt;/strong&gt;<br>††††††††††††††† &lt;/div&gt;<br>††††††††††††††† &lt;ul id=&quot;kml_switch&quot; class=&quot;category-filters&quot;&gt;<br>
+
+††††††††††††††† &lt;li&gt;&lt;span class=&quot;swatch&quot; style=&quot;background-color:#e2001a&quot;&gt;&lt;/span&gt;&lt;span class=&quot;legend&quot;&gt;‘ﬂ«Ê…&lt;/span&gt;<br>††††††††††††††††††††††††††††††† &lt;br&gt;††† <br>
+
+††††††††††††††††††††††††††††††††††† &lt;?php<br>††††††††††††††††††† foreach ($layers as $layer =&gt; $layer_info)<br>††††††††††††††††††† {<br>††††††††††††††††††††††† $layer_name = $layer_info[0];<br>††††††††††††††††††††††† $layer_color = $layer_info[1];<br>
+
+††††††††††††††††††††††† $layer_url = $layer_info[2];<br>††††††††††††††††††††††† $layer_file = $layer_info[3];<br>††††††††††††††††††††††† $layer_link = ( ! $layer_url)<br>††††††††††††††††††††††††††† ? url::base().Kohana::config(&#39;upload.relative_directory&#39;).&#39;/&#39;.$layer_file<br>
+
+††††††††††††††††††††††††††† : $layer_url;<br>††††††††††††††††††††††††††† echo &#39;&lt;li&gt;&#39;<br>††††††††††††††††††††††††††† . &#39;&lt;a href=&quot;#&quot; id=&quot;layer_&#39;. $layer .&#39;&quot;&gt;&#39;<br>††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;swatch&quot; style=&quot;background-color:#&#39;.$layer_color.&#39;&quot;&gt;&lt;/span&gt;&#39;<br>
+
+††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;layer-name&quot;&gt;&#39;.$layer_name.&#39;&lt;/span&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;/a&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;/li&gt;&#39;<br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††† <u>. &#39;&lt;li&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;swatch&quot; style=&quot;background-color:#004b7d&quot;&gt;&lt;/span&gt;&#39;<br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;legend&quot;&gt;›Ì «·ﬁ«Â—… Ê «·„Õ«›Ÿ« &lt;/span&gt;&#39;<br>††††††††††††††††††††††††††† . &#39;&lt;/li&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;br&gt;&#39;††† <br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;li&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;swatch&quot; style=&quot;background-color:#95d4e6&quot;&gt;&lt;/span&gt;&#39;<br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;legend&quot;&gt;›Ì «·„œ‰ «·ÃœÌœ…&lt;span&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;/li&gt;&#39; <br>††††††††††††††††††††††††††† . &#39;&lt;br&gt;&#39;;</u><br>
+
+††††††††††††††††††† }<br>††††††††††††††† ?&gt;<br>††††††††††††††† &lt;/ul&gt;<br>††††††††††††††† &lt;!-- /Layers --&gt;<br>&lt;/blockquote&gt;<br>The next thing I&#39;m trying to do, is to make this detailed label conditional of which layer is active; I now have two layers, with each two labels, and I only want to show the labels of the layers who&#39;s active.<br>
+
+<br>I tried to add† &quot; if ( $(&#39;layer&#39;).hasClass(&quot;active&quot;))&quot; but this gives an error, does anyone know how to help me out?<br><br>&lt;blockquote&gt;<br>&lt;!-- Layers (KML/KMZ) --&gt;<br>††††††††††††††† &lt;div class=&quot;layers-filters clearingfix&quot;&gt;<br>
+
+††††††††††††††††††† &lt;strong&gt;&lt;?php echo Kohana::lang(&#39;ui_main.layers_filter&#39;);?&gt; <br>††††††††††††††††††††††† &lt;span&gt;<br>††††††††††††††††††††††††††† [&lt;a href=&quot;javascript:toggleLayer(&#39;kml_switch_link&#39;, &#39;kml_switch&#39;)&quot; id=&quot;kml_switch_link&quot;&gt;<br>
+
+††††††††††††††††††††††††††††††† &lt;?php echo Kohana::lang(&#39;ui_main.hide&#39;); ?&gt;<br>††††††††††††††††††††††††††† &lt;/a&gt;]<br>††††††††††††††††††††††† &lt;/span&gt;<br>††††††††††††††††††† &lt;/strong&gt;<br>††††††††††††††† &lt;/div&gt;<br>
+
+††††††††††††††† &lt;ul id=&quot;kml_switch&quot; class=&quot;category-filters&quot;&gt;<br>††††††††††††††† &lt;li&gt;&lt;span class=&quot;swatch&quot; style=&quot;background-color:#e2001a&quot;&gt;&lt;/span&gt;&lt;span class=&quot;legend&quot;&gt;‘ﬂ«Ê…&lt;/span&gt;<br>
+
+††††††††††††††††††††††††††††††† &lt;br&gt;††† <br>††††††††††††††††††††††††††††††††††† &lt;?php<br>††††††††††††††††††† foreach ($layers as $layer =&gt; $layer_info)<br>††††††††††††††††††† {<br>††††††††††††††††††††††† $layer_name = $layer_info[0];<br>
+
+††††††††††††††††††††††† $layer_color = $layer_info[1];<br>††††††††††††††††††††††† $layer_url = $layer_info[2];<br>††††††††††††††††††††††† $layer_file = $layer_info[3];<br><br>††††††††††††††††††††††† $layer_link = ( ! $layer_url)<br>
+
+††††††††††††††††††††††††††† ? url::base().Kohana::config(&#39;upload.relative_directory&#39;).&#39;/&#39;.$layer_file<br>††††††††††††††††††††††††††† : $layer_url;<br>††††††††††††††††††††††† <br>††††††††††††††††††††††† echo &#39;&lt;li&gt;&#39;<br>
+
+††††††††††††††††††††††††††† . &#39;&lt;a href=&quot;#&quot; id=&quot;layer_&#39;. $layer .&#39;&quot;&gt;&#39;<br>††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;swatch&quot; style=&quot;background-color:#&#39;.$layer_color.&#39;&quot;&gt;&lt;/span&gt;&#39;<br>
+
+††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;layer-name&quot;&gt;&#39;.$layer_name.&#39;&lt;/span&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;/a&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;/li&gt;&#39;;<br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††† <br>††††††††††††††††††††††††††††††††††††††††††††††† <u>if ( $(&#39;layer&#39;).hasClass(&quot;active&quot;))<br>††††††††††††††††††††††††††††††††††††††††††††††† {††††††† </u><br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††† echo &#39;&lt;li&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;swatch&quot; style=&quot;background-color:#004b7d&quot;&gt;&lt;/span&gt;&#39;<br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;legend&quot;&gt;›Ì «·ﬁ«Â—… Ê «·„Õ«›Ÿ« &lt;/span&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;/li&gt;&#39;<br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;br&gt;&#39;††† <br>††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;li&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;swatch&quot; style=&quot;background-color:#95d4e6&quot;&gt;&lt;/span&gt;&#39;<br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;span class=&quot;legend&quot;&gt;›Ì «·„œ‰ «·ÃœÌœ…&lt;span&gt;&#39;<br>††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;/li&gt;&#39; <br>
+
+††††††††††††††††††††††††††††††††††††††††††††††††††††††† . &#39;&lt;br&gt;&#39;;<br>††††††††††††††††††††††††††††††††††††††††††††††† }<br>††††††††††††††††††† }<br>††††††††††††††† ?&gt;<br>††††††††††††††† &lt;/ul&gt;<br>††††††††††††††† &lt;!-- /Layers --&gt;<br>
+
+&lt;\blockquote&gt;<br><br>I also have a smaller question, I&#39;m trying to change the swatch in the label from a square to a circle.† I changed the image type from rec to cir in swatch.php (in application/controllers/swatch.php), but this doesn&#39;t seem to change anything.<br>
+
+<br>Thank you very much, Does<br></div>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <title>Ushahidi - developers@list.ushahidi.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript">
+
+/*IFrame SSI script II- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use*/
+var iframeids=["msghtml"]
+var iframehide="no"
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+	var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
+	if (tempobj){
+		tempobj.style.display="block";
+	}
+}}}
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}}}
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller;
+
+
+function showDiv( Div ){
+	if (Div) {
+		$('#' + Div).toggle(400);
+	}
+}
+</script>
+  </head>
+  <body>
+	<div class="big_wrapper_1">
+		<div class="wrapper_1">
+			<a class="logo" href="http://www.ushahidi.com"><img 
+src="http://www.ushahidi.com/-/images/ushahidi-logo_small.png" alt="" 
+/></a>			
+			<p>
+				<a href="http://www.ushahidi.com/about-us">ABOUT US</a>
+				<a href="http://www.ushahidi.com/products">PRODUCTS</a>
+				<a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a>
+				<a href="http://blog.ushahidi.com">BLOG</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="big_wrapper_2">
+		<div class="wrapper_2">
+			<div class="content">
+				<div style="margin-bottom:120px; clear:both;">
+					<h1>Ushahidi Mailing Lists</h1>
+
+    					<div id="ez_container">
+      					<h2 class="ez_header">&laquo; <a href="/">All Lists</a><span><a href="?0">developers@list.ushahidi.com</a></span></h2>
+<div id="ez_menubar">
+Message: <a href="?0::176">previous</a> - <a href="?0::178">next</a><br />Month: <a href="?0:201202">February 2012</a></div>
+<h4 class="ez_pagetitle">ushahidigram</h4>
+<div id="ez_msg">
+<div id="ez_header">
+<span class="ez_label">From:</span> Chris Blow &lt;unthinkingly@...&gt;<br />
+<span class="ez_label">Date:</span> Thu, 2 Feb 2012 17:25:53 -0800<br />
+</div>
+<pre>Hello, 
+
+Would anyone be interesting in collaborating on an instagram clone built in ushahidi? 
+
+I think it would be a good exercise because it could leverage the native mobile clients / or be a cool HTML5 mobile thing — but mostly I want it to be extremely streamlined and customized just to photos. We could hide virtually ever feature and carefully craft the few things we do expose. It could be ridiculously minimalist and, if I could just snap and upload, I would use it every day.  It doesn't have to be a perfect instagram clone, just an easy to setup photosharing hub with a one-click experience. 
+
+Perhaps it could be useful to corporate teams, or geeky families, or friendly darknets and people of the underground. (It would not have the huge instagram social network, but I'm attracted to the idea of a smaller hub of a few people ... :)
+
+One problem we talked about at the meetup last in SF was the fact that Ushahidi proper is not really appropriate for day to day use. Also it is just not fun to think about disaster apps all the time. But we know that, in disasters, people use what they are used to. So maybe this would be something that would help bridge use between normal days and things are on fire days. 
+
+I think I really want to work on something with ushahidi that is just 100% fun this year. 
+
+I was reminded of the checkins feature which we were playing with at SXSW last year. That theme is freaking excellent. But I don't use checkin apps. (But I do use the hell out of instagram.)  Is that theme still active? Would it make sense for the ushahidigram theme to be a fork or extension of that one? 
+
+It should be trivial to build most of it, since it is largely a subset of features. And the social features (which are in Instagram but not Ushahidi) are quite simple.
+
+Anyway, I am eager to make another theme in sass (CSS) and to work out my html5 brain-muscles. I went ahead and started pushing to a repository last night. Could use help with the mobile version. Anyone done an any mobile HTML5 features yet? If not, this would be a cool ways to start on a few features without rewriting all the JS and HTML at once ....  I started pushing here: <a href="https://github.com/unthinkingly/ushahidigram">https://github.com/unthinkingly/ushahidigram</a> would be happy to see a fork and some contributors.
+
+Or just tell me what you think please!
+
+c
+
+PS: Also, since most photosharing sites are generally run by assholes from Yahoo now, I want a way to buffer and broker my photos before they get sent to to them (eg flickr, instagram).  Kind of like this brokers to foursquare: <a href="http://nearfuturelaboratory.com/2012/01/22/privatesquare">http://nearfuturelaboratory.com/2012/01/22/privatesquare</a>
+
+
+</pre></div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big_wrapper">
+			<div class="wrapper">
+				<div class="footer">
+					<div class="footer-column">
+	               	<h5>Here</h5>
+	                   <ul>
+	                       <li class="first"><a href="/">HOME</a></li>
+			       <li><a href="http://www.ushahidi.com/about-us">ABOUT US</a></li>
+                               <li><a href="http://www.ushahidi.com/products">PRODUCTS</a></li>
+                               <li><a href="http://www.ushahidi.com/get-involved">GET INVOLVED</a></li>
+	                   </ul>
+	               </div>
+	               <div class="footer-column">
+	               	<h5>Elsewhere</h5>
+	                   <ul>
+	                       <li class="first"><a href="http://wiki.ushahididev.com">Developer Wiki</a></li>
+	                       <li><a href="http://forums.ushahidi.com">Support Forum</a></li>
+	                       <li><a href="http://swiftapp.org" class="right_links">Swift River</a></li>
+	                       <li><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+	                       <li><a href="http://www.twitter.com/ushahidi">Twitter</a></li>
+	                       <li><a>Copyright &copy; <script type="text/javascript" language="javascript">var today = new Date; document.write(today.getFullYear())</script> Ushahidi.com</a></li>
+	                   </ul>
+	               </div>
+				</div>
+			</div>
+		</div>
+		<!-- GA Tracking -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-12063676-1");
+	pageTracker._trackPageview();
+	} catch(err) {}
+	</script>
+	</body>
+	</html>

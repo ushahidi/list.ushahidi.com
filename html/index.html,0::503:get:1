@@ -1,0 +1,13 @@
+<div dir="ltr">Hi people!<div><br></div><div>I&#39;m from Brazil and I&#39;m doing using Ushahidi at my site <a href="http://mapadacopa.org">mapadacopa.org</a>.</div><div><br></div><div>I&#39;ve not announced it to public yet because i want to lauch it with the apps. But i&#39;m having problem compiling the app using the land SDK with the ADT from google.</div>
+
+<div><br></div><div>I&#39;m on a Debian 7 and using the ADT 22.6.3 (<a href="http://developer.android.com/tools/sdk/eclipse-adt.html">http://developer.android.com/tools/sdk/eclipse-adt.html</a>).</div><div><br></div><div>
+
+I&#39;ve cloned the 2.9.4 branch on GitHub (<a href="https://github.com/ushahidi/Ushahidi_Android">https://github.com/ushahidi/Ushahidi_Android</a>), but i have tried with the master branch as well and it gives always an erros on Core library.</div>
+
+<div><br></div><div>Eclipe (4.3.1) gives me this message when i import the project:</div><div><br></div><div><div>[2014-05-29 15:46:58 - abs] Unable to resolve target &#39;android-16&#39;</div><div>[2014-05-29 15:46:58 - google-play-services_lib] Unable to resolve target &#39;android-8&#39;</div>
+
+<div>[2014-05-29 15:46:59 - Core] Unable to resolve target &#39;android-17&#39;</div><div>[2014-05-29 15:46:59 - Coretest] Unable to resolve target &#39;android-7&#39;</div><div>[2014-05-29 15:47:00 - abs] Unable to resolve target &#39;android-16&#39;</div>
+
+<div>[2014-05-29 15:47:00 - Core] Unable to resolve target &#39;android-17&#39;</div></div><div><br></div><div>The Core library gives me two erros, on the AdminActivity.java and on ReportVideoView.java files. The erros is on the command setPluginsEnabled(true).</div>
+
+<div><br></div><div>I would be very thankfull if you could help me!</div><div><br></div><div>Abraços e beijos.</div></div>

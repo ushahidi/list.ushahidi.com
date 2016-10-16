@@ -1,0 +1,23 @@
+Hi Guys,<br clear="all"><br><div>Ahmed did a good job starting the admin API. I&#39;m going to pick up from where he left off. These are sample function I&#39;m looking at exposing via the api. Essentially, the admin API exposes basic Ushahidi administrative activities to third party application.</div>
+
+
+<div><br></div><div>Ahmed has done couple of them already, I&#39;m just going to add more. If you feel something needs to be included let me know. So far I have these drafted. I&#39;m going to go ahead and add them to the wiki.</div>
+
+<div><br></div><div><div>The functions below requires superadmin/admin/moderator role(s)</div><div><br></div><div>Reports</div><div>• _list_latest_unapproved_reports</div><div>• _list_latest_approved_reports</div><div>• _edit_existing_report(s)</div>
+
+<div>• _delete_existing_report(s)</div><div>• _approve _report(s)</div><div>• _unapprove_report(s)</div><div>• _verify_report(s)</div><div><br></div><div>Categories</div><div>• _add_category(ies)</div><div>• _edit_existing_category</div>
+
+<div>• _delete_existing_category</div><div>• _list_all_categories</div><div><br></div><div>Messages - SMS</div><div>• _view_all_sms_messages</div><div>• _create_report_from_sms_messages</div><div>• _delete_sms_message</div>
+
+<div><span class="Apple-tab-span" style="white-space:pre">	</span></div><div>Messages - Email</div><div>• _view_all_email_messages</div><div>• _create_report_from_email_messages</div><div>• _delete_email_messages</div><div>
+
+<br></div><div>Messages - Twitter</div><div>• _view_all_email_messages</div><div>• _create_report_from_email_messages</div><div>• _delete_email_messages</div><div><br></div><div>Comments</div><div>• _flag_unflag_comment_as_spam</div>
+
+<div>• _approve_unapprove_comment</div><div>• _list_pending_comments</div><div>• _list_all_comments</div><div>• _delete_comment</div><div>• _delete_spam</div></div><div><br></div><div><br>-- <br>Henry<br>Crowdsourcing Crisis Information<br>
+
+<br><a href="http://www.ushahidi.com" target="_blank">www.ushahidi.com</a> | <a href="http://twitter.com/ushahidi" target="_blank">twitter.com/ushahidi</a><br>
+Ghana: +233243581806 <br>Skype: eyedol25<br><div>IRC: <span style="font-family:helvetica, arial, sans-serif;font-size:14px;color:rgb(17, 17, 17);line-height:20px"><a href="http://irc.freenode.net" target="_blank">irc.freenode.net</a> #ushahidi</span></div>
+
+
+<br>
+</div>

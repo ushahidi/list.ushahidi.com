@@ -1,0 +1,87 @@
+Thank you George for the clarification, a couple of things:<div><br></div><div>When you select OSM as Map Provider, the Map API key field is displayed which caught me off guard. So I switched to Google Maps and got a key for <a href="http://localhost">http://localhost</a>, that key should have been persisted into the database as one of the configuration settings. My assumption is that it did, when I went to the homepage map loads but big message box appears with error &quot;Error in loading GML file <a href="http://localhost/ushahidi/json/?z=13&amp;c=0&amp;s=1293829200&amp;e=1296507599" target="_blank">http://localhost/ushahidi/json/?z=13&amp;c=0&amp;s=1293829200&amp;e=1296507599</a>&quot; so not sure if the cause is key not being persisted in the DB</div>
+<div><br></div><div>Will post any other issues i encounter..</div><meta charset="utf-8"><div><br></div><div><br><br><div class="gmail_quote">On Wed, Jan 5, 2011 at 10:55 PM, george chamales <span dir="ltr">&lt;<a href="mailto:george@...">george@...</a>&gt;</span> wrote:<br>
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex;">Hi Erik,<div><br>Great info - I&#39;ve got a document that I use whenever I&#39;m doing an Ushahidi install that covers the main things I do to ensure the install works.<div class="gmail_quote">
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+<div style="word-wrap:break-word"><div><div><blockquote type="cite"><div>The installer requires mcrypt-</div></blockquote></div></div></div></blockquote><div>Here&#39;s the list of packages that I install when using ubuntu:  </div>
+
+
+
+<div><br></div><div>sudo apt-get install apache2 php5 mysql-server-5.1 php5-curl php5-mcrypt php5-mysql php5-gd php5-imap git-core sendmail php5-xcache unzip</div><div> </div><div>Mcrypt is there along with sendmail / php5-imap needed to send / receive alerts and php5-xcache for the cacheing system.</div>
+<div class="im">
+
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div style="word-wrap:break-word"><div><div><blockquote type="cite"><div>Suggestions</div><div><br></div><div>May be worth mentioning to users that once they&#39;ve installed <b>php5-mcrypt (Ubuntu/Debian specific binary) </b>that they need to restart apache in order for Ushahidi to recognise the added php library.</div>
+
+
+
+</blockquote></div></div></div></blockquote></div><div>Great point - I&#39;ve never had to do that as a separate step because I also modify /etc/apache2/sites-available/default to &quot;AllowOverride All&quot; on /var/www and ensure that mod_rewrite is enabled by running &quot;a2enmod rewrite&quot;.  Once that&#39;s done I restart apache.</div>
+<div class="im">
+
+
+<div><br></div><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div style="word-wrap:break-word"><div><div><blockquote type="cite">
+
+<div>OpenStreet Maps API Key</div><div><br></div><div>This was a bit confusing for me, no direct relation to the Ushahidi code, but when click on the API key link it takes you to the sign up page for OSM which is ok. You sign up, confirm email address and you&#39;re good to go &lt;&lt; I couldn&#39;t figure out where the <b>API key </b>is supposed to be obtained from, may be my impatience.</div>
+
+
+
+</blockquote></div></div></div></blockquote></div><div>Not 100% sure what he means.  This may be because the &quot;get an api key&quot; is disabled if you choose OSM as your provider, but you do still need a google api key to do geolocation.  That could cause some confusion - in general I just go to the map page, add a google api key, then switch providers.  It&#39;ll be great once Openlayers is updated and we don&#39;t need to bother with google maps keys anymore.</div>
+<div class="im">
+
+
+<div><br></div><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div style="word-wrap:break-word"><div><div><blockquote type="cite"><div></div><div>Post Installation</div>
+
+
+
+<div><br></div><div>Home page error</div><div><br></div><div>Error in loading GML file <a href="http://localhost/ushahidi/json/?z=13&amp;c=0&amp;s=1293829200&amp;e=1296507599" target="_blank">http://localhost/ushahidi/json/?z=13&amp;c=0&amp;s=1293829200&amp;e=1296507599</a> &lt;&lt; big arse message box appeared. haven&#39;t bothered to figure out why it&#39;s throwing this but I can dig around.</div>
+
+
+
+</blockquote></div></div></div></blockquote><div><br></div></div><div>Going to guess that&#39;s due to the missing google maps api key.  There have been times where I&#39;ve had to manually add the key into the database settings table.</div>
+<div class="im">
+
+
+<div> </div><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div style="word-wrap:break-word"><div><div><blockquote type="cite">
+<div>Error 404- <a href="http://localhost/ushahidi/admin" target="_blank">http://localhost/ushahidi/admin</a></div><div><br></div><div>I got error 404 when accessing any pages away from the home page.&lt;&lt; my solution was to go to /ushahidi/applications/config/config.php and specify the controller file:</div>
+
+
+
+
+<div><br></div><div><div>$config[&#39;index_page&#39;] = &#39;index.php&#39;;</div></div><div><br></div><div>I also edited the .htaccess file and set the <b>RewriteEngine Off </b>just as a precaution, mind you mod_rewrite is running on the server.</div>
+
+
+
+
+<div><br></div><div>Most of the URLs worked fine with the exception of:</div><div><br></div><div>Addons- URL automatically goes to <b><a href="http://localhost/ushahidi/admin/addons/plugins/" target="_blank">http://localhost/ushahidi/admin/addons/plugins/</a></b> INSTEAD of <b><a href="http://localhost/ushahidi/index.php/admin/addons/plugins/" target="_blank">http://localhost/ushahidi/index.php/admin/addons/plugins/</a></b></div>
+
+
+
+
+<div><b><br></b></div><div>Themes- same as above ^^<br clear="all"></div></blockquote></div></div></div></blockquote><div><br></div></div><div>Going to guess those are all .htaccess issues caused by an improper RewriteBase entry - should always be the path to your ushahidi directory relative to webroot.</div>
+
+
+
+<div><br></div><div>Just for the sake of posterity, here&#39;s the current cheat-sheet I use when installing on ubuntu:</div><div><br></div><div><div>sudo apt-get install apache2 php5 mysql-server-5.1 php5-curl php5-mcrypt php5-mysql php5-gd php5-imap git-core sendmail php5-xcache unzip</div>
+
+
+
+<div># mysql password:  &lt;whatever&gt;</div><div><br></div><div>#Edit /etc/apache2/sites-available/default:  AllowOverride All on /var/www</div><div>a2enmod rewrite</div><div>/etc/init.d/apache2 restart</div><div><br></div>
+
+
+
+<div>git clone <a href="http://github.com/ushahidi/Ushahidi_Web.git" target="_blank">http://github.com/ushahidi/Ushahidi_Web.git</a></div><div># move it to whatever directory you&#39;re using with mv, i.e. /var/www - using cp may cause hidden directories / files like .htaccess to not be copied over</div>
+
+
+
+<div><br></div><div>mysql -u root -p</div><div>create database &lt;ushahidi db&gt;;</div><div>grant all privileges on &lt;ushahidi db&gt;.* to &#39;&lt;ushahidi username&gt;&#39;@&#39;localhost&#39; identified by &#39;&lt;password&gt;&#39;;</div>
+
+
+
+<div><br></div><div>sudo chown www-data application/config/config.php application/config application/cache application/logs media/uploads .htaccess</div><div><br></div><div># go to the website and run through the install process.</div>
+
+
+
+<div><br></div><div>george</div></div></div><br></div>
+</blockquote></div><br><br clear="all"><br>-- <br>John Wesonga<br><br>
+</div>

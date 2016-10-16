@@ -1,0 +1,75 @@
+Hey Max,<br><br>I&#39;m working on building Multiple Hosted Instances into the core Ushahidi code so all versions of Ushahidi will have the ability to host multiple versions (given the admin has enough technical prowess to get the subdomains working properly in their webserver). I&#39;m actually on that 100% right now and should hopefully have something pushed to the repo by the end of the week.<br>
+<br>Brian<br><br><div class="gmail_quote">On Mon, Mar 8, 2010 at 3:33 AM, Max Froumentin <span dir="ltr">&lt;<a href="mailto:max@...">max@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;">
+Hi Chris,<br>
+<br>
+It&#39;s not so much git than db versions (and laziness and ignorance). I<br>
+always seem to get an old version that doesn&#39;t update correctly. But<br>
+sometimes not, usually the error message is too obscure for me to tell<br>
+straight away. Since I&#39;m mostly interested in front-end stuff, I<br>
+prefer starting from a blank slate over fixing things.<br>
+<br>
+So if I could suggest one thing, it would be to make it clearer in<br>
+error messages when the db version is not in accordance with the code<br>
+used.<br>
+<br>
+And while I&#39;m at it, can I ask about our project of hosting instances<br>
+ourselves? Since I&#39;ve started using that script for creating multiple<br>
+instances on my server, I was wondering what we were at on that front.<br>
+<br>
+Cheers,<br>
+<font color="#888888">Max.<br>
+</font><div><div></div><div class="h5"><br>
+<br>
+<br>
+On 8 March 2010 00:01, Chris Blow &lt;<a href="mailto:unthinkingly@...">unthinkingly@...</a>&gt; wrote:<br>
+&gt; Thanks max,<br>
+&gt;<br>
+&gt; What are the problems?<br>
+&gt;<br>
+&gt; Perhaps there a issue with your git environment somehow?<br>
+&gt;<br>
+&gt; Seems it would be better to resolve the underlying issues.<br>
+&gt; Best,<br>
+&gt; c<br>
+&gt;<br>
+&gt; - via phone<br>
+&gt;<br>
+&gt; On Mar 7, 2010, at 11:14, Max Froumentin &lt;<a href="mailto:max@...">max@...</a>&gt; wrote:<br>
+&gt;<br>
+&gt;&gt; Ah good, thanks. I just wanted to send this shell script I just wrote.<br>
+&gt;&gt; Almost every time I merge, there&#39;s some error I&#39;m not able to fix, so<br>
+&gt;&gt; I end up reinstalling everything. This script does all that for me. It<br>
+&gt;&gt; deletes the local repo and database, fetches the head from git, writes<br>
+&gt;&gt; config files, create a new database, and fill the settings table.<br>
+&gt;&gt;<br>
+&gt;&gt; It&#39;s far from complete, but works for me, and I can create multiple<br>
+&gt;&gt; instances simply. It might be useful for others, so I&#39;m sending it<br>
+&gt;&gt; here. Just set the variables at the top, run, and don&#39;t blame me if<br>
+&gt;&gt; something goes wrong :)<br>
+&gt;&gt;<br>
+&gt;&gt; Max.<br>
+&gt;&gt; &lt;getUshahidi.sh&gt;<br>
+<br>
+<br>
+<br>
+~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="mailto:developers-digest-subscribe@...">developers-digest-subscribe@...</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+message. If you haven&#39;t changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="mailto:developers-unsubscribe@...">developers-unsubscribe@...</a><br>
+<br>
+For addition or removal of addresses, we&#39;ll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="mailto:developers-owner@...">developers-owner@...</a><br>
+<br>
+</div></div></blockquote></div><br>

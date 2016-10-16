@@ -1,0 +1,111 @@
+<div dir="ltr">Hi Angelos,<div><br></div><div>From the error in #1041 it looks like the issue here has nothing to do with Ushahidi itself, and is entirely part of the installation script.</div><div>Not sure if anyone on the Ushahidi team will have ever seen the script before so may not be much help. Have you managed to fix it yet?</div>
+
+<div><br></div><div>Regards</div><div>Robbie<br><div><br></div><div style><br></div></div></div><div class="gmail_extra"><br><br><div class="gmail_quote">On Sat, Jan 5, 2013 at 2:57 AM, Angelos Tzotsos <span dir="ltr">&lt;<a href="mailto:gcpp.kalxas@..." target="_blank">gcpp.kalxas@...</a>&gt;</span> wrote:<br>
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Dear Ushahidi developers,<br>
+<br>
+Happy New Year.<br>
+<br>
+My name is Angelos and I am the release manager for the OSGeoLive distribution.<br>
+<a href="http://live.osgeo.org" target="_blank">http://live.osgeo.org</a><br>
+<br>
+Ushahidi is pre-installed on OSGeoLive.<br>
+<a href="http://live.osgeo.org/en/overview/ushahidi_overview.html" target="_blank">http://live.osgeo.org/en/<u></u>overview/ushahidi_overview.<u></u>html</a><br>
+<br>
+I am writting to this list since we are having some issues with our current installation script and we would like this to be fixed in order to move to our beta release the following days. I have tried to follow our contact list but there was no response so far.<br>
+
+
+<br>
+I am sending you the corresponding e-mail from the OSGeoLive mailing list.<br>
+<br>
+Could someone please take a look at this?<br>
+<a href="http://trac.osgeo.org/osgeo/ticket/1041" target="_blank">http://trac.osgeo.org/osgeo/<u></u>ticket/1041</a><br>
+<br>
+The source code of the installation script can be found here:<br>
+<a href="http://trac.osgeo.org/osgeo/browser/livedvd/gisvm/trunk/bin/install_ushahidi.sh?rev=9533" target="_blank">http://trac.osgeo.org/osgeo/<u></u>browser/livedvd/gisvm/trunk/<u></u>bin/install_ushahidi.sh?rev=<u></u>9533</a><br>
+
+
+<br>
+Our current nightly build with the issue can be downloaded here:<br>
+<a href="http://aiolos.survey.ntua.gr/gisvm/dev/osgeo-live-debug-build9530.iso" target="_blank">http://aiolos.survey.ntua.gr/<u></u>gisvm/dev/osgeo-live-debug-<u></u>build9530.iso</a><br>
+<br>
+Best regards,<br>
+Angelos<br>
+<br>
+On 12/28/2012 10:47 PM, Angelos Tzotsos wrote:<br>
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+Hi,<br>
+<br>
+There has been lot of bug fixing action lately and several nightly builds.<br>
+The last one is available here:<br>
+<a href="http://aiolos.survey.ntua.gr/gisvm/dev/" target="_blank">http://aiolos.survey.ntua.gr/<u></u>gisvm/dev/</a><br>
+<br>
+Before moving to our final alpha6 build I would like to provide an update on the active issues:<br>
+<br>
+1. Mapfish is not working<br>
+<a href="http://trac.osgeo.org/osgeo/ticket/917" target="_blank">http://trac.osgeo.org/osgeo/<u></u>ticket/917</a><br>
+<br>
+2. Sahana is not working<br>
+<a href="http://trac.osgeo.org/osgeo/ticket/1039" target="_blank">http://trac.osgeo.org/osgeo/<u></u>ticket/1039</a><br>
+<br>
+3. Ushahidi is not working<br>
+<a href="http://trac.osgeo.org/osgeo/ticket/1041" target="_blank">http://trac.osgeo.org/osgeo/<u></u>ticket/1041</a><br>
+<br>
+4. i3geo has some installation issues (hopefully the last commits have fixed it)<br>
+<a href="http://trac.osgeo.org/osgeo/ticket/1043" target="_blank">http://trac.osgeo.org/osgeo/<u></u>ticket/1043</a><br>
+<br>
+5. GeoNetwork fails to start internal geoserver with 1GB of RAM<br>
+<a href="http://trac.osgeo.org/osgeo/ticket/1032" target="_blank">http://trac.osgeo.org/osgeo/<u></u>ticket/1032</a><br>
+<br>
+What was fixed the last days:<br>
+- GeoServer<br>
+- Cartaro<br>
+- EOxServer<br>
+- gvSIG<br>
+- Mapbender<br>
+- Tilemill<br>
+- osm2pgsql<br>
+- QGIS Server<br>
+- Spatialite GUI<br>
+<br>
+We would like to have the above issues fixed for our first beta release early January, so we kindly ask involved projects to step up and provide fixes, in order to make the first beta as stable as possible.<br>
+<br>
+Best Wishes,<br>
+Angelos<br>
+<br>
+</blockquote>
+<br>
+<br>
+-- <br>
+Angelos Tzotsos<br>
+Remote Sensing Laboratory<br>
+National Technical University of Athens<br>
+<a href="http://users.ntua.gr/tzotsos" target="_blank">http://users.ntua.gr/tzotsos</a><br>
+<br>
+<br>
+<br>
+<br>
+~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="mailto:developers-digest-subscribe@..." target="_blank">developers-digest-subscribe@<u></u>list.ushahidi.com</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+message. If you haven&#39;t changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="mailto:developers-unsubscribe@..." target="_blank">developers-unsubscribe@list.<u></u>ushahidi.com</a><br>
+<br>
+For addition or removal of addresses, we&#39;ll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="mailto:developers-owner@..." target="_blank">developers-owner@list.<u></u>ushahidi.com</a><br>
+<br>
+</blockquote></div><br><br clear="all"><div><br></div>-- <br><div>Robbie Mackay</div><div><br><div>Software Developer, External Projects</div><div>Ushahidi Inc</div><div>m: +64 27 576 2243<br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div>
+
+</div><div>skype: robbie.mackay</div></div>
+</div>

@@ -1,0 +1,657 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=us-ascii">
+<meta name=Generator content="Microsoft Word 11 (filtered medium)">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><o:SmartTagType
+ namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place"/>
+<!--[if !mso]>
+<style>
+st1\:*{behavior:url(#default#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:monospace;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	text-indent:-.3in;
+	page-break-after:avoid;
+	mso-list:l0 level1 lfo2;
+	font-size:16.0pt;
+	font-family:"Times New Roman";}
+h2
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.4in;
+	text-indent:-.4in;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	mso-list:l0 level2 lfo2;
+	font-size:11.0pt;
+	font-family:"Arial Black";
+	letter-spacing:-.75pt;
+	font-weight:normal;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	text-indent:-.5in;
+	mso-list:l0 level3 lfo2;
+	font-size:11.0pt;
+	font-family:"Times New Roman";}
+h4
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.6in;
+	text-indent:-.6in;
+	mso-list:l0 level4 lfo2;
+	font-size:11.0pt;
+	font-family:"Times New Roman";}
+h5
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.7in;
+	text-indent:-.7in;
+	mso-list:l0 level5 lfo2;
+	font-size:11.0pt;
+	font-family:"Times New Roman";}
+h6
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.8in;
+	text-indent:-.8in;
+	mso-list:l0 level6 lfo2;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;
+	font-style:italic;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Times New Roman";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:8.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.StyleHeading1Left, li.StyleHeading1Left, div.StyleHeading1Left
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	page-break-after:avoid;
+	mso-list:l1 level1 lfo1;
+	font-size:16.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.Normal-Terminal, li.Normal-Terminal, div.Normal-Terminal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";}
+p.StyleHeading6Bold, li.StyleHeading6Bold, div.StyleHeading6Bold
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.8in;
+	text-indent:-.8in;
+	mso-list:l0 level6 lfo2;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;
+	font-style:italic;}
+span.EmailStyle24
+	{mso-style-type:personal-reply;
+	font-family:"Trebuchet MS";
+	color:blue;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:91829166;
+	mso-list-template-ids:-726209136;}
+@list l0:level1
+	{mso-level-style-link:"Heading 1";
+	mso-level-text:%1;
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l0:level2
+	{mso-level-style-link:"Heading 2";
+	mso-level-text:"%1\.%2";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l0:level3
+	{mso-level-style-link:"Heading 3";
+	mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l0:level4
+	{mso-level-style-link:"Heading 4";
+	mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l0:level5
+	{mso-level-style-link:"Heading 5";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l0:level6
+	{mso-level-style-link:"Heading 6";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l0:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l0:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l0:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+@list l1
+	{mso-list-id:1278829025;
+	mso-list-template-ids:-938962712;}
+@list l1:level1
+	{mso-level-style-link:"Style Heading 1 + Left";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.3in;}
+@list l1:level3
+	{mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-.35in;}
+@list l1:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.45in;
+	text-indent:-.45in;}
+@list l1:level5
+	{mso-level-number-format:none;
+	mso-level-text:"4\.1";
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:1.8in;
+	text-indent:-.55in;}
+@list l1:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.15in;
+	text-indent:-.65in;}
+@list l1:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.75in;}
+@list l1:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:2.85in;
+	text-indent:-.85in;}
+@list l1:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-1.0in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=blue>
+
+<div class=Section1>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'>Hi <st1:place
+w:st="on">Milo</st1:place>,<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'>Don&#8217;t you need
+to do a <o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'>git fetch origin
+master:master<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'>instead?<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'><br>
+Cheers,<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'>Pablo<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=2 color=blue face="Trebuchet MS"><span
+style='font-size:10.0pt;font-family:"Trebuchet MS";color:blue'><o:p>&nbsp;</o:p></span></font></p>
+
+<div style='border:none;border-left:solid blue 1.5pt;padding:0in 0in 0in 4.0pt'>
+
+<div>
+
+<div class=MsoNormal align=center style='text-align:center'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt'>
+
+<hr size=3 width="100%" align=center tabindex=-1>
+
+</span></font></div>
+
+<p class=MsoNormal><b><font size=2 face=Tahoma><span style='font-size:10.0pt;
+font-family:Tahoma;font-weight:bold'>From:</span></font></b><font size=2
+face=Tahoma><span style='font-size:10.0pt;font-family:Tahoma'> Milo van der
+Linden [mailto:milo@...] <br>
+<b><span style='font-weight:bold'>Sent:</span></b> Wednesday, November 03, 2010
+14:19<br>
+<b><span style='font-weight:bold'>To:</span></b> developers@...<br>
+<b><span style='font-weight:bold'>Subject:</span></b> Re: [ushahidi developers]
+Update to GitHub Branch</span></font><o:p></o:p></p>
+
+</div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>David,<o:p></o:p></span></font></p>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt'>I will do that now. In
+Ubuntu I use a product called meld to detect diffs. I will run this across the
+2.0 version with my original changes.<o:p></o:p></span></font></p>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>2010/11/3 David Kobia &lt;<a href="mailto:david@...">david@...</a>&gt;<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><st1:place w:st="on"><font size=3 face="Times New Roman"><span
+ style='font-size:12.0pt'>Milo</span></font></st1:place>,<br>
+Do you mind updating your changes for the 2.0 branch? Then I can merge them in.<br>
+<br>
+Thanks!<o:p></o:p></p>
+
+<div>
+
+<div>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt'><br>
+<br>
+<br>
+<o:p></o:p></span></font></p>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>On Wed, Nov 3, 2010 at 1:59 PM, Milo van der Linden &lt;<a
+href="mailto:milo@..." target="_blank">milo@...</a>&gt; wrote:<o:p></o:p></span></font></p>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>Thank you for the information David,&nbsp;<o:p></o:p></span></font></p>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>I did as you said and it turned out I needed to checkout the 2.0 branch
+before I could run the second line. For others who share the same trouble:<o:p></o:p></span></font></p>
+
+<div>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+<div><span style='white-space:pre-wrap'>
+
+<p class=MsoNormal><font size=5 face="Courier New"><span style='font-size:18.0pt;
+font-family:"Courier New"'>$ git branch -m master 1.2</span></span></font><o:p></o:p></p>
+
+</div>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'>#check that there are no pending
+commits:</span></span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'>$ git status</span></span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'>#if you have pending commits in
+the 1.2 branch, commit and push them first</span></span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'># check out 2.0</span></span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'>$git fetch origin 2.0:2.0</span></span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'>#now you are ready to move 2.0
+to master:</span></span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'>$ git branch -m 2.0 master</span></span></font><o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'><br>
+<br>
+</span></font><o:p></o:p></p>
+
+</div>
+
+</div>
+
+</span>
+
+<div>
+
+<p class=MsoNormal><font size=5 face=monospace><span style='white-space:pre-wrap'><span
+style='font-size:18.0pt;font-family:monospace'><br>
+</span></font></span>Good luck!<o:p></o:p></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>Kind regards,<o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>Milo van der Linden<o:p></o:p></span></font></p>
+
+</div>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>2010/11/3 David Kobia &lt;<a href="mailto:david@..."
+target="_blank">david@...</a>&gt;<o:p></o:p></span></font></p>
+
+<div>
+
+<div>
+
+<blockquote style='border:none;border-left:solid #CCCCCC 1.0pt;padding:0in 0in 0in 6.0pt;
+margin-left:4.8pt;margin-right:0in'>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><font size=3
+face="Times New Roman"><span style='font-size:12.0pt'>Hi Guys,<br>
+I just wanted to let you know that we've now converted (renamed) the <b><span
+style='font-weight:bold'>2.0</span></b> branch on github to <b><span
+style='font-weight:bold'>master</span></b>. To avoid breaking your local github
+repos, please do the following:<o:p></o:p></span></font></p>
+
+<div><pre style='margin-left:21.8pt'><font size=4 face="Courier New"><span
+style='font-size:13.5pt'>$ git branch -m master 1.2</span></font><o:p></o:p></pre></div>
+
+<div><pre style='margin-left:21.8pt'><font size=4 face="Courier New"><span
+style='font-size:13.5pt'>$ git branch -m 2.0 master</span></font><o:p></o:p></pre></div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'>This will rename your local branches accordingly, so that your local
+master will match the remote branch which is the original 2.0 branch.<br>
+<br>
+Thanks!<br>
+<font color="#888888"><span style='color:#888888'><br>
+David</span></font><o:p></o:p></span></font></p>
+
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><br>
+<br clear=all>
+<br>
+-- <br>
+Milo van der Linden<br>
+Open Source Geospatial consultant<br>
+<br>
+dogodigi - Geospatial solutions&nbsp; <br>
+Beukenlaan 2<br>
+5261LE&nbsp; Vught<br>
+T. +31616598808<o:p></o:p></span></font></p>
+
+</div>
+
+</div>
+
+</div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+</div>
+
+</div>
+
+<p class=MsoNormal><font size=3 face="Times New Roman"><span style='font-size:
+12.0pt'><br>
+<br clear=all>
+<br>
+-- <br>
+Milo van der Linden<br>
+Open Source Geospatial consultant<br>
+<br>
+dogodigi - Geospatial solutions&nbsp; <br>
+Beukenlaan 2<br>
+5261LE&nbsp; Vught<br>
+T. +31616598808<o:p></o:p></span></font></p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

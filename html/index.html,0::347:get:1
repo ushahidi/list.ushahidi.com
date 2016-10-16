@@ -1,0 +1,100 @@
+<div dir="ltr"><div style>Hi Loren, </div><div><br></div><div style>At the moment we&#39;re aiming for:</div><div>API complete - Early April</div><div>Alpha Release - End of May/Early June</div><div>Beta Release - End of June/Early July</div>
+
+<div><br></div><div style>The dates are a little rough at this stage, there are still a lot of variables.</div><div><br></div><div style>Robbie</div></div><div class="gmail_extra"><br><br><div class="gmail_quote">On Wed, Mar 20, 2013 at 12:09 PM, LBell <span dir="ltr">&lt;<a href="mailto:lbell270@..." target="_blank">lbell270@...</a>&gt;</span> wrote:<br>
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">Thanks for the update - sounds like a lot happening.<br>
+<br>
+Curious if you have a vague idea (non-binding, of course) of when 3.0<br>
+Alpha / Beta might be expected? Something within a range of months (or<br>
+years even) would be helpful.<br>
+<br>
+And thanks for the awesome work,<br>
+<br>
+LB<br>
+<div><div class="h5"><br>
+On Tue, Mar 19, 2013 at 4:44 PM, Robbie MacKay &lt;<a href="mailto:robbie@...">robbie@...</a>&gt; wrote:<br>
+&gt; Hi All,<br>
+&gt;<br>
+&gt; Just a quick update on Ushahidi 3.0. Now that Uchaguzi is done I&#39;m getting<br>
+&gt; moving building API, and we&#39;re starting to dig into the design and workflow<br>
+&gt; issues. You can see what&#39;s happening on the wiki<br>
+&gt; <a href="https://wiki.ushahidi.com/display/WIKI/REST+API" target="_blank">https://wiki.ushahidi.com/display/WIKI/REST+API</a> and in the Github repo<br>
+&gt; <a href="https://github.com/ushahidi/Lamu" target="_blank">https://github.com/ushahidi/Lamu</a>.<br>
+&gt;<br>
+&gt;<br>
+&gt; Tracking the build<br>
+&gt; We&#39;re trying to keep the processes lightweight, however there&#39;s still a lot<br>
+&gt; to build. I&#39;m tracking a backlog of features and other issues through github<br>
+&gt; issues: <a href="https://github.com/ushahidi/Lamu/issues" target="_blank">https://github.com/ushahidi/Lamu/issues</a><br>
+&gt; As each feature gets started we&#39;ll be adding rough spec details and comments<br>
+&gt; to the ticket description, and when features are complete they&#39;ll be code<br>
+&gt; reviewed using Github pull requests. Each of these steps is a chance for you<br>
+&gt; to comment on how we&#39;re doing and suggest improvements.<br>
+&gt;<br>
+&gt; Most tasks will get assigned to and built by the internal team. But if you<br>
+&gt; want to get involved in v3 development chime in on a ticket and let us know<br>
+&gt; where you can help.<br>
+&gt;<br>
+&gt; A lot of discussion is happening between the core team at the moment, but as<br>
+&gt; we get further in we&#39;ll be trying to open that up and get community feedback<br>
+&gt; as well.<br>
+&gt;<br>
+&gt;<br>
+&gt; Early targets and migration<br>
+&gt;<br>
+&gt; As we&#39;re pushing forward with v3, one the big items is going to be migration<br>
+&gt; from Ushahidi 2.x.<br>
+&gt; To ensure this works smoothly we&#39;ve set a couple of early targets:<br>
+&gt;<br>
+&gt; 3.0 Alpha will try to cover core 2.x features and include an import script<br>
+&gt; to pull data from 2.x. This will really be for developers and hard-core<br>
+&gt; testers only. At this stage we won&#39;t be aiming for a nice import UI, just a<br>
+&gt; solid import so we can start testing and ensure we don&#39;t lose data.<br>
+&gt;<br>
+&gt; 3.0 Beta will go further on migration. Migrating from 2.x will mostly likely<br>
+&gt; be integrated into the UI of the installer. It may not be polished at this<br>
+&gt; stage, but it should be enough have early adopters trying out the process<br>
+&gt; and getting running.<br>
+&gt;<br>
+&gt;<br>
+&gt; Shout out if you have any more question on the 3.0 build. I&#39;ll try and send<br>
+&gt; more updates every few weeks as we get moving.<br>
+&gt;<br>
+&gt; Keep on mapping!<br>
+&gt;<br>
+&gt; Robbie<br>
+&gt;<br>
+&gt; PS I should have to Posts API ready for code review soon for anyone<br>
+&gt; interested.<br>
+&gt;<br>
+&gt; Software Developer, External Projects<br>
+&gt; Ushahidi Inc<br>
+&gt; e: <a href="mailto:robbie@...">robbie@...</a><br>
+&gt; skype: robbie.mackay<br>
+<br>
+<br>
+<br>
+</div></div>~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+List Archive: <a href="http://list.ushahidi.com/" target="_blank">http://list.ushahidi.com/</a><br>
+<br>
+Would you like to receive list mail batched in a daily digest instead? Send a message to:<br>
+<a href="mailto:developers-digest-subscribe@...">developers-digest-subscribe@...</a><br>
+<br>
+To remove your address from the list, just send a message to<br>
+the address in the &quot;List-Unsubscribe&quot; header of any list<br>
+message. If you haven&#39;t changed addresses since subscribing,<br>
+you can also send a message to:<br>
+<a href="mailto:developers-unsubscribe@...">developers-unsubscribe@...</a><br>
+<br>
+For addition or removal of addresses, we&#39;ll send a confirmation<br>
+message to that address. When you receive it, simply reply to it<br>
+to complete the transaction.<br>
+<br>
+If you need to get in touch with the human owner of this list,<br>
+please send a message to:<br>
+<a href="mailto:developers-owner@...">developers-owner@...</a><br>
+<br>
+</blockquote></div><br><br clear="all"><div><br></div>-- <br><div>Robbie Mackay</div><div><br><div>Software Developer, External Projects</div><div>Ushahidi Inc</div><div>m: +64 27 576 2243<br><div>e: <a href="mailto:robbie@..." target="_blank">robbie@...</a></div>
+
+</div><div>skype: robbie.mackay</div></div>
+</div>

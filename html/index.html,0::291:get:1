@@ -1,0 +1,22 @@
+<html>
+<head>
+<style><!--
+.hmmessage P
+{
+margin:0px;
+padding:0px
+}
+body.hmmessage
+{
+font-size: 10pt;
+font-family:Tahoma
+}
+--></style></head>
+<body class='hmmessage'><div dir='ltr'>
+<br>Hi folks,<br><br>I'm based in Canada and I'm trying to write Ushahidi plugins. I specifically need info about what class and library files are needed to make a plugin work, and <br>also some examples on how to create a plugin.<br>
+<br>
+I've searched online extensively for info on writing Ushahidi plugins/Kohana plugins but haven't found any adequate info<br>
+on how to do this. I also followed the documentation at<br>
+<a href="https://wiki.ushahidi.com/display/WIKI/How+To+Write+A+Plugin" target="_blank">https://wiki.ushahidi.com/<wbr>display/WIKI/How+To+Write+A+<wbr>Plugin</a> to write a plugin but it doesn't work. This documentation page also needs<br>
+updating or revising because the instructions don't work.&nbsp; <br><br>I've also asked Ushahidi developers but haven't heard back from them.&nbsp; Can anyone help me? Thanks.<br><br><br>Peter Chin<br><br><br><br> 		 	   		  </div></body>
+</html>

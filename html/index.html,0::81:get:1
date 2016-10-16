@@ -1,0 +1,45 @@
+John,<br>What you&#39;re asking about is actually the next step of the Addons feature (Plugins + Themes) which in essence, work more or less the exact same way using the cascading filesystem. Better illustrated below:<br><br>
+
+- Themes<br>    - <b>[default theme]</b><br>        + views<br>        - media<br>            + css<br>            + images<br><br>Basically we&#39;d take the default views and dump them in the above structure and have the system set to look for the views in &#39;<i><b>[default theme]</b></i>&#39; by default. Its actually very easy to do that at this point. The only thing we have to do before making this step is clean up the views, which still have a lot of php code in them. Those will be replaced by helper functions so that they become one-liners.<br>
+
+
+<br><br><div class="gmail_quote">On Mon, Jul 19, 2010 at 8:16 AM, John Etherton <span dir="ltr">&lt;<a href="mailto:john.etherton@...">john.etherton@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin: 0pt 0pt 0pt 0.8ex; border-left: 1px solid rgb(204, 204, 204); padding-left: 1ex;">
+
+
+
+
+
+
+
+
+
+
+<div link="blue" vlink="purple" lang="EN-US">
+
+<div>
+
+<p class="MsoNormal"><span style="font-size: 11pt; color: rgb(31, 73, 125);">I’m looking for functionality similar to WordPress, where
+you can rewrite the views. In 2.0 using plugins, is there an easy way I can set
+my plugin’s <i>view</i> folder to have a higher priority than the <i>application/view</i>
+folder? This way my plugin could easily overwrite an entire view. Or should I
+just create an event for the creation of the view and allow my plugin to
+override the default view that way?</span></p>
+
+<p class="MsoNormal"><span style="font-size: 11pt; color: rgb(31, 73, 125);"> </span></p>
+
+<p class="MsoNormal"><span style="font-size: 11pt; color: rgb(31, 73, 125);">Thanks,</span></p>
+
+<p class="MsoNormal"><span style="font-size: 11pt; color: rgb(31, 73, 125);"> </span></p>
+
+<p class="MsoNormal"><span style="font-size: 11pt; color: rgb(31, 73, 125);">John Etherton</span></p>
+
+<p class="MsoNormal"><span style="font-size: 11pt; color: rgb(31, 73, 125);">+231-6-975-868</span></p>
+
+<p class="MsoNormal"><span style="font-size: 11pt; color: rgb(31, 73, 125);"><a href="mailto:john.etherton@..." target="_blank"><span style="color: blue;">john.etherton@...</span></a></span></p>
+
+</div>
+
+</div>
+
+
+</blockquote></div><br>

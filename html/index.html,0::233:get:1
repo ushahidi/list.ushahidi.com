@@ -1,0 +1,113 @@
+Hello Juliana,<br>I will analyse the information you provided.<br>I personally interested in merging good bits of RosYama and Ushahidi.<br>Need time to analyse information you provided.<br><br>Thanks,<br>Denis <br><br><div class="gmail_quote">
+On Mon, May 7, 2012 at 4:13 PM, Juliana Rotich <span dir="ltr">&lt;<a href="mailto:juliana@..." target="_blank">juliana@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+<font><font face="verdana,sans-serif">Hi Denis,<br>Would you be willing to create a plugin for the follow up on reports e.g report of pothole =&gt; Local authority/option to write an email to local authorities? <br>Our plugin architecture overview is posted here<br>
+
+
+<a href="http://blog.ushahidi.com/index.php/2010/06/29/on-the-ushahidi-plugin-system/" target="_blank">http://blog.ushahidi.com/index.php/2010/06/29/on-the-ushahidi-plugin-system/</a><span class="HOEnZb"><font color="#888888"><br>
+<br clear="all"></font></span></font></font><span class="HOEnZb"><font color="#888888"><font style="font-family:verdana,sans-serif" size="1">Juliana Rotich<br>
+
+</font><font style="font-family:verdana,sans-serif" size="1">Too brief? Here&#39;s why! <a href="http://emailcharter.org/" target="_blank">http://emailcharter.org</a></font></font></span><div class="HOEnZb"><div class="h5">
+<font style="font-family:verdana,sans-serif" size="1"><br>
+
+</font><br>
+<br><br><div class="gmail_quote">On Thu, May 3, 2012 at 1:14 AM, Private Inf <span dir="ltr">&lt;<a href="mailto:privateinf@..." target="_blank">privateinf@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+Hi Robbie,<div><br><br><blockquote style="margin:0pt 0pt 0pt 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex" class="gmail_quote">- request logic to deal with authorities;<br></blockquote></div>I have described the meaning but seems not clear enough.<br>
+
+
+
+Let me explain you.<br>Suppose you have spotted a big hole on the road.<br>You want it to be fixed.<br>You need instructions where to report it to authorities.<br>You also need a template to form your request in an appropriate language (&quot;hey, dude, you have a hole here&quot; will not make sense ;) )<br>
+
+
+
+Fine if authorities will fix the hole after your request. But if not?<br>Then one need to write to state prosecutor. <br>When the issue is fixed you need to load a photo of fixed defect to prove it is fixed.<br>Example is here: <a href="http://rosyama.ru/20472/" target="_blank">http://rosyama.ru/20472/</a><br>
+
+
+
+<br>Thanks,<br>Denis<div><div><br><br><br><div class="gmail_quote">On Thu, May 3, 2012 at 1:44 AM, Robbie MacKay <span dir="ltr">&lt;<a href="mailto:robbie@..." target="_blank">robbie@...</a>&gt;</span> wrote:<br>
+
+
+
+<blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div>Hi Denis,</div><br>- private user profile;<div>Ushahidi has user profile which could probably be extended to create private user profile, or a plugin could be written for this.<div>
+
+
+
+<br>- request logic to deal with authorities;</div></div>
+
+<div>Not sure what you mean here.<div><br>- icons for categories (colors in Ushahidi are not expressive);<br></div>Ushahidi has these - you just need to configure them in the admin.</div><span><font color="#888888"><div>
+
+
+
+<br></div></font></span><div><span><font color="#888888">Robbie</font></span><div><div><br><br><div class="gmail_quote">
+
+On Thu, May 3, 2012 at 5:25 AM, Private Inf <span dir="ltr">&lt;<a href="mailto:privateinf@..." target="_blank">privateinf@...</a>&gt;</span> wrote:<br><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+
+
+
+
+
+Dear Ushahidi developers,<br><div class="gmail_quote"><div class="gmail_quote"><br>I got experience moderating Ushahidi in this project:<br><a href="http://radiation.crowdmap.com" target="_blank">radiation.crowdmap.com</a><br>
+
+
+
+
+
+
+<br>Now my attention is focused on <a href="http://rosyama.ru" target="_blank">http://rosyama.ru</a> project.<br>
+
+The aim of the project is to improve road condition in Russia.<br><br>The algorithm of the RosYama is the following:<br>1) user marks road defect on the map and uploads a photo of defect;<br>
+2) user chooses category for the defect;<br>3) RosYama generates a common request to authorities demanding to fix defect; <br>4) User can upload a reply received from authorities regarding his request;<br>5) If defect will not be fixed RosYama can help to generate a complain to state prosecutor.<br>
+
+
+
+
+
+
+
+
+6) If the defect is fixed user can mark it as fixed and upload a photo of fixed defect.<br><br>RosYama is an open source project licensed under BSD license and hosted on GitHUB:<br><a href="https://github.com/RosYama/RosYama.2" target="_blank">https://github.com/RosYama/RosYama.2</a><br>
+
+
+
+
+
+
+
+
+
+
+<br><a href="http://rosyama.ru/" target="_blank"></a>RosYama started from scratch and still under development.<br>There are many common features between Ushahidy and RosYama.<br>Ushahidi is a mature and worldwide known project. <br>
+
+
+
+
+
+
+
+
+It would be nice to use Ushahidi for solving the same sort of problems as RosYama do.<br><br>But Ushahidi lacks important features, which are implemented in RosYama:<br>- private user profile;<br>- request logic to deal with authorities;<br>
+
+
+
+
+
+
+
+
+- icons for categories (colors in Ushahidi are not expressive);<br><br>Is it hard to implement the above mentioned features in Ushahidi without modifications in architecture?<br>Is there any development work in the mentioned areas going in Ushahidi?<br>
+
+
+
+
+
+
+
+
+<br>Thank you,<br><br>Denis Kulandin<br><b></b>
+</div>
+</div><br>
+</blockquote></div><br></div></div></div>
+</blockquote></div><br>
+</div></div></blockquote></div><br>
+</div></div></blockquote></div><br>

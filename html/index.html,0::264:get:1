@@ -1,0 +1,110 @@
+<html><head></head><body bgcolor="#FFFFFF"><div>With postgis tables the Geometric types are very much more efficient in both storage and searching. GIST indexes provide a fabulous method for quick retrieval. If we could get even half of that optimization into mySQL that would be a boon. <br>
+<br>--<div>Aaron Huslage</div><div>sent via mobile device</div></div><div><br>On Jul 16, 2012, at 7:24 PM, &quot;Pablo A. Destéfanis&quot; &lt;<a href="mailto:pdestefanis@...">pdestefanis@...</a>&gt; wrote:<br>
+<br></div><div></div><blockquote type="cite"><div><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Generator" content="Microsoft Word 14 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+pre
+	{mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:black;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	color:black;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-priority:99;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;
+	color:black;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";
+	color:black;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><div class="WordSection1"><p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">I’ve been wondering that for a *<b>long</b>* time </span><span style="font-size:11.0pt;font-family:Wingdings;color:#1f497d">J</span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> My conclusion is that it’s just a legacy bit of design, where maybe the system was expecting several reports from each location, rather the more common 1-1 relationship we have now. (Original devs, you may now laugh at my conclusion…)</span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> </span></p><p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">What I usually end up doing is storing POINT(longitude,latitude), as to work with a geometry for each location (which is to say, for each incident). So we can add to the question, why do we save lat/lon, when we could use a geometry? (and derive lat/lon as needed). </span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> </span></p><p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">We now have one geom-enabled table, to store geometries associated with incidents. Having this optional 1-many relationship between a report and several locations could make sense. </span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> </span></p><p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">If anyone has any info on performance of indexed geometry fields vs the traditional lat/long, please comment. I assume that for simple lookups, the floats will be faster.</span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> </span></p><p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d">Pablo</span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#1f497d"> </span></p><div><div style="border:none;border-top:solid #b5c4df 1.0pt;padding:3.0pt 0in 0in 0in"><p class="MsoNormal">
+<b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:windowtext">From:</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:windowtext"> John Etherton [mailto:<a href="mailto:john.etherton@...">john.etherton@...</a>] <br>
+<b>Sent:</b> Monday, July 16, 2012 17:12<br><b>To:</b> <a href="mailto:developers@...">developers@...</a><br><b>Subject:</b> Re: [ushahidi developers] PHP/MySQL</span></p></div></div><p class="MsoNormal">
+ </p><div><p class="MsoNormal" style="margin-bottom:12.0pt">For that matter does it make sense to store locations in separate tables from the incidents?</p><div><p class="MsoNormal"> </p></div><p class="MsoNormal">On 07/16/2012 05:01 PM, David Kobia wrote:</p>
+</div><blockquote style="margin-top:5.0pt;margin-bottom:5.0pt"><pre>For starters,</pre><pre>Just testing last week, I noticed quite a difference between</pre><pre>- `longitude` float(10,6) NOT NULL DEFAULT &#39;0&#39;,</pre>
+<pre>- `latitude` float(10,6) NOT NULL DEFAULT &#39;0&#39;,</pre><pre> </pre><pre>and the current</pre><pre>- `latitude` double NOT NULL DEFAULT &#39;0&#39;,</pre><pre>- `longitude` double NOT NULL DEFAULT &#39;0&#39;,</pre>
+<pre> </pre><pre>Doubles are twice as large and extremely wasteful. Also, there really</pre><pre>isn&#39;t any need to know within a millimeter, the latitude/longitude. 6</pre><pre>decimal places will more than suffice (XXXX.XXXXXX). Combine this with</pre>
+<pre>indexing and we might be getting somewhere.</pre><pre> </pre><pre> </pre><pre> </pre><pre> </pre><pre>On Mon, Jul 16, 2012 at 6:25 PM, Pablo A. Destéfanis</pre><pre><a href="mailto:pdestefanis@...">&lt;pdestefanis@...&gt;</a> wrote:</pre>
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt"><pre>I agree with Emmanuel, and let me add:</pre><pre> </pre><pre> </pre><pre> </pre><pre>·         While PostGIS is excellent, quite a lot can be done with MySQL’s</pre>
+<pre>spatial extensions. I don’t swear over it, but the complexity of porting the</pre><pre>app needs to be weighed against the limitations (also known as the “how many</pre><pre>ppl would need it”).</pre><pre> </pre><pre>
+·         If you have a big site, you can always offload your data to your</pre><pre>DB of choice. To me that is part of the “a factory installation won’t cut</pre><pre>it”</pre><pre> </pre><pre>·         Not sure how the NoSQL option will.</pre>
+<pre> </pre><pre>·         I do not have info on slow queries with me, but I’m sure code</pre><pre>could be tightened. While I can’t point to examples, I do recall this from</pre><pre>looking at several query-logs in MySQL.</pre>
+<pre> </pre><pre> </pre><pre> </pre><pre>Last, if anyone is interested in testing this, I would love to stay in</pre><pre>touch.</pre><pre> </pre><pre> </pre><pre> </pre><pre>Cheers,</pre><pre> </pre><pre> </pre><pre>Pablo</pre>
+<pre> </pre><pre> </pre><pre> </pre><pre>From: Emmanuel Kala [<a href="mailto:emkala@...">mailto:emkala@...</a>]</pre><pre>Sent: Monday, July 16, 2012 14:50</pre><pre>To: <a href="mailto:developers@...">developers@...</a></pre>
+<pre>Subject: Re: [ushahidi developers] PHP/MySQL</pre><pre> </pre><pre> </pre><pre> </pre><pre>Some notes:</pre><pre> </pre><pre>Scale is a function of design</pre><pre>MySQL scales quite well...when you know what you&#39;re doing but it&#39;s not very</pre>
+<pre>inspiring for geo-spatial work. PostgreSQL (+PostGIS) has clearly become the</pre><pre>preferred choice for such.</pre><pre>For high traffic deployments, a factory installation won&#39;t cut it - some</pre><pre>load balancing, caching, DB tuning etc work has to be done  in addition to</pre>
+<pre>exorcising ghosts that are always inherent in the machine</pre><pre>The NoSQL options, e.g. Redis, are pretty good for caching (Reddit and big</pre><pre>xxx sites)</pre><pre>Profiling code has provided great insights on what sections of the</pre>
+<pre>application are yielding beastly load times</pre><pre> </pre><pre>Thanks.</pre><pre> </pre><pre> </pre><pre> </pre><pre>On Mon, Jul 16, 2012 at 10:59 PM, João Peixoto <a href="mailto:joao.mpfp@...">&lt;joao.mpfp@...&gt;</a> wrote:</pre>
+<pre> </pre><pre>Hello all,</pre><pre> </pre><pre> </pre><pre> </pre><pre>First post here, not really an Ushahidi developer yet, for the moment the</pre><pre>NGO I work with has a couple projects that use it and since we love it,</pre>
+<pre>we&#39;re starting customization to meet our needs (which differ a bit from the</pre><pre>typical Crwodmap sites - it&#39;s a biking support site).</pre><pre> </pre><pre> </pre><pre> </pre><pre>On Mon, Jul 16, 2012 at 4:51 PM, David Kobia <a href="mailto:david@...">&lt;david@...&gt;</a> wrote:</pre>
+<pre> </pre><pre>[...]</pre><pre> </pre><pre> </pre><pre> </pre><pre>An option might be to ensure that database interaction is abstracted</pre><pre>enough that it doesn&#39;t matter what the underlying database is... and</pre>
+<pre>this is something that might be worth looking into.</pre><pre> </pre><pre> </pre><pre> </pre><pre>I&#39;d love to see some DB abstraction on Ushahidi. If possible, have a &quot;quick</pre><pre>and dirty&quot; approach using mysql that allows a quick deployment, but as a</pre>
+<pre>site scales up and requires further optimizations, allow better back-ends</pre><pre>for efficiency.</pre><pre> </pre><pre> </pre><pre> </pre><pre>My 2 cents!</pre><pre> </pre><pre> </pre><pre> </pre><pre>JP</pre><pre>
+ </pre><pre> </pre><pre> </pre><pre> </pre><pre> </pre><pre>--</pre><pre> </pre><pre>Kind Regards,</pre><pre> </pre><pre>Emmanuel Kala</pre><pre> </pre><pre> </pre><pre> </pre><pre>Skype: emmanuel.kala</pre><pre> </pre><pre>
+ </pre><pre> </pre><pre>Judgement comes from experience, experience comes from poor judgement</pre></blockquote><pre> </pre><pre> </pre><pre> </pre><pre>~~~~~~~~~~~~~~~~~~~~~~~~~~</pre><pre>List Archive: <a href="http://list.ushahidi.com/">http://list.ushahidi.com/</a></pre>
+<pre> </pre><pre>Would you like to receive list mail batched in a daily digest instead? Send a message to:</pre><pre><a href="mailto:developers-digest-subscribe@...">developers-digest-subscribe@...</a></pre>
+<pre> </pre><pre>To remove your address from the list, just send a message to</pre><pre>the address in the &quot;List-Unsubscribe&quot; header of any list</pre><pre>message. If you haven&#39;t changed addresses since subscribing,</pre>
+<pre>you can also send a message to:</pre><pre><a href="mailto:developers-unsubscribe@...">developers-unsubscribe@...</a></pre><pre> </pre><pre>For addition or removal of addresses, we&#39;ll send a confirmation</pre>
+<pre>message to that address. When you receive it, simply reply to it</pre><pre>to complete the transaction.</pre><pre> </pre><pre>If you need to get in touch with the human owner of this list,</pre><pre>please send a message to:</pre>
+<pre><a href="mailto:developers-owner@...">developers-owner@...</a></pre><pre> </pre></blockquote><p class="MsoNormal" style="margin-bottom:12.0pt"> </p></div></div></blockquote></body></html>

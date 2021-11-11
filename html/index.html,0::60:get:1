@@ -1,9 +1,0 @@
-Hi Folks,<br><br>David and I are organizing for a screen cast that will cover Ushahidi Plugins.  The screencast will basically be a conversation between David and I where we&#39;ll discuss the plugin system and do some diagraming/visuals along the way. Our hope is to produce a screen cast that will cover the basics of the Ushahidi Plugin system and give a general overview of how to create one.<br>
-
-<br>Please reply with any questions you have about the system that you&#39;d like to see covered.  For those of you already familiar with the system, if you think of a question that would be helpful, you can send it on too.<br>
-
-<br>Here are a few questions to get the ball rolling:<br><ul><li>How has the plugin architecture altered the Ushahidi core platform (code-wise or directory-wise)?</li><li>What is a hook?</li><li>What is a filter?</li><li>
-
-How do I handle database changes or updates needed for my plugin?</li><li>How do I get started writing my own plugin?<br></li></ul><br>Please send all questions in no later than <b>Friday (June 4) of this week</b>. We&#39;ll try to cover as much of them as we can during the screen cast.<br>
-
-<br>Cheers!<br><br clear="all">Caleb Bell<br><br><a href="http://www.ushahidi.com">www.ushahidi.com</a><br>US: 850.366.3702<br>

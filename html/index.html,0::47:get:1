@@ -1,9 +1,0 @@
-Hi Folks,<br><br>When working on a fresh install of Ushahidi, I&#39;ve often wanted a large set of incident reports to populate my blank database.<br><br><a href="http://github.com/downloads/ushahidi/Ushahidi_Web/ushahidi_haiti_incidents.sql.zip" target="_blank">This sql file solves the issue</a>.<br>
-
-
-<br>The file is a SQL dump of the incident, category, incident_category, incident_person, and location tables exported from the production Haiti database.  All personally identifiable information (PII) have been removed. I&#39;ve also removed the columns in the incident table that were unique to Haiti so everything should fit nicely with a fresh db.<br>
-
-
-<br>I hope this comes in handy during your development efforts.<br><br>Cheers,<br> <br>Caleb Bell<br><a href="http://www.ushahidi.com" target="_blank">www.ushahidi.com</a><br>Crowdsourcing Crisis Information<br><br>US: 850.366.3702<br>
-
-

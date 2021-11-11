@@ -1,7 +1,0 @@
-<div>Hi All,</div><div><br></div><div>Just a quick note to let you know that the the Redmine -&gt; Git Issues Migration is done.</div><div><br></div><div>Redmine (<a href="http://dev.ushahidi.com/">http://dev.ushahidi.com/</a>) will remain active through the end of Feb, after which it will auto-forward to <a href="http://github.com/ushahidi">http://github.com/ushahidi</a></div>
-
-<div><br></div><div>As part of the migration, we normalized the <a href="https://img.skitch.com/20120217-cc45hm78xkuw3t3h5mr8gdjmja.png">labeling scheme</a> across our repos on github:</div><div><ul><li>Bug</li><li>Community Task</li>
-
-<li>Feature</li><li>P1 - Immediate</li><li>P2 - Normal</li><li>P3 - Low</li></ul></div><div><br></div><div>The labels are pretty self explanatory but we want to highlight the &quot;Community Task&quot; label. We added that in the mix as an easy way to indicate to community dev&#39;s where they dive in. Of course folks can pitch in anywhere but for someone who&#39;s new, a &quot;Community Task&quot; is something that is deemed low-hanging and a good place to get one&#39;s feet wet.</div>
-
-<div><br></div><div>Best regards,</div><div><br></div>Caleb Bell<br><a href="http://www.ushahidi.com" target="_blank">www.ushahidi.com</a><br>US: 850.366.8702<br>

@@ -1,3 +1,0 @@
-Hi Guys,<br>I just wanted to let you know that we&#39;ve now converted (renamed) the <b>2.0</b> branch on github to <b>master</b>. To avoid breaking your local github repos, please do the following:<br><br><pre style="margin-left: 40px;">
-<div class="line" id="LC3"><font size="4">$ git branch -m master 1.2</font></div><div class="line" id="LC4"><font size="4">$ git branch -m 2.0 master</font></div></pre>This will rename your local branches accordingly, so that your local master will match the remote branch which is the original 2.0 branch.<br>
-<br>Thanks!<br><br>David<br>

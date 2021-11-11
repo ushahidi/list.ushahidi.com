@@ -1,5 +1,0 @@
-<div dir="ltr"><div><div>hello , i&#39;m new to Ushahidi,<br><br></div>so i want to change something but i cant see where make my change,<br><br></div>i have database called bd-event where i store the information (alert) coming from sensor device helping to  detect fire ,so i&#39;v created user called user1 and when user1 is connected to ushahidi , and when he clicks on submit Report then submit bottom , ushahidi  connect to the data base<br clear="all">
-<div><div><div>and upload the description of this alert from bd-event and create report with this information<br><br></div><div>can you tel me wich files  should i change . <br><br><br></div><div>-- <br><div dir="ltr">Hocine Saadi<br>
-Chargé d’études au CERIST (CEntre de Recherche en l&#39;Information Scientifique et Technique)<br>Division Théorie et Ingénierie des Systèmes Informatiques (DTISI)<br>03, Rue frères Aissiou - Ben Aknoun - Alger<br>
-Ingénieur en Informatique (USTHB)<br><br></div>
-</div></div></div></div>

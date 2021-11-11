@@ -1,6 +1,0 @@
-<p style><span style="letter-spacing:0px">On April 27, 2012, Dennison WIlliams reported a security vulnerability with the Ushahidi web application. The vulnerability allows unauthorized users to gain admin access to Ushahidi deployments through a fake authentication cookie. Session data was stored in a cookie, and while encrypted, the encryption key is never changed. This leads to any Ushahidi session cookie being valid and usable on any other Ushahidi installation.</span></p>
-
-<p style><span style="letter-spacing:0px">This vulnerability is fixed in Ushahidi 2.3.1 including setting the encryption key on new installs, and warning users who haven&#39;t taken security measures. Alternatively existing users can patch their deployment as described here:</span></p>
-
-<p style><font color="#222222" face="Georgia"><a href="http://security.ushahidi.com/2012/04/30/sa-web-2012-004-ushahidi-web-single-vulnerability/">http://security.ushahidi.com/2012/04/30/sa-web-2012-004-ushahidi-web-single-vulnerability/</a></font></p>
-

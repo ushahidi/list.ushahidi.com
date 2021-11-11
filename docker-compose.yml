@@ -1,9 +1,0 @@
-version: "2"
-services:
-  nginx:
-    build:
-      context: nginx
-    volumes:
-      - "/root/html:/vols/html:ro"
-    ports:
-      - "80:80"
